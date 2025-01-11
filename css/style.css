@@ -13,7 +13,8 @@ body {
     font-family: "Inter", serif;
     margin: 0;
     overflow-x: hidden;
-    height: 100%;
+    min-height: 100vh;
+
 }
 
 header {
@@ -52,6 +53,9 @@ nav ul li a {
     font-weight: bold;
 }
 
+a{
+    cursor: pointer;
+}
 
 /*INDEX.HTML*/
 
@@ -156,6 +160,7 @@ nav ul li a {
 /*FOOTER*/
 
 .footer {
+    align-content: end;
     background-color:#004f91;
     background: cover;
     background-position: cover;    
@@ -216,7 +221,7 @@ nav ul li a {
 
 .producto {
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .producto img {
@@ -239,6 +244,16 @@ nav ul li a {
     font-weight: bold;
 }
 
+#ver-mas {
+    cursor: pointer;
+    margin-top: 1.125rem;
+    background-color: #910000;
+    color: white;
+    padding: .625rem 1.25rem;
+    border-radius: .625rem;
+    text-decoration: none;
+    font-weight: bold;
+}
 
 /*PEPSI-HISTORY.HTML*/
 
@@ -308,4 +323,376 @@ nav ul li a {
     color: rgb(255, 0, 0);
     width: 18.875rem;
     height: 22rem;
+}
+
+/*CONTACTO.HTML*/
+
+/*PÁGINAS INDIVIDUALES*/
+
+/*PEPSI CLASICA*/
+
+#principal-clasica {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+#textoprincipal-clasica {
+    width: 50.375rem;
+    height: 25.8125rem;
+    text-align: left;
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    left: 10%;
+}
+
+#principal-clasica h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    font-style: normal;
+}
+
+#principal-clasica p {
+    margin-top: 3.25rem;
+    font-size: 1.5rem;
+    font-weight:300;
+    width: 60.25rem;
+}
+
+#principal-clasica img {
+    width: 28.625rem;
+    height: 47.8125rem;
+    object-fit: cover;
+    position: absolute;
+    top: 10rem;
+    left: 78.8125rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#nutricion-info{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 6.25rem);
+    justify-content: center;
+    align-items: center;
+    margin: 22.5rem 17.5875rem;
+    max-width: 40rem;
+    column-gap: 1.25rem;
+}
+
+.nutri{
+    grid-column: 1/6;
+    grid-row: 1/2;
+    height: 3.125rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.box-nutri {
+    background-color:#0058a2;
+    flex: 1;
+    color: white;
+    text-align: center;
+    width: 9.375rem;
+    height: 200px;
+    transition: transform .2s;
+}
+
+.box-nutri h2 {
+    font-size: 1.525rem;
+    font-weight: bold;
+    height: 8.375rem;
+    margin-bottom: auto;
+    margin-top: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-nutri p {
+    border-radius: 0rem 0rem .625rem .625rem;
+    display: flex;
+    background-color:#003D6B;
+    font-size: 1rem;
+    line-height: 1.5;
+    height: 3.125rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-nutri:hover{
+    transform: scale(1.1);
+
+}
+.box-nutri:hover div{
+    background-color:#5bb4ff;
+    
+}
+.box-nutri:hover h2{
+    background-color:#5bb4ff;
+    
+}
+.box-nutri:hover p{
+    background-color:#006cbc ;
+    
+}
+
+.descripcion-nutri{
+    height: .125rem;
+    align-self: end;
+    justify-self: start;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+.descripcion-nutri p{
+    font-size: .825rem;
+    font-weight: 200;
+}
+
+.boton-compra{
+    margin-top: 1.25rem;
+    background-color: #91000000;
+    color: white;
+    width: 200px;
+    padding: .625rem 1.25rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.boton-compra button{
+    cursor: pointer;
+    border: none;
+    width:400px;
+    background:transparent;
+    border: 2px solid white;
+    border-radius:50px;
+    color: white;
+    margin-top: 50px;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 32px
+}
+
+.ml {
+    position: absolute; 
+    bottom:5px;      
+    right: 0px;       
+    background-color: #45b0ff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    width: 200px;  
+    height: 150px;     
+}
+
+.ml h2 {
+    margin: 20px;
+    font-size: 34px;
+    color: #ffffff; 
+}
+
+.ml p {
+    font-size: 14px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    color: #000000; 
+}
+
+/*PEPSI ZERO AZUCAR*/
+
+#principal-zero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+#textoprincipal-zero {
+    width: 52.375rem;
+    height: 28.8125rem;
+    text-align: left;
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    left: 10%;
+}
+
+#principal-zero h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    font-style: normal;
+}
+
+#principal-zero p {
+    margin-top: 3.25rem;
+    font-size: 1.5rem;
+    font-weight:300;
+    width: 60.25rem;
+}
+
+#principal-zero img {
+    width: 28.625rem;
+    height: 47.8125rem;
+    object-fit: cover;
+    position: absolute;
+    top: 10rem;
+    left: 78.8125rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#nutricion-info{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 6.25rem);
+    justify-content: center;
+    align-items: center;
+    margin: 22.5rem 17.5875rem;
+    max-width: 40rem;
+    column-gap: 1.25rem;
+}
+
+.nutri{
+    grid-column: 1/6;
+    grid-row: 1/2;
+    height: 3.125rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.box-nutri-zero {
+    background-color:#a0a0a0;
+    flex: 1;
+    color: white;
+    text-align: center;
+    width: 9.375rem;
+    height: 200px;
+    transition: transform .2s;
+}
+
+.box-nutri-zero h2 {
+    font-size: 1.525rem;
+    font-weight: bold;
+    height: 8.375rem;
+    margin-bottom: auto;
+    margin-top: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-nutri-zero p {
+    border-radius: 0rem 0rem .625rem .625rem;
+    display: flex;
+    background-color:#535353;
+    font-size: 1rem;
+    line-height: 1.5;
+    height: 3.125rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-nutri-zero:hover{
+    transform: scale(1.1);
+
+}
+.box-nutri-zero:hover div{
+    background-color:#ff0000;
+    
+}
+.box-nutri-zero:hover h2{
+    background-color:#ff0000;
+    
+}
+.box-nutri-zero:hover p{
+    background-color:#830000 ;
+    
+}
+
+.descripcion-nutri-zero{
+    height: .125rem;
+    align-self: end;
+    justify-self: start;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+.descripcion-nutri-zero p{
+    font-size: .825rem;
+    font-weight: 200;
+}
+
+.boton-compra{
+    margin-top: 1.25rem;
+    background-color: #91000000;
+    color: white;
+    width: 200px;
+    padding: .625rem 1.25rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.boton-compra button{
+    cursor: pointer;
+    border: none;
+    width:400px;
+    background:transparent;
+    border: 2px solid white;
+    border-radius:50px;
+    color: white;
+    margin-top: 50px;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 32px
+}
+
+.ml {
+    position: absolute; 
+    bottom:5px;       
+    right: 0px;        
+    background-color: #5f5f5f; /* Fondo blanco */
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    width: 200px;  
+    height: 150px;     
+}
+
+.ml h2 {
+    margin: 20px;
+    font-size: 34px;
+    color: #ffffff; 
+}
+
+.ml p {
+    font-size: 14px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; 
 }
