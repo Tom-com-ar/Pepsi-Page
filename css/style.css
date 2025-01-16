@@ -8,14 +8,16 @@
 
 .bodygeneral {
     background: linear-gradient(to left, #0066b2, #004f91, #003b73, #002a4d);
-    background: cover;
-    background-position: cover;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
     font-family: "Inter", serif;
     margin: 0;
-    overflow-x: hidden;
-    min-height: 100vh;
-
+    height: 100%;
+    min-height: 100vh; 
+    overflow-x: hidden; 
 }
+
 
 header {
     display: flex;
@@ -427,6 +429,7 @@ a{
     align-items: center;
     margin: 22.5rem 17.5875rem;
     max-width: 40rem;
+    height: 80%;
     column-gap: 1.25rem;
 }
 
@@ -448,7 +451,7 @@ a{
     color: white;
     text-align: center;
     width: 9.375rem;
-    height: 200px;
+    height: 10.5rem;
     transition: transform .2s;
 }
 
@@ -512,7 +515,7 @@ a{
     margin-top: 1.25rem;
     background-color: #91000000;
     color: white;
-    width: 200px;
+    width: 12.5rem;
     padding: .625rem 1.25rem;
     text-decoration: none;
     font-weight: bold;
@@ -521,16 +524,16 @@ a{
 .boton-compra button{
     cursor: pointer;
     border: none;
-    width:400px;
+    width:25rem;
     background:transparent;
-    border: 2px solid white;
-    border-radius:50px;
+    border: .125rem solid white;
+    border-radius:3.125rem;
     color: white;
-    margin-top: 50px;
-    padding: 20px;
+    margin-top: 3.125rem;
+    padding: 1.25rem;
     text-decoration: none;
     font-weight: bold;
-    font-size: 32px
+    font-size: 2rem;
 }
 
 .ml {
@@ -559,7 +562,7 @@ a{
     color: #000000; 
 }
 
-/*PEPSI ZERO AZUCAR*/
+/*PEPSI CERO AZUCAR*/
 
 .fondo-cero{
     background: black;
@@ -571,7 +574,7 @@ a{
     min-height: 100vh;
 }
 
-#principal-zero {
+#principal-cero {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -579,7 +582,7 @@ a{
     text-align: center;
 }
 
-#textoprincipal-zero {
+#textoprincipal-cero {
     width: 52.375rem;
     height: 28.8125rem;
     text-align: left;
@@ -589,20 +592,20 @@ a{
     left: 10%;
 }
 
-#principal-zero h1 {
+#principal-cero h1 {
     font-size: 6rem;
     font-weight: bold;
     font-style: normal;
 }
 
-#principal-zero p {
+#principal-cero p {
     margin-top: 3.25rem;
     font-size: 1.5rem;
     font-weight:300;
     width: 60.25rem;
 }
 
-#principal-zero img {
+#principal-cero img {
     width: 28.625rem;
     height: 47.8125rem;
     object-fit: cover;
@@ -636,7 +639,7 @@ a{
     align-items: center;
 }
 
-.box-nutri-zero {
+.box-nutri-cero {
     background-color:#a0a0a0;
     flex: 1;
     color: white;
@@ -646,7 +649,7 @@ a{
     transition: transform .2s;
 }
 
-.box-nutri-zero h2 {
+.box-nutri-cero h2 {
     font-size: 1.525rem;
     font-weight: bold;
     height: 8.375rem;
@@ -658,7 +661,7 @@ a{
     justify-content: center;
 }
 
-.box-nutri-zero p {
+.box-nutri-cero p {
     border-radius: 0rem 0rem .625rem .625rem;
     display: flex;
     background-color:#535353;
@@ -669,24 +672,24 @@ a{
     justify-content: center;
 }
 
-.box-nutri-zero:hover{
+.box-nutri-cero:hover{
     transform: scale(1.1);
 
 }
-.box-nutri-zero:hover div{
+.box-nutri-cero:hover div{
     background-color:#ff0000;
     
 }
-.box-nutri-zero:hover h2{
+.box-nutri-cero:hover h2{
     background-color:#ff0000;
     
 }
-.box-nutri-zero:hover p{
+.box-nutri-cero:hover p{
     background-color:#830000 ;
     
 }
 
-.descripcion-nutri-zero{
+.descripcion-nutri-cero{
     height: .125rem;
     align-self: end;
     justify-self: start;
@@ -697,7 +700,7 @@ a{
     grid-column-end: 6;
 }
 
-.descripcion-nutri-zero p{
+.descripcion-nutri-cero p{
     font-size: .825rem;
     font-weight: 200;
 }
@@ -946,3 +949,251 @@ a{
     justify-content: center;
     color: #ffffff; 
 }
+
+
+@media(max-width:1440px){
+    
+    #seccion1 {
+        height: 60%;
+    }
+
+
+    #textoseccion1{
+        width: 34.875rem;
+        height: 25.8125rem;
+        top: 11.9375rem;
+        left: 8.6875rem;
+    }
+
+
+    #seccion1 h1{
+        font-size: 6rem;
+    }
+
+    #seccion1 p {
+        font-size: 1rem;
+    }
+
+    #seccion1 img {
+        width: 35.625rem;
+        height: 60.0625rem;
+        top: 5.375rem;
+        left: 35.375rem;
+        
+    }
+
+
+    #seccion2 {
+        margin-top: 42.5625rem;
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        background-color: #ffffff00;
+        width: 100%; 
+        max-width: 1440px; 
+    }
+    
+    #negro, #celeste, #blanco {
+        flex: 1; 
+        width: 100%; 
+        max-width: 1440px; 
+    }
+
+    /*PRODUCTOS.HTML*/
+
+    .producto img {
+        width: 15.875rem;
+        height: 20rem;
+        
+    }
+    
+    /*PEPSI-HISTORY.HTML*/
+
+    .logos img{
+        width: 10rem;
+        height: 15rem;
+    }
+
+    #historia{
+        margin: 1.25rem;
+    }
+
+    #primer-texto , #segundo-texto{
+        font-size: 1rem;
+        width: 35.3125rem;
+        height: 8.4375rem;
+    }
+
+    .grilla-logos{
+        margin: 1.25rem;
+    }
+
+    /*PEPSI CLASICA*/
+
+
+    #textoprincipal-clasica {
+        top: 15%;
+        left: 10%;
+    }
+
+    #principal-clasica h1 {
+        font-size: 4rem;
+    }
+
+    #principal-clasica p {
+        font-size: 1rem;
+        margin-top: 1.5rem;
+        width: 40.25rem;
+
+    }
+
+    #principal-clasica img {
+        width: 20.625rem;
+        height: 35.8125rem;
+        object-fit: contain;
+        position: absolute;
+        top: 5.8125rem;
+        left: 50rem;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+
+    #nutricion-info{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 6rem);
+        justify-content: center;
+        align-items: center;
+        margin: 10rem 23rem;
+        max-width: 10rem;
+        height: 80%;
+        column-gap: 1rem;
+    }
+
+    .box-nutri{
+        width: 7rem;
+    }
+
+    .ml{
+        z-index: 10;
+        bottom: 0rem;
+    }
+    
+    .boton-compra{
+        margin-top: 0rem;
+    }
+
+
+    /*PEPSI CERO*/
+
+    #textoprincipal-cero {
+        top: 15%;
+        left: 10%;
+    }
+
+    #principal-cero h1 {
+        font-size: 4rem;
+    }
+
+    #principal-cero p {
+        font-size: 1rem;
+        margin-top: 1.5rem;
+        width: 40.25rem;
+
+    }
+
+    #principal-cero img {
+        width: 20.625rem;
+        height: 35.8125rem;
+        object-fit: contain;
+        position: absolute;
+        top: 5.8125rem;
+        left: 50rem;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+
+    #nutricion-info{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 6rem);
+        justify-content: center;
+        align-items: center;
+        margin: 10rem 23rem;
+        max-width: 10rem;
+        height: 80%;
+        column-gap: 1rem;
+    }
+
+    .box-nutri-cero{
+        width: 7rem;
+    }
+
+    .ml-cero{
+        z-index: 10;
+        bottom: 0rem;
+    }
+    
+    .boton-compra-cero{
+        margin-top: 0rem;
+    }
+
+    /*PEPSI DIETÉTICA*/
+
+    #textoprincipal-diet {
+        top: 15%;
+        left: 10%;
+    }
+
+    #principal-diet h1 {
+        font-size: 4rem;
+    }
+
+    #principal-diet p {
+        font-size: 1rem;
+        margin-top: 1.5rem;
+        width: 40.25rem;
+
+    }
+
+    #principal-diet img {
+        width: 20.625rem;
+        height: 35.8125rem;
+        object-fit: contain;
+        position: absolute;
+        top: 5.8125rem;
+        left: 50rem;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+
+    #nutricion-info{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 6rem);
+        justify-content: center;
+        align-items: center;
+        margin: 10rem 23rem;
+        max-width: 10rem;
+        height: 80%;
+        column-gap: 1rem;
+    }
+
+    .box-nutri-diet{
+        width: 7rem;
+    }
+
+    .ml-diet{
+        z-index: 10;
+        bottom: 0rem;
+    }
+    
+    .boton-compra-diet{
+        margin-top: 0rem;
+    }
+
+}
+
