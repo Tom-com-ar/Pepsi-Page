@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Pepsi Página - Inicio</title>
 </head>
@@ -20,6 +21,30 @@
             </ul>
         </nav>
     </header>
+    <header class="header-resposive">
+        <div class="menu-icon">
+            <i class="material-icons">menu</i>
+        </div>
+        <img id="PepsiLogoPrincipal" src="assets/logos/pepsi_logo.png" alt="logo principal de Pepsi">
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="./pages/productos.html">Productos</a></li>
+                <li><a href="./pages/pepsi-history.html">Historia de Pepsi</a></li>
+                <li><a href="./pages/contact-us.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const navLinks = document.querySelector('.nav-links');
+    
+        menuIcon.addEventListener('click', () => {
+            // Alterna la visibilidad del menú
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+    </script>
+    
     <main>
         <section id="seccion1">
             <div id="textoseccion1">
@@ -70,10 +95,13 @@
         </div>
 
         <div class="footer-social">
-            <a href="https://www.instagram.com/pepsi/"target="_blank"><img src="./assets/logos/instagram-icon.png" alt="Instagram"></a>
-            <a href="https://x.com/pepsi"target="_blank"><img src="./assets/logos/x-icon.png" alt="X"></a>
-            <a href="https://www.youtube.com/user/Pepsi"target="_blank"><img src="./assets/logos/youtube-icon.png" alt="YouTube"></a>
-            <a href="https://www.tiktok.com/@pepsi"target="_blank"><img src="./assets/logos/tiktok-icon.png" alt="TikTok"></a>
+            <a href="https://www.instagram.com/pepsi/" target="_blank"><img src="./assets/logos/instagram-icon.png"
+                    alt="Instagram"></a>
+            <a href="https://x.com/pepsi" target="_blank"><img src="./assets/logos/x-icon.png" alt="X"></a>
+            <a href="https://www.youtube.com/user/Pepsi" target="_blank"><img src="./assets/logos/youtube-icon.png"
+                    alt="YouTube"></a>
+            <a href="https://www.tiktok.com/@pepsi" target="_blank"><img src="./assets/logos/tiktok-icon.png"
+                    alt="TikTok"></a>
         </div>
     </footer>
 </body>
