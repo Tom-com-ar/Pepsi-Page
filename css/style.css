@@ -1693,6 +1693,220 @@ a{
 
 }
 
+@media (max-width:430px){
+
+    header{
+        display: none;
+    }
+
+    .header-resposive{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 15px;
+        color: #fff; 
+        position: relative;    
+    }
+
+    .menu-icon {
+        font-size: 45px;
+        cursor: pointer;
+        color: #fff; 
+    }
+    
+    #PepsiLogoPrincipal {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 60px; 
+    }
+    
+    .nav-links {
+        display: none; 
+        position: absolute;
+        top: 60px; 
+        left: 50%;
+        width: 100%; 
+        z-index: 999;
+    }
+    
+    .nav-links ul {
+        list-style: none;
+        padding: 10px 20px;
+        gap: 10px;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .nav-links ul li {
+        margin: 10px 0;
+    }
+    
+    .nav-links ul li a {
+        padding: 4px 5px;
+        text-decoration: none;
+        color: #ffffff; 
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .nav-links ul li a:hover{
+        background-color: #5f5f5fc9;
+        border-radius:20px;
+    }
+
+    #textoseccion1 {
+        width: 20rem;
+        height: 25.8125rem;
+        text-align: center;
+        position: absolute;
+        left: -5%;
+        top: 25%;
+        z-index: 1;
+        margin: 20px;
+    }
+    
+    #seccion1 h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        font-style: italic;
+    }
+    
+    #seccion1 p {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-left: 35px;
+        width: 15.25rem;
+    }
+    
+    #seccion1 img {
+        width: 15.625rem;
+        height: 60.0625rem;
+        object-fit: contain;
+        position: absolute;
+        top: 15.075rem;
+        left: 2.2rem;
+        z-index: -1;
+        overflow: hidden;
+    }
+
+
+    .footer-social a img {
+        width: 15px;
+        height: 15px;
+        margin-top:20px ;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width:390px){
+
+    header{
+        display: none;
+    }
+
+    .header-resposive{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 15px;
+        color: #fff; 
+        position: relative;    
+    }
+
+    .menu-icon {
+        font-size: 45px;
+        cursor: pointer;
+        color: #fff; 
+    }
+    
+    #PepsiLogoPrincipal {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 60px; 
+    }
+    
+    .nav-links {
+        display: none; 
+        position: absolute;
+        top: 60px; 
+        left: 50%;
+        width: 100%; 
+        z-index: 999;
+    }
+    
+    .nav-links ul {
+        list-style: none;
+        padding: 10px 20px;
+        gap: 10px;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .nav-links ul li {
+        margin: 10px 0;
+    }
+    
+    .nav-links ul li a {
+        padding: 4px 5px;
+        text-decoration: none;
+        color: #ffffff; 
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .nav-links ul li a:hover{
+        background-color: #5f5f5fc9;
+        border-radius:20px;
+    }
+
+    #textoseccion1 {
+        width: 20rem;
+        height: 25.8125rem;
+        text-align: center;
+        position: absolute;
+        left: -5%;
+        top: 25%;
+        z-index: 1;
+        margin: 20px;
+    }
+    
+    #seccion1 h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        font-style: italic;
+    }
+    
+    #seccion1 p {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-left: 35px;
+        width: 15.25rem;
+    }
+    
+    #seccion1 img {
+        width: 15.625rem;
+        height: 60.0625rem;
+        object-fit: contain;
+        position: absolute;
+        top: 15.075rem;
+        left: 2.2rem;
+        z-index: -1;
+        overflow: hidden;
+    }
+
+
+    .footer-social a img {
+        width: 15px;
+        height: 15px;
+        margin-top:20px ;
+        margin-left: 10px;
+    }
+}
+
 
 @media (max-width:320px){
 
@@ -1800,3 +2014,5 @@ a{
         margin-left: 10px;
     }
 }
+
+
