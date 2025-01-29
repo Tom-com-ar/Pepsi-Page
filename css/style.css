@@ -1126,7 +1126,6 @@ a {
     .nutri {
         height: 40px;
         font-size: 26px;
-        margin-top: 30px;
     }
 
     .box-nutri,
@@ -1384,12 +1383,7 @@ a {
         max-width: 400px;
         column-gap: 20px;
     }
-
-    .nutri {
-        margin-bottom: 70px;
-        margin-top: 20px;
-    }
-
+  
     .descripcion-nutri p,
     .descripcion-nutri-cero p,
     .descripcion-nutri-diet p {
