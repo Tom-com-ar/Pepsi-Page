@@ -1158,6 +1158,11 @@ a {
         margin-top: 0px;
     }
 
+
+    .nutri{
+        margin-top: 20px;
+    }
+
     .boton-compra button,
     .boton-compra button,
     .boton-compra button {
@@ -1349,6 +1354,10 @@ a {
     #principal-cero h1,
     #principal-diet h1 {
         font-size: 60px;
+    }
+
+    .nutri{
+        margin-top: 20px;
     }
 
     #principal-clasica p,
