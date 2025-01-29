@@ -7,8 +7,8 @@ https://tom-com-ar.github.io/Pepsi-Page/
 Este es un proyecto de rediseño de la identidad visual de Pepsi, desarrollado como parte de un curso. El objetivo fue modernizar la imagen de la marca manteniendo su esencia y atractivo visual.
 
 ## Tecnologías y herramientas utilizadas
-- **HTML, CSS y JavaScript** (para la presentación del rediseño en una página web)
-
+- **HTML, CSS y JavaScript**
+  
 ## Características del rediseño
 - Nueva paleta de colores inspirada en tendencias modernas.
 - Ajuste de la tipografía para mejorar la legibilidad y el impacto visual.
