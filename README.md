@@ -1,4 +1,7 @@
 Pepsi Page 
+
+https://tom-com-ar.github.io/Pepsi-Page/
+
 # Rediseño de Pepsi
 
 Este es un proyecto de rediseño de la identidad visual de Pepsi, desarrollado como parte de un curso. El objetivo fue modernizar la imagen de la marca manteniendo su esencia y atractivo visual.
