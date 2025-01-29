@@ -1126,6 +1126,7 @@ a {
     .nutri {
         height: 40px;
         font-size: 26px;
+        margin-top: 30px;
     }
 
     .box-nutri,
@@ -1158,10 +1159,6 @@ a {
         margin-top: 0px;
     }
 
-
-    .nutri{
-        margin-top: 20px;
-    }
 
     .boton-compra button,
     .boton-compra button,
@@ -1356,10 +1353,6 @@ a {
         font-size: 60px;
     }
 
-    .nutri{
-        margin-top: 20px;
-    }
-
     #principal-clasica p,
     #principal-cero p,
     #principal-diet p {
@@ -1394,6 +1387,7 @@ a {
 
     .nutri {
         margin-bottom: 70px;
+        margin-top: 20px;
     }
 
     .descripcion-nutri p,
