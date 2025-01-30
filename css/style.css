@@ -886,7 +886,7 @@ a {
     color: white;
     text-align: center;
     width: 9.375rem;
-    height: 150px;
+    height: 175%;
     transition: transform .2s;
 }
 
@@ -953,7 +953,6 @@ a {
     margin-top: 1.25rem;
     background-color: #91000000;
     color: white;
-    width: 200px;
     padding: .625rem 1.25rem;
     text-decoration: none;
     font-weight: bold;
@@ -1158,10 +1157,7 @@ a {
         margin-top: 0px;
     }
 
-
-    .boton-compra button,
-    .boton-compra button,
-    .boton-compra button {
+    .boton-compra button{
         font-size: 24px;
         width: 250px;
         height: 75px;
@@ -1287,7 +1283,7 @@ a {
     }
 
     .producto p {
-        font-size: 13.6px;
+        font-size: 18px;
     }
 
     #ver-mas {
@@ -1383,11 +1379,17 @@ a {
         max-width: 400px;
         column-gap: 20px;
     }
+
+    .box-nutri,
+    .box-nutri-cero,
+    .box-nutri-diet {
+        height: 175px;
+    }
   
     .descripcion-nutri p,
     .descripcion-nutri-cero p,
     .descripcion-nutri-diet p {
-        margin-top: 20px;
+        margin-top: 50px;
         font-size: 13.6px;
     }
 
@@ -1475,6 +1477,10 @@ a {
         width: 25px;
         height: 25px;
         margin-left: 10px;
+    }
+
+    .producto p{
+        font-size: 16px;
     }
 
     #textoprincipal-clasica,
@@ -1597,6 +1603,7 @@ a {
     .descripcion-nutri-cero p,
     .descripcion-nutri-diet p {
         font-size: 13.2px;
+        margin-top: 10px;
         font-weight: 200;
     }
 
