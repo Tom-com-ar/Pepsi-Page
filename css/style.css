@@ -2166,7 +2166,7 @@ a {
         object-fit: contain;
         position: absolute;
         top: 250px;
-        left: 80px;
+        left: 50px;
         z-index: -1;
         overflow: hidden;
     }
