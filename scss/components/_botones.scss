@@ -1,0 +1,490 @@
+//BOTÓN DE COMPRA LATAS
+
+.boton-compra {
+    margin-top: 1.25rem;
+    background-color: #91000000;
+    color: white;
+    width: 0rem;
+    padding: .625rem 1.25rem;
+    text-decoration: none;
+    font-weight: bold;
+
+    button {
+        cursor: pointer;
+        border: none;
+        width: 25rem;
+        background: transparent;
+        border: .125rem solid white;
+        border-radius: 3.125rem;
+        color: white;
+        margin-top: 3.125rem;
+        padding: 1.25rem;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+}
+
+//RESPOSIVE
+
+//1440
+@media (max-width: 1440px) {
+    .boton-compra {
+        width: 0px;
+        margin-top: 0px;
+    }
+    
+    .boton-compra button{
+        font-size: 24px;
+        width: 250px;
+        height: 75px;
+    }
+
+}
+
+//1024
+@media (max-width: 1024px) {
+    .boton-compra {
+        margin-top: 50px;
+    }
+    
+}
+
+//768
+
+@media (max-width: 768px) {
+    .boton-compra {
+        margin-top: 20px;
+        background-color: #91000000;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .boton-compra button {
+        width: 300px;
+        margin-top: 48px;
+        font-size: 20px;
+    }
+    
+}
+
+//425
+@media (max-width: 425px) {
+    .boton-compra {
+        margin-top: 600px;
+        margin-left: 13px;
+    }
+    
+    .boton-compra button {
+        cursor: pointer;
+        border: 5px solid white;
+        width: 200px;
+        padding: 20px;
+        font-size: 20px;
+    }
+    
+    .productos-container-clasica {
+        background-color: #003865;
+        border: 2px solid transparent;
+        border-radius: 32px 32px 0 0;
+        margin-top: -125px;
+        width: 425px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .productos-container-cero {
+        background-color: #434343;
+        border: 2px solid transparent;
+        border-radius: 32px 32px 0 0;
+        margin-top: -125px;
+        width: 425px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .productos-container-diet {
+        background-color: #b4b4b4;
+        border: 2px solid transparent;
+        border-radius: 32px 32px 0 0;
+        margin-top: -125px;
+        width: 425px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .btn.productos {
+        background-color: transparent;
+        color: white;
+        border: none;
+        font-size: 25px;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .btn.productos:hover {
+        text-decoration: none;
+    }
+    
+    .datos-clasica {
+        width: 130px;
+        height: 100px;
+        top: 65%;
+        left: 69%;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        background-color: #3498db;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        z-index: 5;
+        padding: 17px 15px;
+        border-radius: 10px;
+    }
+    
+    .datos-cero {
+        width: 130px;
+        height: 100px;
+        top: 65%;
+        left: 69%;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        background-color: #ff0000;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        z-index: 5;
+        padding: 17px 15px;
+        border-radius: 10px;
+    }
+    
+    .datos-diet {
+        width: 130px;
+        height: 100px;
+        top: 65%;
+        left: 69%;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        background-color: #535353;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        z-index: 5;
+        padding: 17px 15px;
+        border-radius: 10px;
+    }
+    
+    .datos-container-clasica p,
+    .datos-container-cero p,
+    .datos-container-diet p {
+        margin: 0;
+        line-height: 1.5;
+    }
+    
+}
+
+//375
+@media (max-width: 375px) {
+    .boton-compra {
+        margin-top: 600px;
+        margin-left: -5px;
+    }
+    
+    .boton-compra button {
+        cursor: pointer;
+        border: 5px solid white;
+        width: 200px;
+        padding: 20px;
+        font-size: 20px;
+    }
+    
+    .productos-container-clasica {
+        background-color: #003865;
+        border: 2px solid transparent;
+        border-radius: 32px 32px 0 0;
+        margin-top: -125px;
+        width: 375px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .productos-container-cero {
+        background-color: #434343;
+        border: 2px solid transparent;
+        border-radius: 32px 32px 0 0;
+        margin-top: -125px;
+        width: 375px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .productos-container-diet {
+        background-color: #b4b4b4;
+        border: 2px solid transparent;
+        border-radius: 32px 32px 0 0;
+        margin-top: -125px;
+        width: 375px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .btn.productos {
+        background-color: transparent;
+        color: white;
+        border: none;
+        font-size: 25px;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .btn.productos:hover {
+        text-decoration: none;
+    }
+    
+    .datos-clasica {
+        width: 130px;
+        height: 100px;
+        top: 65%;
+        left: 65%;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        background-color: #3498dbaf;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        z-index: 5;
+        padding: 17px 15px;
+        border-radius: 10px;
+        border:  2px solid rgb(255, 0, 0);
+    }
+    
+    .datos-cero {
+        width: 130px;
+        height: 100px;
+        top: 65%;
+        left: 65%;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        background-color: #ff0000ba;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        z-index: 5;
+        padding: 17px 15px;
+        border-radius: 10px;
+        border:  2px solid rgb(255, 255, 255);
+    }
+    
+    .datos-diet {
+        width: 130px;
+        height: 100px;
+        top: 65%;
+        left: 65%;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        background-color: #535353ba;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        z-index: 5;
+        padding: 17px 15px;
+        border-radius: 10px;
+        border:  2px solid rgb(0, 102, 255);
+    }
+    
+    .datos-container-clasica p,
+    .datos-container-cero p,
+    .datos-container-diet p {
+        margin: 0;
+        line-height: 1.5;
+    }
+    
+}
+
+//320
+@media (max-width: 320px) {
+    .boton-compra {
+        margin-top: 600px;
+        margin-left: -35px;
+    }
+    
+    .boton-compra button {
+        cursor: pointer;
+        border: 5px solid white;
+        width: 200px;
+        padding: 20px;
+        font-size: 20px;
+    }
+    
+    .productos-container-clasica {
+        background-color: #003865;
+        border: 2px solid transparent;
+        border-radius: 32px 32px 0 0;
+        margin-top: -125px;
+        width: 320px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .productos-container-cero {
+        background-color: #434343;
+        border: 2px solid transparent;
+        border-radius: 32px 32px 0 0;
+        margin-top: -125px;
+        width: 320px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .productos-container-diet {
+        background-color: #b4b4b4;
+        border: 2px solid transparent;
+        border-radius: 32px 32px 0 0;
+        margin-top: -125px;
+        width: 320px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .btn.productos {
+        background-color: transparent;
+        color: white;
+        border: none;
+        font-size: 25px;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .btn.productos:hover {
+        text-decoration: none;
+    }
+    
+    .datos-clasica {
+        width: 130px;
+        height: 100px;
+        top: 65%;
+        left: 59%;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        background-color: #3498dbaf;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        z-index: 5;
+        padding: 17px 15px;
+        border-radius: 10px;
+        border:  2px solid rgb(255, 0, 0);
+    }
+    
+    .datos-cero {
+        width: 130px;
+        height: 100px;
+        top: 65%;
+        left: 59%;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        background-color: #ff0000ba;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        z-index: 5;
+        padding: 17px 15px;
+        border-radius: 10px;
+        border:  2px solid rgb(255, 255, 255);
+    }
+    
+    .datos-diet {
+        width: 130px;
+        height: 100px;
+        top: 65%;
+        left: 59%;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        background-color: #535353ba;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        z-index: 5;
+        padding: 17px 15px;
+        border-radius: 10px;
+        border:  2px solid rgb(0, 102, 255);
+    }
+    
+    .datos-container-clasica p,
+    .datos-container-cero p,
+    .datos-container-diet p {
+        margin: 0;
+        line-height: 1.5;
+    }
+    
+}
+
+//BOTÓN VER MÁS
+
+#ver-mas {
+    margin-bottom: 1.25rem;
+    cursor: pointer;
+    margin-top: 1.125rem;
+    background-color: #910000;
+    color: white;
+    padding: .625rem 1.25rem;
+    border-radius: .625rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+//1024{
+
+@media (max-width: 1024px) {
+    #ver-mas {
+        padding: 10px 16px;
+        font-size: 16px;
+    }
+}

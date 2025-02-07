@@ -17,63 +17,6 @@
     min-height: 100vh;
     overflow-x: hidden;
 
-
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 2rem;
-        font-size: 1.5rem;
-
-        #PepsiLogoPrincipal {
-            height: 4.375rem;
-        }
-
-        nav {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-
-            ul {
-                display: flex;
-                list-style: none;
-                margin: 0;
-                padding: 0;
-
-                li {
-                    margin: 0 1.25rem;
-
-                    a {
-                        text-decoration: none;
-                        color: white;
-                        font-size: 1.125rem;
-                        font-weight: bold;
-                        cursor: pointer;
-                    }
-                }
-            }
-        }
-    }
-
-    .header-resposive {
-        display: none;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px 20px;
-        color: #fff;
-        position: relative;
-
-        .menu-icon {
-            font-size: 24px;
-            cursor: pointer;
-
-            .nav-links {
-                display: none;
-
-            }
-        }
-    }
-
     main {
         #seccion1 {
             display: flex;
@@ -213,17 +156,6 @@
                         font-weight: bold;
                     }
 
-                    #ver-mas {
-                        margin-bottom: 1.25rem;
-                        cursor: pointer;
-                        margin-top: 1.125rem;
-                        background-color: #910000;
-                        color: white;
-                        padding: .625rem 1.25rem;
-                        border-radius: .625rem;
-                        text-decoration: none;
-                        font-weight: bold;
-                    }
                 }
             }
         }
@@ -325,49 +257,6 @@
         }
     }
 
-    footer {
-        align-content: end;
-        background-color: #004f91;
-        background: cover;
-        background-position: cover;
-        color: white;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        flex-wrap: wrap;
-        font-style: italic;
-        font-weight: bold;
-
-        img {
-            width: 70px;
-            height: auto;
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-        }
-
-        .column {
-            a {
-                display: block;
-                text-decoration: none;
-                color: white;
-                margin-bottom: 10px;
-                font-size: 14px;
-            }
-        }
-
-        .footer-social {
-            img {
-                width: 30px;
-                height: 30px;
-                margin-left: 10px;
-            }
-        }
-    }
 }
 
 
@@ -500,30 +389,6 @@
             }
         }
 
-        .boton-compra {
-            margin-top: 1.25rem;
-            background-color: #91000000;
-            color: white;
-            width: 0rem;
-            padding: .625rem 1.25rem;
-            text-decoration: none;
-            font-weight: bold;
-
-            button {
-                cursor: pointer;
-                border: none;
-                width: 25rem;
-                background: transparent;
-                border: .125rem solid white;
-                border-radius: 3.125rem;
-                color: white;
-                margin-top: 3.125rem;
-                padding: 1.25rem;
-                text-decoration: none;
-                font-weight: bold;
-                font-size: 2rem;
-            }
-        }
     }
 
     .ml {
@@ -694,30 +559,6 @@
             }
         }
 
-        .boton-compra {
-            margin-top: 1.25rem;
-            background-color: #91000000;
-            color: white;
-            width: 0rem;
-            padding: .625rem 1.25rem;
-            text-decoration: none;
-            font-weight: bold;
-
-            button {
-                cursor: pointer;
-                border: none;
-                width: 25rem;
-                background: transparent;
-                border: .125rem solid white;
-                border-radius: 3.125rem;
-                color: white;
-                margin-top: 3.125rem;
-                padding: 1.25rem;
-                text-decoration: none;
-                font-weight: bold;
-                font-size: 2rem;
-            }
-        }
     }
 
     .ml-cero {
@@ -888,30 +729,6 @@
             }
         }
 
-        .boton-compra {
-            margin-top: 1.25rem;
-            background-color: #91000000;
-            color: white;
-            width: 0rem;
-            padding: .625rem 1.25rem;
-            text-decoration: none;
-            font-weight: bold;
-
-            button {
-                cursor: pointer;
-                border: none;
-                width: 25rem;
-                background: transparent;
-                border: .125rem solid white;
-                border-radius: 3.125rem;
-                color: white;
-                margin-top: 3.125rem;
-                padding: 1.25rem;
-                text-decoration: none;
-                font-weight: bold;
-                font-size: 2rem;
-            }
-        }
     }
 
     .ml-diet {

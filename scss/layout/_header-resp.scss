@@ -1,0 +1,18 @@
+.header-resposive {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: #fff;
+    position: relative;
+
+    .menu-icon {
+        font-size: 24px;
+        cursor: pointer;
+
+        .nav-links {
+            display: none;
+
+        }
+    }
+}

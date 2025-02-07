@@ -16,52 +16,6 @@
   min-height: 100vh;
   overflow-x: hidden;
 }
-.bodygeneral header, .fondo-diet header, .fondo-cero header, .fondo-clasica header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  font-size: 1.5rem;
-}
-.bodygeneral header #PepsiLogoPrincipal, .fondo-diet header #PepsiLogoPrincipal, .fondo-cero header #PepsiLogoPrincipal, .fondo-clasica header #PepsiLogoPrincipal {
-  height: 4.375rem;
-}
-.bodygeneral header nav, .fondo-diet header nav, .fondo-cero header nav, .fondo-clasica header nav {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.bodygeneral header nav ul, .fondo-diet header nav ul, .fondo-cero header nav ul, .fondo-clasica header nav ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.bodygeneral header nav ul li, .fondo-diet header nav ul li, .fondo-cero header nav ul li, .fondo-clasica header nav ul li {
-  margin: 0 1.25rem;
-}
-.bodygeneral header nav ul li a, .fondo-diet header nav ul li a, .fondo-cero header nav ul li a, .fondo-clasica header nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.125rem;
-  font-weight: bold;
-  cursor: pointer;
-}
-.bodygeneral .header-resposive, .fondo-diet .header-resposive, .fondo-cero .header-resposive, .fondo-clasica .header-resposive {
-  display: none;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  color: #fff;
-  position: relative;
-}
-.bodygeneral .header-resposive .menu-icon, .fondo-diet .header-resposive .menu-icon, .fondo-cero .header-resposive .menu-icon, .fondo-clasica .header-resposive .menu-icon {
-  font-size: 24px;
-  cursor: pointer;
-}
-.bodygeneral .header-resposive .menu-icon .nav-links, .fondo-diet .header-resposive .menu-icon .nav-links, .fondo-cero .header-resposive .menu-icon .nav-links, .fondo-clasica .header-resposive .menu-icon .nav-links {
-  display: none;
-}
 .bodygeneral main #seccion1, .fondo-diet main #seccion1, .fondo-cero main #seccion1, .fondo-clasica main #seccion1 {
   display: flex;
   justify-content: center;
@@ -183,17 +137,6 @@
   font-style: italic;
   font-weight: bold;
 }
-.bodygeneral main #productos-pepsi .grilla .producto #ver-mas, .fondo-diet main #productos-pepsi .grilla .producto #ver-mas, .fondo-cero main #productos-pepsi .grilla .producto #ver-mas, .fondo-clasica main #productos-pepsi .grilla .producto #ver-mas {
-  margin-bottom: 1.25rem;
-  cursor: pointer;
-  margin-top: 1.125rem;
-  background-color: #910000;
-  color: white;
-  padding: 0.625rem 1.25rem;
-  border-radius: 0.625rem;
-  text-decoration: none;
-  font-weight: bold;
-}
 .bodygeneral main #historia, .fondo-diet main #historia, .fondo-cero main #historia, .fondo-clasica main #historia {
   display: flex;
   margin: 40px auto;
@@ -273,41 +216,6 @@
 .bodygeneral main .contacto-info .iconos img, .fondo-diet main .contacto-info .iconos img, .fondo-cero main .contacto-info .iconos img, .fondo-clasica main .contacto-info .iconos img {
   width: 2.5rem;
   height: 2.5rem;
-}
-.bodygeneral footer, .fondo-diet footer, .fondo-cero footer, .fondo-clasica footer {
-  align-content: end;
-  background-color: #004f91;
-  background: cover;
-  background-position: cover;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  flex-wrap: wrap;
-  font-style: italic;
-  font-weight: bold;
-}
-.bodygeneral footer img, .fondo-diet footer img, .fondo-cero footer img, .fondo-clasica footer img {
-  width: 70px;
-  height: auto;
-}
-.bodygeneral footer .footer-links, .fondo-diet footer .footer-links, .fondo-cero footer .footer-links, .fondo-clasica footer .footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-}
-.bodygeneral footer .column a, .fondo-diet footer .column a, .fondo-cero footer .column a, .fondo-clasica footer .column a {
-  display: block;
-  text-decoration: none;
-  color: white;
-  margin-bottom: 10px;
-  font-size: 14px;
-}
-.bodygeneral footer .footer-social img, .fondo-diet footer .footer-social img, .fondo-cero footer .footer-social img, .fondo-clasica footer .footer-social img {
-  width: 30px;
-  height: 30px;
-  margin-left: 10px;
 }
 
 .fondo-clasica #principal-clasica {
@@ -421,29 +329,6 @@
 .fondo-clasica #nutricion-info .descripcion-nutri p {
   font-size: 0.825rem;
   font-weight: 200;
-}
-.fondo-clasica #nutricion-info .boton-compra {
-  margin-top: 1.25rem;
-  background-color: rgba(145, 0, 0, 0);
-  color: white;
-  width: 0rem;
-  padding: 0.625rem 1.25rem;
-  text-decoration: none;
-  font-weight: bold;
-}
-.fondo-clasica #nutricion-info .boton-compra button {
-  cursor: pointer;
-  border: none;
-  width: 25rem;
-  background: transparent;
-  border: 0.125rem solid white;
-  border-radius: 3.125rem;
-  color: white;
-  margin-top: 3.125rem;
-  padding: 1.25rem;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 2rem;
 }
 .fondo-clasica .ml {
   position: absolute;
@@ -591,29 +476,6 @@
   font-size: 0.825rem;
   font-weight: 200;
 }
-.fondo-cero #nutricion-info .boton-compra {
-  margin-top: 1.25rem;
-  background-color: rgba(145, 0, 0, 0);
-  color: white;
-  width: 0rem;
-  padding: 0.625rem 1.25rem;
-  text-decoration: none;
-  font-weight: bold;
-}
-.fondo-cero #nutricion-info .boton-compra button {
-  cursor: pointer;
-  border: none;
-  width: 25rem;
-  background: transparent;
-  border: 0.125rem solid white;
-  border-radius: 3.125rem;
-  color: white;
-  margin-top: 3.125rem;
-  padding: 1.25rem;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 2rem;
-}
 .fondo-cero .ml-cero {
   position: absolute;
   bottom: 5px;
@@ -759,29 +621,6 @@
 .fondo-diet #nutricion-info .descripcion-nutri-diet p {
   font-size: 0.825rem;
   font-weight: 200;
-}
-.fondo-diet #nutricion-info .boton-compra {
-  margin-top: 1.25rem;
-  background-color: rgba(145, 0, 0, 0);
-  color: white;
-  width: 0rem;
-  padding: 0.625rem 1.25rem;
-  text-decoration: none;
-  font-weight: bold;
-}
-.fondo-diet #nutricion-info .boton-compra button {
-  cursor: pointer;
-  border: none;
-  width: 25rem;
-  background: transparent;
-  border: 0.125rem solid white;
-  border-radius: 3.125rem;
-  color: white;
-  margin-top: 3.125rem;
-  padding: 1.25rem;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 2rem;
 }
 .fondo-diet .ml-diet {
   position: absolute;
