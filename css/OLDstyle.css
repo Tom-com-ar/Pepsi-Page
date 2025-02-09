@@ -1211,9 +1211,11 @@ a {
     }
 
     nav ul li a {
-        font-size: 16px;
-        text-align: center;
+        margin-top: 16px;
+        display: flex;
         justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 
     #seccion1 {

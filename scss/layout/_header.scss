@@ -2,11 +2,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    font-size: 1.5rem;
+    padding: 16px 32px;
+    font-size: 24px;
 
     #PepsiLogoPrincipal {
-        height: 4.375rem;
+        height: 70px;
     }
 
     nav {
@@ -21,12 +21,12 @@ header {
             padding: 0;
 
             li {
-                margin: 0 1.25rem;
+                margin: 0 20px;
 
                 a {
                     text-decoration: none;
                     color: white;
-                    font-size: 1.125rem;
+                    font-size: 18px;
                     font-weight: bold;
                     cursor: pointer;
                 }

@@ -1,0 +1,253 @@
+@media (max-width: 768px) {
+    nav {
+        margin-top: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        ul li a {
+            margin-top: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+    }
+
+    #seccion1 {
+        height: 60%;
+
+        #textoseccion1 {
+            width: 655px;
+            height: 248px;
+            top: 169px;
+            left: 90px;
+
+            h1 {
+                font-size: 96px;
+
+            }
+
+            p {
+                width: 448px;
+                font-size: 24px;
+            }
+
+            img {
+                width: 378px;
+                height: 465px;
+                top: 510px;
+                left: 369px;
+            }
+        }
+
+    }
+
+    #seccion2 {
+        margin-top: 841px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: space-between;
+        background-color: #ffffff00;
+        width: 100%;
+        height: 500px;
+        max-width: 768px;
+
+        .box {
+            border-radius: 0;
+
+            h3 {
+                font-size: 16px;
+
+            }
+
+            p {
+                font-size: 13.6px;
+
+            }
+
+            #negro,
+            #celeste,
+            #blanco {
+                flex: 1;
+                width: 100%;
+                height: 200px;
+                max-width: 768px;
+            }
+        }
+    }
+
+    .footer-social a img {
+        width: 25px;
+        height: 25px;
+        margin-left: 10px;
+    }
+
+    .producto p {
+        font-size: 16px;
+
+    }
+
+    #textoprincipal-clasica,
+    #textoprincipal-cero,
+    #textoprincipal-diet {
+        width: 500px;
+        height: 250px;
+        text-align: left;
+        position: absolute;
+        z-index: 1;
+        top: 20%;
+        left: 10%;
+
+        h1 {
+            font-size: 64px;
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        p {
+            margin-top: 48px;
+            font-size: 16px;
+            font-weight: 300;
+            width: 324px;
+        }
+
+        img {
+            width: 298px;
+            height: 493px;
+            object-fit: contain;
+            position: absolute;
+            top: 288px;
+            left: 461px;
+            z-index: 1;
+            overflow: hidden;
+        }
+    }
+
+    #nutricion-info {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 100px);
+        justify-content: center;
+        align-items: center;
+        margin: 300px 77px;
+        max-width: 640px;
+        column-gap: 20px;
+
+        .nutri {
+            grid-column: 1/6;
+            grid-row: 1/2;
+            height: 50px;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: white;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .box-nutri,
+            .box-nutri-cero,
+            .box-nutri-diet {
+                flex: 1;
+                color: white;
+                text-align: center;
+                width: 134px;
+                height: 168px;
+                transition: transform .2s;
+
+                h2 {
+                    font-size: 24.4px;
+                    font-weight: bold;
+                    height: 134px;
+                    margin-bottom: auto;
+                    margin-top: auto;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                p {
+                    border-radius: 0px 0px 10px 10px;
+                    display: flex;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    height: 50px;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            .descripcion-nutri,
+            .descripcion-nutri-cero,
+            .descripcion-nutri-diet {
+                width: 350px;
+                height: 2px;
+                align-self: end;
+                justify-self: start;
+                font-size: 24px;
+                margin-bottom: 20px;
+                color: white;
+                grid-column-start: 1;
+                grid-column-end: 6;
+
+                p {
+                    font-size: 13.2px;
+                    margin-top: 10px;
+                    font-weight: 200;
+                }
+            }
+        }
+    }
+
+    #historia{
+        display: flex;
+        flex-direction: column;
+        row-gap: 75px;
+        margin: auto;
+
+        #primer-texto,
+    #segundo-texto {
+        font-size: 13.6px;
+        width: 500px;
+        height: 100px;
+        margin-left: 20px;
+    }
+    }
+
+    #logos-pepsi{
+        padding: 24px 16px;
+        border-radius: 15px;
+        margin: 16px auto;
+        margin-top: 192px;
+        max-width: 1608px;
+
+        .grilla-logos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            align-items: center;
+            margin: 40px auto;
+            max-width: 1120px;
+
+            .logos{
+                img{
+                    width: 112px;
+                    height: 160px;
+                }
+                p{
+                    font-size: 13.6px;
+
+                }
+            }
+
+            #resaltador {
+                padding-top: 85px;
+                padding-left: 80px;
+            }
+        }
+    }
+
+}

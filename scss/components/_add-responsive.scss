@@ -1,0 +1,354 @@
+@media (max-width: 425px) {
+    .productos-container-clasica {
+        background-color: #003865;
+        border: 2px solid transparent;
+        border-radius: 32px 32px 0 0;
+        margin-top: -125px;
+        width: 425px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .productos-container-cero {
+        background-color: #434343;
+        border: 2px solid transparent;
+        border-radius: 32px 32px 0 0;
+        margin-top: -125px;
+        width: 425px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .productos-container-diet {
+        background-color: #b4b4b4;
+        border: 2px solid transparent;
+        border-radius: 32px 32px 0 0;
+        margin-top: -125px;
+        width: 425px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn.productos {
+        background-color: transparent;
+        color: white;
+        border: none;
+        font-size: 25px;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .btn.productos:hover {
+        text-decoration: none;
+    }
+
+    .datos-clasica {
+        width: 130px;
+        height: 100px;
+        top: 65%;
+        left: 69%;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        background-color: #3498db;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        z-index: 5;
+        padding: 17px 15px;
+        border-radius: 10px;
+    }
+
+    .datos-cero {
+        width: 130px;
+        height: 100px;
+        top: 65%;
+        left: 69%;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        background-color: #ff0000;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        z-index: 5;
+        padding: 17px 15px;
+        border-radius: 10px;
+    }
+
+    .datos-diet {
+        width: 130px;
+        height: 100px;
+        top: 65%;
+        left: 69%;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        background-color: #535353;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        z-index: 5;
+        padding: 17px 15px;
+        border-radius: 10px;
+    }
+
+    .datos-container-clasica p,
+    .datos-container-cero p,
+    .datos-container-diet p {
+        margin: 0;
+        line-height: 1.5;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .productos-container-clasica {
+        background-color: #003865;
+        border: 2px solid transparent;
+        border-radius: 32px 32px 0 0;
+        margin-top: -125px;
+        width: 375px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .productos-container-cero {
+        background-color: #434343;
+        border: 2px solid transparent;
+        border-radius: 32px 32px 0 0;
+        margin-top: -125px;
+        width: 375px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .productos-container-diet {
+        background-color: #b4b4b4;
+        border: 2px solid transparent;
+        border-radius: 32px 32px 0 0;
+        margin-top: -125px;
+        width: 375px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn.productos {
+        background-color: transparent;
+        color: white;
+        border: none;
+        font-size: 25px;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .btn.productos:hover {
+        text-decoration: none;
+    }
+
+    .datos-clasica {
+        width: 130px;
+        height: 100px;
+        top: 65%;
+        left: 65%;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        background-color: #3498dbaf;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        z-index: 5;
+        padding: 17px 15px;
+        border-radius: 10px;
+        border: 2px solid rgb(255, 0, 0);
+    }
+
+    .datos-cero {
+        width: 130px;
+        height: 100px;
+        top: 65%;
+        left: 65%;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        background-color: #ff0000ba;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        z-index: 5;
+        padding: 17px 15px;
+        border-radius: 10px;
+        border: 2px solid rgb(255, 255, 255);
+    }
+
+    .datos-diet {
+        width: 130px;
+        height: 100px;
+        top: 65%;
+        left: 65%;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        background-color: #535353ba;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        z-index: 5;
+        padding: 17px 15px;
+        border-radius: 10px;
+        border: 2px solid rgb(0, 102, 255);
+    }
+
+    .datos-container-clasica p,
+    .datos-container-cero p,
+    .datos-container-diet p {
+        margin: 0;
+        line-height: 1.5;
+    }
+
+}
+
+
+@media (max-width: 320px) {
+    .productos-container-clasica {
+        background-color: #003865;
+        border: 2px solid transparent;
+        border-radius: 32px 32px 0 0;
+        margin-top: -125px;
+        width: 320px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .productos-container-cero {
+        background-color: #434343;
+        border: 2px solid transparent;
+        border-radius: 32px 32px 0 0;
+        margin-top: -125px;
+        width: 320px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .productos-container-diet {
+        background-color: #b4b4b4;
+        border: 2px solid transparent;
+        border-radius: 32px 32px 0 0;
+        margin-top: -125px;
+        width: 320px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn.productos {
+        background-color: transparent;
+        color: white;
+        border: none;
+        font-size: 25px;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .btn.productos:hover {
+        text-decoration: none;
+    }
+
+    .datos-clasica {
+        width: 130px;
+        height: 100px;
+        top: 65%;
+        left: 59%;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        background-color: #3498dbaf;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        z-index: 5;
+        padding: 17px 15px;
+        border-radius: 10px;
+        border: 2px solid rgb(255, 0, 0);
+    }
+
+    .datos-cero {
+        width: 130px;
+        height: 100px;
+        top: 65%;
+        left: 59%;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        background-color: #ff0000ba;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        z-index: 5;
+        padding: 17px 15px;
+        border-radius: 10px;
+        border: 2px solid rgb(255, 255, 255);
+    }
+
+    .datos-diet {
+        width: 130px;
+        height: 100px;
+        top: 65%;
+        left: 59%;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        background-color: #535353ba;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        z-index: 5;
+        padding: 17px 15px;
+        border-radius: 10px;
+        border: 2px solid rgb(0, 102, 255);
+    }
+
+    .datos-container-clasica p,
+    .datos-container-cero p,
+    .datos-container-diet p {
+        margin: 0;
+        line-height: 1.5;
+    }
+
+}

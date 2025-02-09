@@ -1,31 +1,31 @@
 //BOTÓN DE COMPRA LATAS
 
 .boton-compra {
-    margin-top: 1.25rem;
+    margin-top: 16px;
     background-color: #91000000;
     color: white;
-    width: 0rem;
-    padding: .625rem 1.25rem;
+    width: 0px;
+    padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
 
     button {
         cursor: pointer;
         border: none;
-        width: 25rem;
+        width: 400px;
         background: transparent;
-        border: .125rem solid white;
-        border-radius: 3.125rem;
+        border: 2px solid white;
+        border-radius: 50px;
         color: white;
-        margin-top: 3.125rem;
-        padding: 1.25rem;
+        margin-top: 50px;
+        padding: 20px;
         text-decoration: none;
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 32px;
     }
 }
 
-//RESPOSIVE
+//RESPONSIVE
 
 //1440
 @media (max-width: 1440px) {
@@ -85,119 +85,6 @@
         font-size: 20px;
     }
     
-    .productos-container-clasica {
-        background-color: #003865;
-        border: 2px solid transparent;
-        border-radius: 32px 32px 0 0;
-        margin-top: -125px;
-        width: 425px;
-        height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .productos-container-cero {
-        background-color: #434343;
-        border: 2px solid transparent;
-        border-radius: 32px 32px 0 0;
-        margin-top: -125px;
-        width: 425px;
-        height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .productos-container-diet {
-        background-color: #b4b4b4;
-        border: 2px solid transparent;
-        border-radius: 32px 32px 0 0;
-        margin-top: -125px;
-        width: 425px;
-        height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .btn.productos {
-        background-color: transparent;
-        color: white;
-        border: none;
-        font-size: 25px;
-        font-weight: bold;
-        cursor: pointer;
-        padding: 0;
-        margin: 0;
-        text-align: center;
-    }
-    
-    .btn.productos:hover {
-        text-decoration: none;
-    }
-    
-    .datos-clasica {
-        width: 130px;
-        height: 100px;
-        top: 65%;
-        left: 69%;
-        text-align: center;
-        justify-content: center;
-        position: absolute;
-        background-color: #3498db;
-        color: white;
-        font-size: 25px;
-        font-weight: bold;
-        text-align: center;
-        z-index: 5;
-        padding: 17px 15px;
-        border-radius: 10px;
-    }
-    
-    .datos-cero {
-        width: 130px;
-        height: 100px;
-        top: 65%;
-        left: 69%;
-        text-align: center;
-        justify-content: center;
-        position: absolute;
-        background-color: #ff0000;
-        color: white;
-        font-size: 25px;
-        font-weight: bold;
-        text-align: center;
-        z-index: 5;
-        padding: 17px 15px;
-        border-radius: 10px;
-    }
-    
-    .datos-diet {
-        width: 130px;
-        height: 100px;
-        top: 65%;
-        left: 69%;
-        text-align: center;
-        justify-content: center;
-        position: absolute;
-        background-color: #535353;
-        color: white;
-        font-size: 25px;
-        font-weight: bold;
-        text-align: center;
-        z-index: 5;
-        padding: 17px 15px;
-        border-radius: 10px;
-    }
-    
-    .datos-container-clasica p,
-    .datos-container-cero p,
-    .datos-container-diet p {
-        margin: 0;
-        line-height: 1.5;
-    }
-    
 }
 
 //375
@@ -213,122 +100,6 @@
         width: 200px;
         padding: 20px;
         font-size: 20px;
-    }
-    
-    .productos-container-clasica {
-        background-color: #003865;
-        border: 2px solid transparent;
-        border-radius: 32px 32px 0 0;
-        margin-top: -125px;
-        width: 375px;
-        height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .productos-container-cero {
-        background-color: #434343;
-        border: 2px solid transparent;
-        border-radius: 32px 32px 0 0;
-        margin-top: -125px;
-        width: 375px;
-        height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .productos-container-diet {
-        background-color: #b4b4b4;
-        border: 2px solid transparent;
-        border-radius: 32px 32px 0 0;
-        margin-top: -125px;
-        width: 375px;
-        height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .btn.productos {
-        background-color: transparent;
-        color: white;
-        border: none;
-        font-size: 25px;
-        font-weight: bold;
-        cursor: pointer;
-        padding: 0;
-        margin: 0;
-        text-align: center;
-    }
-    
-    .btn.productos:hover {
-        text-decoration: none;
-    }
-    
-    .datos-clasica {
-        width: 130px;
-        height: 100px;
-        top: 65%;
-        left: 65%;
-        text-align: center;
-        justify-content: center;
-        position: absolute;
-        background-color: #3498dbaf;
-        color: white;
-        font-size: 25px;
-        font-weight: bold;
-        text-align: center;
-        z-index: 5;
-        padding: 17px 15px;
-        border-radius: 10px;
-        border:  2px solid rgb(255, 0, 0);
-    }
-    
-    .datos-cero {
-        width: 130px;
-        height: 100px;
-        top: 65%;
-        left: 65%;
-        text-align: center;
-        justify-content: center;
-        position: absolute;
-        background-color: #ff0000ba;
-        color: white;
-        font-size: 25px;
-        font-weight: bold;
-        text-align: center;
-        z-index: 5;
-        padding: 17px 15px;
-        border-radius: 10px;
-        border:  2px solid rgb(255, 255, 255);
-    }
-    
-    .datos-diet {
-        width: 130px;
-        height: 100px;
-        top: 65%;
-        left: 65%;
-        text-align: center;
-        justify-content: center;
-        position: absolute;
-        background-color: #535353ba;
-        color: white;
-        font-size: 25px;
-        font-weight: bold;
-        text-align: center;
-        z-index: 5;
-        padding: 17px 15px;
-        border-radius: 10px;
-        border:  2px solid rgb(0, 102, 255);
-    }
-    
-    .datos-container-clasica p,
-    .datos-container-cero p,
-    .datos-container-diet p {
-        margin: 0;
-        line-height: 1.5;
     }
     
 }
@@ -348,134 +119,18 @@
         font-size: 20px;
     }
     
-    .productos-container-clasica {
-        background-color: #003865;
-        border: 2px solid transparent;
-        border-radius: 32px 32px 0 0;
-        margin-top: -125px;
-        width: 320px;
-        height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .productos-container-cero {
-        background-color: #434343;
-        border: 2px solid transparent;
-        border-radius: 32px 32px 0 0;
-        margin-top: -125px;
-        width: 320px;
-        height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .productos-container-diet {
-        background-color: #b4b4b4;
-        border: 2px solid transparent;
-        border-radius: 32px 32px 0 0;
-        margin-top: -125px;
-        width: 320px;
-        height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .btn.productos {
-        background-color: transparent;
-        color: white;
-        border: none;
-        font-size: 25px;
-        font-weight: bold;
-        cursor: pointer;
-        padding: 0;
-        margin: 0;
-        text-align: center;
-    }
-    
-    .btn.productos:hover {
-        text-decoration: none;
-    }
-    
-    .datos-clasica {
-        width: 130px;
-        height: 100px;
-        top: 65%;
-        left: 59%;
-        text-align: center;
-        justify-content: center;
-        position: absolute;
-        background-color: #3498dbaf;
-        color: white;
-        font-size: 25px;
-        font-weight: bold;
-        text-align: center;
-        z-index: 5;
-        padding: 17px 15px;
-        border-radius: 10px;
-        border:  2px solid rgb(255, 0, 0);
-    }
-    
-    .datos-cero {
-        width: 130px;
-        height: 100px;
-        top: 65%;
-        left: 59%;
-        text-align: center;
-        justify-content: center;
-        position: absolute;
-        background-color: #ff0000ba;
-        color: white;
-        font-size: 25px;
-        font-weight: bold;
-        text-align: center;
-        z-index: 5;
-        padding: 17px 15px;
-        border-radius: 10px;
-        border:  2px solid rgb(255, 255, 255);
-    }
-    
-    .datos-diet {
-        width: 130px;
-        height: 100px;
-        top: 65%;
-        left: 59%;
-        text-align: center;
-        justify-content: center;
-        position: absolute;
-        background-color: #535353ba;
-        color: white;
-        font-size: 25px;
-        font-weight: bold;
-        text-align: center;
-        z-index: 5;
-        padding: 17px 15px;
-        border-radius: 10px;
-        border:  2px solid rgb(0, 102, 255);
-    }
-    
-    .datos-container-clasica p,
-    .datos-container-cero p,
-    .datos-container-diet p {
-        margin: 0;
-        line-height: 1.5;
-    }
-    
 }
 
 //BOTÓN VER MÁS
 
 #ver-mas {
-    margin-bottom: 1.25rem;
+    margin-bottom: 20px;
     cursor: pointer;
-    margin-top: 1.125rem;
+    margin-top: 18px;
     background-color: #910000;
     color: white;
-    padding: .625rem 1.25rem;
-    border-radius: .625rem;
+    padding: 10px 20px;
+    border-radius: 10px;
     text-decoration: none;
     font-weight: bold;
 }
@@ -483,6 +138,33 @@
 //1024{
 
 @media (max-width: 1024px) {
+    #ver-mas {
+        padding: 10px 16px;
+        font-size: 16px;
+    }
+}
+
+//425px
+
+@media (max-width: 425px) {
+    #ver-mas {
+        padding: 10px 16px;
+        font-size: 16px;
+    }
+}
+
+//375px
+
+@media (max-width: 425px) {
+    #ver-mas {
+        padding: 10px 16px;
+        font-size: 16px;
+    }
+}
+
+//320px
+
+@media (max-width: 425px) {
     #ver-mas {
         padding: 10px 16px;
         font-size: 16px;
