@@ -2065,9 +2065,9 @@ a {
         border-radius: 10px;
     }
 
-    .datos-container-clasica p,
-    .datos-container-cero p,
-    .datos-container-diet p {
+    .datos-clasica p,
+    .datos-cero p,
+    .datos-diet p {
         margin: 0;
         line-height: 1.5;
     }

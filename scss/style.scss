@@ -1,28 +1,21 @@
-//Variables y mixins
-@import "base/map";
-@import "base/mixins";
-@import "base/reset";
+@use "base/map";
+@use "base/mixins";
+@use "base/variables";
+@use "base/reset";
 
-//Layout
-@import "layout/header";
-@import "layout/footer";
-@import "layout/header-resp";
+@use "layout/header";
+@use "layout/header-resp";
+@use "layout/footer";
 
-//Componentes
-@import "components/botones";
-@import "components/add-responsive";
-
-// 5. Páginas específicas
-
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@use "components/botones";
+@use "components/add-responsive";
 
 .bodygeneral {
-    background: linear-gradient(to left, #0066b2, #004f91, #003b73, #002a4d);
+    background: map-get($colores,fondo-principal);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    font-family: "Inter", serif;
+    font-family:variables.$fuente;
     margin: 0;
     height: 100%;
     min-height: 100vh;
@@ -38,8 +31,8 @@
             text-align: center;
 
             #textoseccion1 {
-                width: 566px;
-                height: 413px;
+                width: 35.375rem;
+                height: 25.8125rem;
                 text-align: left;
                 position: absolute;
                 z-index: 1;
@@ -47,59 +40,58 @@
                 left: 20%;
 
                 h1 {
-                    font-size: 96px;
+                    font-size: 6rem;
                     font-weight: bold;
                     font-style: italic;
                 }
 
                 p {
-                    font-size: 24px;
+                    font-size: 1.5rem;
                     font-weight: bold;
-                    width: 388px;
+                    width: 24.25rem;
                 }
             }
 
             img {
-                width: 570px;
-                height: 961px;
+                width: 35.625rem;
+                height: 60.0625rem;
                 object-fit: contain;
                 position: absolute;
-                top: 129.2px;
-                left: 1084px;
+                top: 8.075rem;
+                left: 67.75rem;
                 z-index: -1;
             }
         }
 
 
         #seccion2 {
-            margin-top: 681px;
+            margin-top: 42.5625rem;
             display: flex;
             position: relative;
             justify-content: space-between;
-            background-color: #ffffff00;
 
             .box {
-                height: 200px;
+                height: 12.5rem;
                 flex: 1;
-                padding: 20px;
+                padding: 1.25rem;
                 color: black;
-                border-radius: 26px 26px 0 0;
+                border-radius: 1.625rem 1.625rem 0 0;
                 text-align: left;
 
                 h3 {
-                    font-size: 18px;
+                    font-size: 1.125rem;
                     font-weight: bold;
-                    margin-bottom: 10px;
+                    margin-bottom: .625rem;
                 }
 
                 p {
-                    font-size: 16px;
+                    font-size: 1rem;
                     line-height: 1.5;
                 }
             }
 
             #negro {
-                height: 300px;
+                height: 18.75rem;
                 background-color: black;
                 color: white;
                 position: relative;
@@ -107,7 +99,7 @@
             }
 
             #celeste {
-                height: 300px;
+                height: 18.75rem;
                 background-color: #00aaff;
                 color: white;
                 position: relative;
@@ -115,7 +107,7 @@
             }
 
             #blanco {
-                height: 236px;
+                height: 14.75rem;
                 background-color: white;
                 color: black;
                 position: relative;
@@ -123,34 +115,30 @@
             }
         }
 
-        .boton-productos-resposive {
-            display: none;
-        }
-
         #productos-pepsi {
-            padding: 40px 16px;
-            border-radius: 15px;
-            margin: 20px auto;
-            margin-top: -70px;
-            max-width: 1300px;
+            padding: 2.5rem 1rem;
+            border-radius: .9375rem;
+            margin: 1.25rem auto;
+            margin-top: -4.375rem;
+            max-width: 81.25rem;
 
             .grilla {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 justify-content: center;
                 align-items: center;
-                margin: 40px auto;
-                max-width: 1200px;
+                margin: 2.5rem auto;
+                max-width: 75rem;
 
                 .producto {
                     text-align: center;
                     color: rgb(255, 255, 255);
 
                     img {
-                        width: 254px;
-                        height: 320px;
+                        width: 15.875rem;
+                        height: 20rem;
                         object-fit: contain;
-                        border-radius: 10px;
+                        border-radius: .625rem;
                         display: block;
                         margin: 0 auto;
 
@@ -160,9 +148,9 @@
                     }
 
                     p {
-                        margin-bottom: 20px;
-                        margin-top: 10px;
-                        font-size: 19.6px;
+                        margin-bottom: 1.25rem;
+                        margin-top: .625rem;
+                        font-size: 1.225rem;
                         font-style: italic;
                         font-weight: bold;
                     }
@@ -173,65 +161,68 @@
 
         #historia {
             display: flex;
-            margin: 40px auto;
+            margin: 2.5rem auto;
             align-items: center;
             justify-content: center;
             color: rgb(0, 0, 0);
             font-weight: bold;
-            gap: 200px;
+            gap: 12.5rem;
 
             #primer-texto {
-                font-size: 20px;
-                width: 645px;
-                height: 183px;
+                font-size: 1.25rem;
+                width: 40.3125rem;
+                height: 11.4375rem;
             }
 
             #segundo-texto {
-                @extend #primer-texto;
+                font-size: 1.25rem;
+                width: 40.3125rem;
+                height: 11.4375rem;
             }
         }
 
         #logos-pepsi {
             background-color: white;
-            padding: 40px 16px;
-            border-radius: 15px;
-            margin: 20px auto;
-            margin-top: 192px;
-            max-width: 1608px;
+            padding: 2.5rem 1rem;
+            border-radius: .9375rem;
+            margin: 1.25rem auto;
+            margin-top: 12rem;
+            max-width: 100.5rem;
 
             .grilla-logos {
                 display: grid;
                 grid-template-columns: repeat(5, 1fr);
                 justify-content: center;
                 align-items: center;
-                margin: 40px auto;
-                max-width: 1120px;
+                margin: 2.5rem auto;
+                max-width: 70rem;
 
                 .logos {
                     text-align: center;
                     color: rgb(0, 0, 0);
 
                     img {
-                        width: 222px;
-                        height: 320px;
+                        width: 13.875rem;
+                        height: 20rem;
                         object-fit: contain;
-                        border-radius: 10px;
+                        border-radius: .625rem;
                         display: block;
                         margin: 0 auto;
                     }
 
                     p {
-                        margin-top: 10px;
-                        font-size: 19.6px;
+                        margin-top: .625rem;
+                        font-size: 1.225rem;
                         font-style: italic;
                         font-weight: bold;
                     }
 
-                    #resaltador {
-                        color: rgb(255, 0, 0);
-                        width: 302px;
-                        height: 352px;
-                    }
+                }
+
+                #resaltador {
+                    color: rgb(255, 0, 0);
+                    width: 18.875rem;
+                    height: 22rem;
                 }
             }
         }
@@ -245,8 +236,8 @@
         }
 
         .contacto-info {
-            margin-top: 100px;
-            margin-bottom: 100px;
+            margin-top: 6.25rem;
+            margin-bottom: 6.25rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -257,12 +248,12 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                gap: 20px;
-                margin-top: 20px;
+                gap: 1.25rem;
+                margin-top: 1.25rem;
 
                 img {
-                    width: 40px;
-                    height: 40px;
+                    width: 2.5rem;
+                    height: 2.5rem;
                 }
             }
         }
@@ -282,8 +273,8 @@
         text-align: center;
 
         #textoprincipal-clasica {
-            width: 838px;
-            height: 461px;
+            width: 52.375rem;
+            height: 28.8125rem;
             text-align: left;
             position: absolute;
             z-index: 1;
@@ -291,26 +282,26 @@
             left: 10%;
 
             h1 {
-                font-size: 96px;
+                font-size: 6rem;
                 font-weight: bold;
                 font-style: normal;
             }
 
             p {
-                margin-top: 52px;
-                font-size: 24px;
+                margin-top: 3.25rem;
+                font-size: 1.5rem;
                 font-weight: 300;
-                width: 964px;
+                width: 60.25rem;
             }
         }
 
         img {
-            width: 458px;
-            height: 765px;
+            width: 28.625rem;
+            height: 47.8125rem;
             object-fit: contain;
             position: absolute;
-            top: 160px;
-            left: 1261px;
+            top: 10rem;
+            left: 78.8125rem;
             z-index: 1;
             overflow: hidden;
         }
@@ -319,19 +310,19 @@
     #nutricion-info {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(3, 100px);
+        grid-template-rows: repeat(3, 6.25rem);
         justify-content: center;
         align-items: center;
-        margin: 360px 281.4px;
-        max-width: 640px;
-        column-gap: 20px;
+        margin: 22.5rem 17.5875rem;
+        max-width: 40rem;
+        column-gap: 1.25rem;
 
         .nutri {
             grid-column: 1/6;
             grid-row: 1/2;
-            height: 50px;
-            font-size: 24px;
-            margin-bottom: 20px;
+            height: 3.125rem;
+            font-size: 1.5rem;
+            margin-bottom: 1.25rem;
             color: white;
             display: flex;
             justify-content: flex-start;
@@ -343,8 +334,8 @@
             flex: 1;
             color: white;
             text-align: center;
-            width: 150px;
-            height: 168px;
+            width: 9.375rem;
+            height: 10.5rem;
             transition: transform .2s;
 
             &:hover {
@@ -353,9 +344,9 @@
             }
 
             h2 {
-                font-size: 24.4px;
+                font-size: 1.525rem;
                 font-weight: bold;
-                height: 134px;
+                height: 8.375rem;
                 margin-bottom: auto;
                 margin-top: auto;
                 text-align: center;
@@ -369,12 +360,12 @@
             }
 
             p {
-                border-radius: 0px 0px 10px 10px;
+                border-radius: 0rem 0rem .625rem .625rem;
                 display: flex;
                 background-color: #003D6B;
-                font-size: 16px;
+                font-size: 1rem;
                 line-height: 1.5;
-                height: 50px;
+                height: 3.125rem;
                 align-items: center;
                 justify-content: center;
 
@@ -385,17 +376,17 @@
         }
 
         .descripcion-nutri {
-            height: 2px;
+            height: .125rem;
             align-self: end;
             justify-self: start;
-            font-size: 24px;
-            margin-bottom: 20px;
+            font-size: 1.5rem;
+            margin-bottom: 1.25rem;
             color: white;
             grid-column-start: 1;
             grid-column-end: 6;
 
             p {
-                font-size: 13.2px;
+                font-size: .825rem;
                 font-weight: 200;
             }
         }
@@ -404,23 +395,23 @@
 
     .ml {
         position: absolute;
-        bottom: 5px;
-        right: 0px;
+        bottom: .3125rem;
+        right: 0rem;
         background-color: #45b0ff;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: .625rem;
+        box-shadow: 0 .25rem .375rem rgba(0, 0, 0, 0.1);
         text-align: center;
-        width: 200px;
-        height: 150px;
+        width: 12.5rem;
+        height: 9.375rem;
 
         h2 {
-            margin: 20px;
-            font-size: 34px;
+            margin: 1.25rem;
+            font-size: 2.125rem;
             color: #ffffff;
         }
 
         p {
-            font-size: 14px;
+            font-size: .875rem;
             font-weight: bold;
             align-items: center;
             justify-content: center;
@@ -435,7 +426,6 @@
     .datos-clasica {
         display: none;
     }
-
 
 }
 
@@ -452,8 +442,8 @@
         color: white;
 
         #textoprincipal-cero {
-            width: 838px;
-            height: 461px;
+            width: 52.375rem;
+            height: 28.8125rem;
             text-align: left;
             position: absolute;
             z-index: 1;
@@ -461,26 +451,26 @@
             left: 10%;
 
             h1 {
-                font-size: 96px;
+                font-size: 6rem;
                 font-weight: bold;
                 font-style: normal;
             }
 
             p {
-                margin-top: 52px;
-                font-size: 24px;
+                margin-top: 3.25rem;
+                font-size: 1.5rem;
                 font-weight: 300;
-                width: 964px;
+                width: 60.25rem;
             }
         }
 
         img {
-            width: 458px;
-            height: 765px;
+            width: 28.625rem;
+            height: 47.8125rem;
             object-fit: contain;
             position: absolute;
-            top: 160px;
-            left: 1261px;
+            top: 10rem;
+            left: 78.8125rem;
             z-index: 1;
             overflow: hidden;
         }
@@ -489,19 +479,19 @@
     #nutricion-info {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(3, 100px);
+        grid-template-rows: repeat(3, 6.25rem);
         justify-content: center;
         align-items: center;
-        margin: 360px 281.4px;
-        max-width: 640px;
-        column-gap: 20px;
+        margin: 22.5rem 17.5875rem;
+        max-width: 40rem;
+        column-gap: 1.25rem;
 
         .nutri {
             grid-column: 1/6;
             grid-row: 1/2;
-            height: 50px;
-            font-size: 24px;
-            margin-bottom: 20px;
+            height: 3.125rem;
+            font-size: 1.5rem;
+            margin-bottom: 1.25rem;
             color: white;
             display: flex;
             justify-content: flex-start;
@@ -513,8 +503,8 @@
             flex: 1;
             color: white;
             text-align: center;
-            width: 150px;
-            height: 168px;
+            width: 9.375rem;
+            height: 10.5rem;
             transition: transform .2s;
 
             &:hover {
@@ -523,9 +513,9 @@
             }
 
             h2 {
-                font-size: 24.4px;
+                font-size: 1.525rem;
                 font-weight: bold;
-                height: 134px;
+                height: 8.375rem;
                 margin-bottom: auto;
                 margin-top: auto;
                 text-align: center;
@@ -539,12 +529,12 @@
             }
 
             p {
-                border-radius: 0px 0px 10px 10px;
+                border-radius: 0rem 0rem .625rem .625rem;
                 display: flex;
                 background-color: #535353;
-                font-size: 16px;
+                font-size: 1rem;
                 line-height: 1.5;
-                height: 50px;
+                height: 3.125rem;
                 align-items: center;
                 justify-content: center;
 
@@ -555,17 +545,17 @@
         }
 
         .descripcion-nutri-cero {
-            height: 2px;
+            height: .125rem;
             align-self: end;
             justify-self: start;
-            font-size: 24px;
-            margin-bottom: 20px;
+            font-size: 1.5rem;
+            margin-bottom: 1.25rem;
             color: white;
             grid-column-start: 1;
             grid-column-end: 6;
 
             p {
-                font-size: 13.2px;
+                font-size: .825rem;
                 font-weight: 200;
             }
         }
@@ -574,23 +564,23 @@
 
     .ml-cero {
         position: absolute;
-        bottom: 5px;
-        right: 0px;
+        bottom: .3125rem;
+        right: 0rem;
         background-color: #5f5f5f;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: .625rem;
+        box-shadow: 0 .25rem .375rem rgba(0, 0, 0, 0.1);
         text-align: center;
-        width: 200px;
-        height: 150px;
+        width: 12.5rem;
+        height: 9.375rem;
 
         h2 {
-            margin: 20px;
-            font-size: 34px;
+            margin: 1.25rem;
+            font-size: 2.125rem;
             color: #ffffff;
         }
 
         p {
-            font-size: 14px;
+            font-size: .875rem;
             font-weight: bold;
             align-items: center;
             justify-content: center;
@@ -622,8 +612,8 @@
         color: white;
 
         #textoprincipal-diet {
-            width: 838px;
-            height: 461px;
+            width: 52.375rem;
+            height: 28.8125rem;
             text-align: left;
             position: absolute;
             z-index: 1;
@@ -631,26 +621,26 @@
             left: 10%;
 
             h1 {
-                font-size: 96px;
+                font-size: 6rem;
                 font-weight: bold;
                 font-style: normal;
             }
 
             p {
-                margin-top: 52px;
-                font-size: 24px;
+                margin-top: 3.25rem;
+                font-size: 1.5rem;
                 font-weight: 300;
-                width: 964px;
+                width: 60.25rem;
             }
         }
 
         img {
-            width: 458px;
-            height: 765px;
+            width: 28.625rem;
+            height: 47.8125rem;
             object-fit: contain;
             position: absolute;
-            top: 160px;
-            left: 1261px;
+            top: 10rem;
+            left: 78.8125rem;
             z-index: 1;
             overflow: hidden;
         }
@@ -659,19 +649,19 @@
     #nutricion-info {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(3, 100px);
+        grid-template-rows: repeat(3, 6.25rem);
         justify-content: center;
         align-items: center;
-        margin: 360px 281.4px;
-        max-width: 640px;
-        column-gap: 20px;
+        margin: 22.5rem 17.5875rem;
+        max-width: 40rem;
+        column-gap: 1.25rem;
 
         .nutri {
             grid-column: 1/6;
             grid-row: 1/2;
-            height: 50px;
-            font-size: 24px;
-            margin-bottom: 20px;
+            height: 3.125rem;
+            font-size: 1.5rem;
+            margin-bottom: 1.25rem;
             color: white;
             display: flex;
             justify-content: flex-start;
@@ -683,8 +673,8 @@
             flex: 1;
             color: white;
             text-align: center;
-            width: 150px;
-            height: 168px;
+            width: 9.375rem;
+            height: 10.5rem;
             transition: transform .2s;
 
             &:hover {
@@ -693,9 +683,9 @@
             }
 
             h2 {
-                font-size: 24.4px;
+                font-size: 1.525rem;
                 font-weight: bold;
-                height: 134px;
+                height: 8.375rem;
                 margin-bottom: auto;
                 margin-top: auto;
                 text-align: center;
@@ -709,12 +699,12 @@
             }
 
             p {
-                border-radius: 0px 0px 10px 10px;
+                border-radius: 0rem 0rem .625rem .625rem;
                 display: flex;
                 background-color: #5f5f5f;
-                font-size: 16px;
+                font-size: 1rem;
                 line-height: 1.5;
-                height: 50px;
+                height: 3.125rem;
                 align-items: center;
                 justify-content: center;
 
@@ -725,17 +715,17 @@
         }
 
         .descripcion-nutri-diet {
-            height: 2px;
+            height: .125rem;
             align-self: end;
             justify-self: start;
-            font-size: 24px;
-            margin-bottom: 20px;
+            font-size: 1.5rem;
+            margin-bottom: 1.25rem;
             color: white;
             grid-column-start: 1;
             grid-column-end: 6;
 
             p {
-                font-size: 13.2px;
+                font-size: .825rem;
                 font-weight: 200;
             }
         }
@@ -744,23 +734,23 @@
 
     .ml-diet {
         position: absolute;
-        bottom: 5px;
-        right: 0px;
+        bottom: .3125rem;
+        right: 0rem;
         background-color: #000000;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: .625rem;
+        box-shadow: 0 .25rem .375rem rgba(0, 0, 0, 0.1);
         text-align: center;
-        width: 200px;
-        height: 150px;
+        width: 12.5rem;
+        height: 9.375rem;
 
         h2 {
-            margin: 20px;
-            font-size: 34px;
+            margin: 1.25rem;
+            font-size: 2.125rem;
             color: #ffffff;
         }
 
         p {
-            font-size: 14px;
+            font-size: .875rem;
             font-weight: bold;
             align-items: center;
             justify-content: center;
@@ -823,6 +813,14 @@
                 max-width: 1440px;
 
                 .box {
+
+                    h3 {
+                        font-size: 20px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                    }
 
                     #negro,
                     #celeste,
@@ -1488,21 +1486,699 @@
             }
 
         }
+
         .ml,
         .ml-cero,
         .ml-diet {
             width: 200px;
             height: 150px;
             z-index: 10;
-            top:700px;
+            top: 700px;
         }
     }
 }
 
 
+@media (max-width: 425px) {
+    .bodygeneral {
+        header {
+            display: none;
+        }
+
+        main {
+            #seccion1 {
+                #textoseccion1 {
+                    width: 275px;
+                    height: 413px;
+                    text-align: center;
+                    position: absolute;
+                    left: 12%;
+                    top: 15%;
+                    z-index: 1;
+                    margin: 20px;
+
+                    h1 {
+                        font-size: 48px;
+                        font-weight: bold;
+                        font-style: italic;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        font-weight: bold;
+                        margin-left: 20px;
+                        width: 244px;
+                    }
+                }
+
+                img {
+                    width: 250px;
+                    height: 961px;
+                    object-fit: contain;
+                    position: absolute;
+                    top: 250px;
+                    left: 90px;
+                    z-index: -1;
+                    overflow: hidden;
+                }
+
+            }
+
+            #productos-pepsi {
+                margin-top: 10px;
+
+                .grilla {
+                    top: 50%;
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    justify-content: center;
+                    align-items: center;
+                    margin: 56px auto;
+                    max-width: 1200px;
+
+                    .producto {
+                        img {
+                            width: 206px;
+                            height: 240px;
+                        }
+
+                        p {
+                            font-size: 13.6px;
+
+                        }
+
+                    }
+                }
+            }
+
+            #historia {
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+
+                #primer-texto {
+                    margin-top: 50px;
+                    font-size: 12.8px;
+                    width: 300px;
+                    height: 71px;
+                }
+
+                #segundo-texto {
+                    margin-top: 250px;
+                    margin-bottom: 100px;
+                    font-size: 12.8px;
+                    width: 300px;
+                    height: 135px;
+                }
+            }
+
+            #logos-pepsi {
+                padding: 24px 16px;
+                border-radius: 15px;
+                margin: 16px auto;
+                margin-top: 192px;
+
+                .grilla-logos {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    justify-content: center;
+                    align-items: center;
+                    margin: 40px auto;
+                    max-width: 70rem;
+
+                    .logos {
+                        text-align: center;
+                        color: rgb(0, 0, 0);
+
+                        img {
+                            width: 112px;
+                            height: 160px;
+                        }
+
+                        p {
+                            font-size: 13.6px;
+
+                        }
+                    }
+
+                    #resaltador {
+                        padding-top: 88px;
+                        padding-left: 96px;
+                        color: rgb(255, 0, 0);
+                        width: 302px;
+                        height: 352px;
+                    }
+                }
+            }
+
+            #mapita {
+                margin-top: 50px;
+                width: 350px;
+                height: 350px;
+            }
+        }
+
+        .footer-social a img {
+            width: 15px;
+            height: 15px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+    }
+
+
+    .fondo-cero,
+    .fondo-clasica,
+    .fondo-diet {
+        main {
+
+            #principal-clasica,
+            #principal-cero,
+            #principal-diet {
+                #textoprincipal-clasica {
+                    top: 15%;
+                    left: 15%;
+                    width: 300px;
+
+                    h1 {
+                        text-align: center;
+                        font-size: 40px;
+                    }
+
+                    p {
+                        display: none;
+
+                    }
+                }
+
+                #textoprincipal-cero,
+                #textoprincipal-diet {
+                    top: 15%;
+                    left: 9%;
+                    width: 350px;
+
+                    h1 {
+                        text-align: center;
+                        font-size: 40px;
+                    }
+
+                    p {
+                        display: none;
+
+                    }
+                }
 
 
 
+                img {
+                    width: 218px;
+                    height: 413px;
+                    object-fit: contain;
+                    position: absolute;
+                    top: 237px;
+                    left: 103px;
+                    z-index: 1;
+                    overflow: hidden;
+                }
+            }
+
+            #nutricion-info {
+
+                .nutri,
+                .box-nutri,
+                .box-nutri-cero,
+                .box-nutri-diet,
+                .descripcion-nutri,
+                .descripcion-nutri-cero,
+                .descripcion-nutri-diet {
+                    display: none;
+                }
+
+            }
+
+            .ml,
+            .ml-cero,
+            .ml-diet {
+                display: none;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .bodygeneral {
+        header {
+            display: none;
+        }
+
+        main {
+            #seccion1 {
+                #textoseccion1 {
+                    width: 250px;
+                    height: 413px;
+                    text-align: center;
+                    position: absolute;
+                    left: 12%;
+                    top: 15%;
+                    z-index: 1;
+                    margin: 20px;
+
+                    h1 {
+                        font-size: 48px;
+                        font-weight: bold;
+                        font-style: italic;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        font-weight: bold;
+                        margin-left: 5px;
+                        width: 244px;
+                    }
+                }
+
+                img {
+                    width: 225px;
+                    height: 961px;
+                    object-fit: contain;
+                    position: absolute;
+                    top: 250px;
+                    left: 80px;
+                    z-index: -1;
+                    overflow: hidden;
+                }
+
+            }
+
+            #productos-pepsi {
+                margin-top: 10px;
+
+                .grilla {
+                    top: 50%;
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    justify-content: center;
+                    align-items: center;
+                    margin: 56px auto;
+                    max-width: 1200px;
+
+                    .producto {
+                        img {
+                            width: 206px;
+                            height: 240px;
+                        }
+
+                        p {
+                            font-size: 13.6px;
+
+                        }
+                    }
+                }
+            }
+
+            #historia {
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+
+                #primer-texto {
+                    margin-top: 50px;
+                    margin-bottom: 75px;
+                    font-size: 12.8px;
+                    width: 250px;
+                    height: 71px;
+                }
+
+                #segundo-texto {
+                    font-size: 12.8px;
+                    width: 250px;
+                    margin-top: 250px;
+                    margin-bottom: 150px;
+                    height: 135px;
+                }
+            }
+
+            #logos-pepsi {
+                padding: 24px 16px;
+                border-radius: 15px;
+                margin: 16px auto;
+                margin-top: 192px;
+
+                .grilla-logos {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    justify-content: center;
+                    align-items: center;
+                    margin: 40px auto;
+                    max-width: 300px;
+
+                    .logos {
+                        text-align: center;
+                        color: rgb(0, 0, 0);
+
+                        img {
+                            width: 112px;
+                            height: 160px;
+                        }
+
+                        p {
+                            font-size: 13.6px;
+
+                        }
+                    }
+
+                    #resaltador {
+                        padding-top: 88px;
+                        padding-left: 125px;
+                        color: rgb(255, 0, 0);
+                        width: 200px;
+                        height: 352px;
+                        text-align: center;
+                    }
+                }
+            }
+
+            #mapita {
+                margin-top: 50px;
+                width: 350px;
+                height: 350px;
+            }
+        }
+
+        .footer-social a img {
+            width: 15px;
+            height: 15px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+    }
+
+
+    .fondo-cero,
+    .fondo-clasica,
+    .fondo-diet {
+        main {
+
+            #principal-clasica,
+            #principal-cero,
+            #principal-diet {
+                #textoprincipal-clasica {
+                    top: 15%;
+                    left: 18%;
+                    width: 250px;
+
+                    h1 {
+                        text-align: center;
+                        font-size: 40px;
+                    }
+
+                    p {
+                        display: none;
+
+                    }
+                }
+
+                #textoprincipal-cero,
+                #textoprincipal-diet {
+                    top: 13%;
+                    left: 18%;
+                    width: 250px;
+
+                    h1 {
+                        text-align: center;
+                        font-size: 40px;
+                    }
+
+                    p {
+                        display: none;
+
+                    }
+                }
 
 
 
+                img {
+                    width: 218px;
+                    height: 413px;
+                    object-fit: contain;
+                    position: absolute;
+                    top: 237px;
+                    left: 85px;
+                    z-index: 1;
+                    overflow: hidden;
+                }
+            }
+
+            #nutricion-info {
+
+                .nutri,
+                .box-nutri,
+                .box-nutri-cero,
+                .box-nutri-diet,
+                .descripcion-nutri,
+                .descripcion-nutri-cero,
+                .descripcion-nutri-diet {
+                    display: none;
+                }
+
+            }
+
+            .ml,
+            .ml-cero,
+            .ml-diet {
+                display: none;
+            }
+
+        }
+    }
+}
+
+
+@media (max-width: 320px) {
+    .bodygeneral {
+        header {
+            display: none;
+        }
+
+        main {
+            #seccion1 {
+                #textoseccion1 {
+                    width: 250px;
+                    height: 413px;
+                    text-align: center;
+                    position: absolute;
+                    left: 5%;
+                    top: 15%;
+                    z-index: 1;
+                    margin: 20px;
+
+                    h1 {
+                        font-size: 48px;
+                        font-weight: bold;
+                        font-style: italic;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        font-weight: bold;
+                        margin-left: 5px;
+                        width: 244px;
+                    }
+                }
+
+                img {
+                    width: 225px;
+                    height: 961px;
+                    object-fit: contain;
+                    position: absolute;
+                    top: 250px;
+                    left: 55px;
+                    z-index: -1;
+                    overflow: hidden;
+                }
+
+            }
+
+            #productos-pepsi {
+                margin-top: 10px;
+
+                .grilla {
+                    top: 50%;
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    justify-content: center;
+                    align-items: center;
+                    margin: 56px auto;
+                    max-width: 1200px;
+
+                    .producto {
+                        img {
+                            width: 206px;
+                            height: 240px;
+                        }
+
+                        p {
+                            font-size: 13.6px;
+
+                        }
+                    }
+                }
+            }
+
+            #historia {
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+
+                #primer-texto {
+                    margin-top: 50px;
+                    margin-bottom: 75px;
+                    font-size: 12.8px;
+                    width: 250px;
+                    height: 71px;
+                }
+
+                #segundo-texto {
+                    font-size: 12.8px;
+                    width: 250px;
+                    margin-top: 250px;
+                    margin-bottom: 150px;
+                    height: 135px;
+                }
+            }
+
+            #logos-pepsi {
+                padding: 24px 16px;
+                border-radius: 15px;
+                margin: 16px auto;
+                margin-top: 192px;
+
+                .grilla-logos {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    justify-content: center;
+                    align-items: center;
+                    margin: 40px auto;
+                    max-width: 300px;
+
+                    .logos {
+                        text-align: center;
+                        color: rgb(0, 0, 0);
+
+                        img {
+                            width: 112px;
+                            height: 160px;
+                        }
+
+                        p {
+                            font-size: 13.6px;
+
+                        }
+                    }
+
+                    #resaltador {
+                        padding-top: 88px;
+                        padding-left: 95px;
+                        color: rgb(255, 0, 0);
+                        width: 174px;
+                        height: 352px;
+                        text-align: center;
+                    }
+                }
+            }
+
+            #mapita {
+                margin-top: 50px;
+                width: 350px;
+                height: 350px;
+            }
+        }
+
+        .footer-social a img {
+            width: 15px;
+            height: 15px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+    }
+
+
+    .fondo-cero,
+    .fondo-clasica,
+    .fondo-diet {
+        main {
+
+            #principal-clasica,
+            #principal-cero,
+            #principal-diet {
+                #textoprincipal-clasica {
+                    top: 15%;
+                    left: 12%;
+                    width: 250px;
+
+                    h1 {
+                        text-align: center;
+                        font-size: 40px;
+                    }
+
+                    p {
+                        display: none;
+
+                    }
+                }
+
+                #textoprincipal-cero,
+                #textoprincipal-diet {
+                    top: 13%;
+                    left: 12%;
+                    width: 250px;
+
+                    h1 {
+                        text-align: center;
+                        font-size: 40px;
+                    }
+
+                    p {
+                        display: none;
+
+                    }
+                }
+
+
+
+                img {
+                    width: 218px;
+                    height: 413px;
+                    object-fit: contain;
+                    position: absolute;
+                    top: 237px;
+                    left: 55px;
+                    z-index: 1;
+                    overflow: hidden;
+                }
+            }
+
+            #nutricion-info {
+
+                .nutri,
+                .box-nutri,
+                .box-nutri-cero,
+                .box-nutri-diet,
+                .descripcion-nutri,
+                .descripcion-nutri-cero,
+                .descripcion-nutri-diet {
+                    display: none;
+                }
+
+            }
+
+            .ml,
+            .ml-cero,
+            .ml-diet {
+                display: none;
+            }
+
+        }
+    }
+}
