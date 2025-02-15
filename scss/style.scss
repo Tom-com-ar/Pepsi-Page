@@ -1,21 +1,19 @@
-@use "base/map";
-@use "base/mixins";
-@use "base/variables";
-@use "base/reset";
+@import "utilities/map";
+@import"utilities/variables";
+@import"utilities/mixins";
 
-@use "layout/header";
-@use "layout/header-resp";
-@use "layout/footer";
+@import"base/reset";
 
-@use "components/botones";
-@use "components/add-responsive";
+@import"layout/header";
+@import"layout/header-resp";
+@import"layout/footer";
+
+@import"components/botones";
+@import"components/add-responsive";
 
 .bodygeneral {
-    background: map-get($colores,fondo-principal);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    font-family:variables.$fuente;
+    background-color: unquote(map-get($colores, fondo-principal ));
+    font-family:$fuente;
     margin: 0;
     height: 100%;
     min-height: 100vh;
@@ -27,7 +25,7 @@
             justify-content: center;
             align-items: center;
             height: 80%;
-            color: white;
+            color: map-get($colors, fondo);
             text-align: center;
 
             #textoseccion1 {
