@@ -1,0 +1,214 @@
+@import "../../utilities/map";
+@import"../../utilities/mixins";
+
+@import"../../base/reset";
+
+@import"../../layout/header-resp";
+@import"../../layout/footer";
+
+@import"../../components/botones";
+
+@media (max-width: 1440px) {
+    
+    .bodygeneral {
+        main {
+            #seccion1 {
+                height: 60%;
+
+                #textoseccion1 {
+                    width: 558px;
+                    height: 413px;
+                    top: 191px;
+                    left: 171px;
+
+                    h1 {
+                        font-size: 96px;
+
+                    }
+
+                    p {
+                        font-size: 16px;
+
+                    }
+
+                }
+
+                img {
+                    width: 600px;
+                    height: 800px;
+                    top: 134px;
+                    left: 750px;
+                }
+            }
+
+            #seccion2 {
+                margin-top: 681px;
+                display: flex;
+                position: relative;
+                justify-content: space-between;
+                background-color: #ffffff00;
+                width: 100%;
+                max-width: 1440px;
+
+                .box {
+
+                    h3 {
+                        font-size: 20px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                    }
+
+                    #negro,
+                    #celeste,
+                    #blanco {
+                        flex: 1;
+                        width: 100%;
+                        max-width: 1440px;
+                    }
+                }
+            }
+
+            .producto {
+                img {
+                    width: 206px;
+                    height: 288px;
+                }
+            }
+
+
+            #historia {
+                margin: 20px;
+
+                #primer-texto,
+                #segundo-texto {
+                    font-size: 18px;
+                    width: 565px;
+                    height: 135px;
+                }
+            }
+
+            #logos-pepsi {
+                padding: 24px 16px;
+                border-radius: 15px;
+                margin: 1px auto;
+                margin-top: 192px;
+                max-width: 1608px;
+
+                .grilla-logos {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    justify-content: center;
+                    align-items: center;
+                    margin: 40px auto;
+                    max-width: 1120px;
+
+                    .logos {
+                        text-align: center;
+                        color: rgb(0, 0, 0);
+
+                        img {
+                            width: 160px;
+                            height: 240px;
+                        }
+
+                        p {
+                            font-size: 24px;
+
+                        }
+
+                    }
+
+                    #resaltador {
+                        padding-top: 40px;
+                        color: rgb(255, 0, 0);
+                        width: 302px;
+                        height: 352px;
+                    }
+                }
+            }
+        }
+    }
+
+    .fondo-clasica,
+    .fondo-cero,
+    .fondo-diet {
+
+        #principal-clasica,
+        #principal-cero,
+        #principal-diet {
+
+            #textoprincipal-clasica,
+            #textoprincipal-cero,
+            #textoprincipal-diet {
+                height: 250px;
+                top: 20%;
+                left: 10%;
+
+                h1 {
+                    font-size: 60px;
+
+                }
+
+                p {
+                    font-size: 16px;
+                    margin-top: 24px;
+                    width: 600px;
+                }
+
+            }
+
+            div img {
+                width: 330px;
+                height: 573px;
+                object-fit: contain;
+                position: absolute;
+                top: 200px;
+                left: 925px;
+                z-index: 1;
+                overflow: hidden;
+            }
+        }
+
+        #nutricion-info {
+            margin: 220px 375px;
+            max-width: 160px;
+            height: 80%;
+            column-gap: 16px;
+
+            .nutri {
+
+                height: 40px;
+                font-size: 26px;
+            }
+
+            .box-nutri,
+            .box-nutri-cero,
+            .box-nutri-diet {
+                width: 112px;
+
+                h2 {
+                    font-size: 24px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+
+            .ml,
+            .ml-cero,
+            .ml-diet {
+                z-index: 10;
+                bottom: 0px;
+            }
+
+            .datos-diet,.datos-clasica,.datos-cero{
+                display: none;
+            }
+        }
+
+
+    }
+}
