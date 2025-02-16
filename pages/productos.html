@@ -5,93 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./assets/logos/pepsi_logo.png">
     <link rel="stylesheet" href="../css/style.css">
     <title>Pepsi Página - Productos</title>
+    <meta name="description"
+        content="Descubre todo sobre Pepsi: historia, productos y promociones exclusivas. ¡Refresca tu día con Pepsi!">
+    <meta name="keywords" content="Pepsi, refresco, bebida, cola, promociones, historia de Pepsi">
 </head>
 
 <body class="bodygeneral">
     <header>
-        <img id="PepsiLogoPrincipal" src="../assets/logos/pepsi_logo.png" alt="logo principal de Pepsi">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="./pepsi-history.html">Historia de Pepsi</a></li>
-                <li><a href="./contact-us.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <header class="header-resposive">
-        <div class="menu-icon">
-            <i class="material-icons">menu</i>
-        </div>
-        <img id="PepsiLogoPrincipal" src="../assets/logos/pepsi_logo.png" alt="logo principal de Pepsi">
+        <img data-aos="zoom-out-down" data-aos-duration="1500" id="PepsiLogoPrincipal" src="../assets/logos/pepsi_logo.png" alt="logo principal de Pepsi">
+        
         <nav class="nav-links">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="#">Productos</a></li>
-                <li><a href="../pages/pepsi-history.html">Historia</a></li>
-                <li><a href="../pages/contact-us.html">Contacto</a></li>
+                <li><a href="./pepsi-history.html">Historia</a></li>
+                <li><a href="./contact-us.html">Contacto</a></li>
             </ul>
         </nav>
+
+        <div class="menu-icon">
+            <i class="material-icons">menu</i>
+        </div>
     </header>
     <main>
         <section id="productos-pepsi">
             <div class="grilla">
-                <div class="producto">
-                    <img src="../assets/latas/pepsi_classic.png" alt="Pepsi Clásica">
-                    <p>Pepsi Clásica</p>
-                    <a id="botonlata" href="../pages/latas/pepsi-clasica.html">
-                        <button id="ver-mas">Ver Más</button>
+                <div  class="producto">
+                    <img data-aos="zoom-in" data-aos-duration="1500" src="../assets/latas/pepsi_classic.png" alt="Pepsi Clásica">
+                    <p data-aos="zoom-in-right" data-aos-delay="250" data-aos-duration="1000">Pepsi Clásica</p>
+                    <a  id="botonlata" href="../pages/latas/pepsi-clasica.html">
+                        <button data-aos="zoom-out-up" data-aos-duration="1250" id="ver-mas">Ver Más</button>
                     </a>
                 </div>
                 <div class="producto">
-                    <img src="../assets/latas/pepsi_zero_sugar.png" alt="Pepsi Sin Azúcar">
-                    <p>Pepsi Sin Azúcar</p>
+                    <img data-aos="zoom-in" data-aos-duration="1500" src="../assets/latas/pepsi_zero_sugar.png" alt="Pepsi Sin Azúcar">
+                    <p data-aos="zoom-in-right" data-aos-delay="250" data-aos-duration="1000">Pepsi Sin Azúcar</p>
                     <a id="botonlata" href="../pages/latas/pepsi-cero.html">
-                        <button id="ver-mas">Ver Más</button>
+                        <button data-aos="zoom-out-up" data-aos-duration="1250" id="ver-mas">Ver Más</button>
                     </a>
                 </div>
                 <div class="producto">
-                    <img src="../assets/latas/pepsi_diet.png" alt="Pepsi Dietética">
-                    <p>Pepsi Dietética</p>
+                    <img data-aos="zoom-in" data-aos-duration="1500" src="../assets/latas/pepsi_diet.png" alt="Pepsi Dietética">
+                    <p data-aos="zoom-in-right" data-aos-delay="250" data-aos-duration="1000">Pepsi Dietética</p>
                     <a id="botonlata" href="../pages/latas/pepsi-dieta.html">
-                        <button id="ver-mas">Ver Más</button>
+                        <button data-aos="zoom-out-up" data-aos-duration="1250" id="ver-mas">Ver Más</button>
                     </a>
                 </div>
                 <div class="producto">
-                    <img src="../assets/latas/pepsi_caffeine.png" alt="Pepsi con Cafeína">
-                    <p>Pepsi con Cafeína</p>
+                    <img data-aos="zoom-in" data-aos-duration="1500" src="../assets/latas/pepsi_caffeine.png" alt="Pepsi con Cafeína">
+                    <p data-aos="zoom-in-right" data-aos-delay="250" data-aos-duration="1000">Pepsi con Cafeína</p>
                     <a id="botonlata" href="javascript:void(0);" onclick="alertProximamente()">
-                        <button id="ver-mas">Ver Más</button> 
+                        <button data-aos="zoom-out-up" data-aos-duration="1250" id="ver-mas">Ver Más</button> 
                     </a>
                 </div>
                 <div class="producto">
-                    <img src="../assets/latas/pepsi_wild_cherry.png" alt="Pepsi Cereza Salvaje">
-                    <p>Pepsi Cereza</p>
+                    <img data-aos="zoom-in" data-aos-duration="1500" src="../assets/latas/pepsi_wild_cherry.png" alt="Pepsi Cereza Salvaje">
+                    <p data-aos="zoom-in-right" data-aos-delay="250" data-aos-duration="1000">Pepsi Cereza</p>
                     <a id="botonlata" href="javascript:void(0);" onclick="alertProximamente()">
-                        <button id="ver-mas">Ver Más</button>
+                        <button data-aos="zoom-out-up" data-aos-duration="1250" id="ver-mas">Ver Más</button>
                     </a>
                 </div>
                 <div class="producto">
-                    <img src="../assets/latas/pepsi_zero_sugar_wild_cherry.png" alt="Pepsi Sin Azúcar Cereza Salvaje">
-                    <p>Pepsi Sin Azúcar Cereza</p>
+                    <img data-aos="zoom-in" data-aos-duration="1500" src="../assets/latas/pepsi_zero_sugar_wild_cherry.png" alt="Pepsi Sin Azúcar Cereza Salvaje">
+                    <p data-aos="zoom-in-right" data-aos-delay="250" data-aos-duration="1000">Pepsi Sin Azúcar Cereza</p>
                     <a id="botonlata" href="javascript:void(0);" onclick="alertProximamente()">
-                        <button id="ver-mas">Ver Más</button>
+                        <button data-aos="zoom-out-up" data-aos-duration="1250" id="ver-mas">Ver Más</button>
                     </a>
                 </div>
                 <div class="producto">
-                    <img src="../assets/latas/pepsi_diet_caffeine.png" alt="Pepsi Dietética con Cafeína">
-                    <p>Pepsi Dietética con Cafeína</p>
+                    <img data-aos="zoom-in" data-aos-duration="1500" src="../assets/latas/pepsi_diet_caffeine.png" alt="Pepsi Dietética con Cafeína">
+                    <p data-aos="zoom-in-right" data-aos-delay="250" data-aos-duration="1000">Pepsi Dietética con Cafeína</p>
                     <a id="botonlata" href="javascript:void(0);" onclick="alertProximamente()">
-                        <button id="ver-mas">Ver Más</button>
+                        <button data-aos="zoom-out-up" data-aos-duration="1250" id="ver-mas">Ver Más</button>
                     </a>
                 </div>
                 <div class="producto">
-                    <img src="../assets/latas/pepsi_soda_shop.png" alt="Pepsi Soda Shop">
-                    <p>Pepsi Soda Shop</p>
+                    <img data-aos="zoom-in" data-aos-duration="1500" src="../assets/latas/pepsi_soda_shop.png" alt="Pepsi Soda Shop">
+                    <p data-aos="zoom-in-right" data-aos-delay="250" data-aos-duration="1000">Pepsi Soda Shop</p>
                     <a id="botonlata" href="javascript:void(0);" onclick="alertProximamente()">
-                        <button id="ver-mas">Ver Más</button>
+                        <button data-aos="zoom-out-up" data-aos-duration="1250" id="ver-mas">Ver Más</button>
                     </a>
                 </div>
             </div>
@@ -126,6 +122,10 @@
     </footer>
 
     <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 
 </body>
 </html>

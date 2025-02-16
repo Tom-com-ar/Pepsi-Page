@@ -1,0 +1,174 @@
+//BOTÓN DE COMPRA LATAS
+
+.boton-compra {
+    margin-top: 16px;
+    background-color: #91000000;
+    color: white;
+    width: 0px;
+    z-index: 10;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+
+    button {
+        z-index: 10;
+        cursor: pointer;
+        border: none;
+        width: 400px;
+        background: transparent;
+        border: 2px solid white;
+        border-radius: 50px;
+        color: white;
+        margin-top: 50px;
+        padding: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 32px;
+    }
+}
+
+//RESPONSIVE
+
+//1440
+@media (max-width: 1440px) {
+    .boton-compra {
+        width: 0px;
+        margin-top: 0px;
+    }
+    
+    .boton-compra button{
+        font-size: 24px;
+        width: 250px;
+        height: 75px;
+    }
+
+}
+
+//1024
+@media (max-width: 1024px) {
+    .boton-compra {
+        margin-top: 50px;
+    }
+    
+}
+
+//768
+
+@media (max-width: 768px) {
+    .boton-compra {
+        margin-top: 20px;
+        background-color: #91000000;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .boton-compra button {
+        width: 300px;
+        margin-top: 48px;
+        font-size: 20px;
+    }
+    
+}
+
+//425
+@media (max-width: 425px) {
+    .boton-compra {
+        margin-top: 700px;
+        margin-left: 13px;
+    }
+    
+    .boton-compra button {
+        cursor: pointer;
+        border: 5px solid white;
+        width: 200px;
+        padding: 20px;
+        font-size: 20px;
+    }
+    
+}
+
+//375
+@media (max-width: 375px) {
+    .boton-compra {
+        margin-top: 700px;
+        margin-left: -5px;
+    }
+    
+    .boton-compra button {
+        cursor: pointer;
+        border: 5px solid white;
+        width: 200px;
+        padding: 20px;
+        font-size: 20px;
+    }
+    
+}
+
+//320
+@media (max-width: 320px) {
+    .boton-compra {
+        margin-top: 700px;
+        margin-left: -35px;
+    }
+    
+    .boton-compra button {
+        cursor: pointer;
+        border: 5px solid white;
+        width: 200px;
+        padding: 20px;
+        font-size: 20px;
+    }
+    
+}
+
+//BOTÓN VER MÁS
+
+#ver-mas {
+    margin-bottom: 20px;
+    cursor: pointer;
+    margin-top: 18px;
+    background-color: #910000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+//1024{
+
+@media (max-width: 1024px) {
+    #ver-mas {
+        padding: 10px 16px;
+        font-size: 16px;
+    }
+}
+
+//425px
+
+@media (max-width: 425px) {
+    #ver-mas {
+        padding: 10px 16px;
+        font-size: 16px;
+    }
+}
+
+//375px
+
+@media (max-width: 425px) {
+    #ver-mas {
+        padding: 10px 16px;
+        font-size: 16px;
+    }
+}
+
+//320px
+
+@media (max-width: 425px) {
+    #ver-mas {
+        padding: 10px 16px;
+        font-size: 16px;
+    }
+}

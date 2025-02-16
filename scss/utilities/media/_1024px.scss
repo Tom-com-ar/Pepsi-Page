@@ -1,0 +1,243 @@
+@import "../../utilities/map";
+@import"../../utilities/mixins";
+
+@import"../../base/reset";
+
+@import"../../layout/footer";
+
+@import"../../components/botones";
+
+@media (max-width: 1024px) {
+    .bodygeneral {
+
+        .menu-icon {
+            display: none;
+        }
+
+        main {
+            nav {
+                margin-top: 16px;
+                @include flex(none, center, center, none);
+                width: 100%;
+
+                ul {
+                    margin-top: 16px;
+                    @include flex(none, center, center, none);
+                    width: 100%;
+
+                    li {
+                        gap: 50px;
+                    }
+                }
+            }
+
+            #seccion1 {
+                height: 60%;
+
+                #textoseccion1 {
+                    width: 446px;
+                    height: 413px;
+                    top: 255px;
+                    left: 91px;
+
+                    h1 {
+                        font-size: 88px;
+
+                    }
+
+                    p {
+                        width: 320px;
+                        font-size: 24px;
+                    }
+
+                }
+
+
+                img {
+                    width: 400px;
+                    height: 850px;
+                    top: 225px;
+                    left: 570px;
+                }
+
+
+            }
+
+            #seccion2 {
+                @include flex(none, space-between, none, none);
+                margin-top: 841px;
+                position: relative;
+                background-color: #ffffff00;
+                width: 100%;
+                max-width: 1440px;
+
+                .box {
+                    h3 {
+                        font-size: 16px;
+
+                    }
+
+                    p {
+                        font-size: 13.6px;
+
+                    }
+                }
+            }
+
+            .footer-social a img {
+                width: 25px;
+                height: 25px;
+                margin-left: 10px;
+            }
+
+            #productos-pepsi {
+                .grilla {
+                    @include grid(repeat(3, 1fr), none, center, center, none);
+                    margin: 56px auto;
+                    max-width: 1200px;
+
+                    .producto {
+                        img {
+                            width: 206px;
+                            height: 240px;
+                        }
+
+                        p {
+                            font-size: 18px;
+
+                        }
+                    }
+
+                }
+            }
+
+            #historia {
+
+                #primer-texto,
+                #segundo-texto {
+                    font-size: 13.6px;
+                    width: 645px;
+                    height: 135px;
+                    margin-left: 20px;
+                }
+            }
+
+            #logos-pepsi {
+                padding: 24px 16px;
+                border-radius: 15px;
+                margin: 16px auto;
+                margin-top: 192px;
+                max-width: 1608px;
+
+                .grilla-logos {
+                    @include grid(repeat(3, 1fr), none, center, center, none);
+                    margin: 40px auto;
+                    max-width: 1120px;
+
+                    .logos {
+                        img {
+                            width: 120px;
+                            height: 160px;
+                        }
+
+                        p {
+                            font-size: 13.6px;
+
+                        }
+
+                    }
+
+                    #resaltador {
+                        padding-top: 56px;
+                        padding-left: 32px;
+                        color: rgb(255, 0, 0);
+                        width: 302px;
+                        height: 352px;
+                    }
+                }
+            }
+        }
+    }
+
+    .fondo-clasica,
+    .fondo-cero,
+    .fondo-diet {
+
+        #principal-clasica,
+        #principal-cero,
+        #principal-diet {
+
+            #textoprincipal-clasica,
+            #textoprincipal-cero,
+            #textoprincipal-diet {
+                height: 200px;
+                top: 20%;
+                left: 10%;
+                width: 500px;
+
+                h1 {
+                    font-size: 60px;
+
+                }
+
+                p {
+                    font-size: 16px;
+                    margin-top: 40px;
+                    width: 400px;
+                }
+
+            }
+
+            div img {
+                width: 300px;
+                height: 573px;
+                object-fit: contain;
+                position: absolute;
+                top: 200px;
+                left: 600px;
+                z-index: -1;
+                overflow: hidden;
+            }
+        }
+
+        #nutricion-info {
+            @include grid(repeat(3, 1fr), repeat(3, 100px), center, center, none);
+            column-gap: 20px;
+            margin: 250px 105px;
+            max-width: 400px;
+
+            .box-nutri,
+            .box-nutri-cero,
+            .box-nutri-diet {
+                height: 175px;
+            }
+
+            .descripcion-nutri p,
+            .descripcion-nutri-cero p,
+            .descripcion-nutri-diet p {
+                margin-top: 50px;
+                font-size: 13.6px;
+            }
+
+            #chau {
+                display: none;
+            }
+
+            .datos-diet,
+            .datos-clasica,
+            .datos-cero {
+                display: none;
+            }
+        }
+
+        .ml,
+        .ml-cero,
+        .ml-diet {
+            h2 p {
+                font-size: 20px;
+            }
+        }
+    }
+
+
+}

@@ -5,27 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./assets/logos/pepsi_logo.png">
     <link rel="stylesheet" href="./css/style.css">
     <title>Pepsi Página - Inicio</title>
+    <meta name="description"
+        content="Descubre todo sobre Pepsi: historia, productos y promociones exclusivas. ¡Refresca tu día con Pepsi!">
+    <meta name="keywords" content="Pepsi, refresco, bebida, cola, promociones, historia de Pepsi">
+
 </head>
 
 <body class="bodygeneral">
     <header>
-        <img id="PepsiLogoPrincipal" src="assets/logos/pepsi_logo.png" alt="logo principal de Pepsi">
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="./pages/productos.html">Productos</a></li>
-                <li><a href="./pages/pepsi-history.html">Historia de Pepsi</a></li>
-                <li><a href="./pages/contact-us.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <header class="header-resposive">
-        <div class="menu-icon">
-            <i class="material-icons">menu</i>
-        </div>
-        <img id="PepsiLogoPrincipal" src="assets/logos/pepsi_logo.png" alt="logo principal de Pepsi">
+        <img data-aos="zoom-out-down" data-aos-duration="3000" id="PepsiLogoPrincipal" src="assets/logos/pepsi_logo.png" alt="logo principal de Pepsi">
+
         <nav class="nav-links">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -34,35 +27,39 @@
                 <li><a href="./pages/contact-us.html">Contacto</a></li>
             </ul>
         </nav>
-    </header> 
+
+        <div class="menu-icon">
+            <i class="material-icons">menu</i>
+        </div>
+    </header>
     <main>
         <section id="seccion1">
-            <div id="textoseccion1">
+            <div data-aos="fade-right" data-aos-duration="3000" id="textoseccion1">
                 <h1>Obtén Más con Pepsi</h1>
                 <p>En el corazón del refresco, Pepsi te trae sabores audaces y un gusto que nunca pasa de moda.
                     Descubre hoy la experiencia Pepsi.</p>
             </div>
 
             <div>
-                <img src="./assets/latas/pepsi_classic.png" alt="lata de Pepsi clásica">
+                <img data-aos="fade-left" data-aos-duration="3000" src="./assets/latas/pepsi_classic.png" alt="lata de Pepsi clásica">
             </div>
         </section>
 
         <section id="seccion2">
-            <div class="box" id="blanco">
+            <div data-aos="fade-left" data-aos-duration="500" class="box" id="blanco">
                 <h3>El Compañero Perfecto para Cualquier Momento</h3>
                 <p>
                     Disfruta la refrescante y única combinación de sabores que hacen de Pepsi tu bebida favorita.
                     Perfecta para acompañar cada momento con estilo.
                 </p>
             </div>
-            <div class="box" id="negro">
+            <div data-aos="fade-left" data-aos-delay="550" data-aos-duration="500" class="box" id="negro">
                 <h3>Nunca Pases de Moda</h3>
                 <p>
                     Pepsi ha marcado tendencias durante generaciones. Sé audaz, sé clásico, sé Pepsi.
                 </p>
             </div>
-            <div class="box" id="celeste">
+            <div data-aos="fade-left" data-aos-delay="1100" data-aos-duration="500" class="box" id="celeste">
                 <h3>Historia de Pepsi</h3>
                 <p>
                     Descubre el viaje de una marca que ha llevado frescura al mundo desde 1893. Explora nuestro legado
@@ -96,6 +93,11 @@
     </footer>
 
 
-    <script src="./js/main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
+
 </html>

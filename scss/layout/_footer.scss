@@ -1,0 +1,43 @@
+footer {
+    align-content: end;
+    background-color: #004f91;
+    background: cover;
+    background-position: cover;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    font-style: italic;
+    font-weight: bold;
+
+    img {
+        width: 70px;
+        height: auto;
+    }
+
+    .footer-links {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .column {
+        a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+    }
+
+    .footer-social {
+        img {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+        }
+    }
+}

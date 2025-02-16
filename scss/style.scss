@@ -1,0 +1,698 @@
+@import "utilities/map";
+@import"utilities/variables";
+@import"utilities/mixins";
+
+@import"base/reset";
+
+@import"layout/header";
+@import"layout/footer";
+
+@import"components/botones";
+
+
+.bodygeneral {
+    background: linear-gradient(to top left, #0066b2, #004f91, #003b73, #002a4d);
+    font-family: $fuente;
+    margin: 0;
+    height: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+
+    .menu-icon {
+        display: none;
+    }
+
+    main {
+        #seccion1 {
+            @include flex(none, center, center, none);
+            height: 80%;
+            color: white;
+            text-align: center;
+
+            #textoseccion1 {
+                width: 35.375rem;
+                height: 25.8125rem;
+                text-align: left;
+                position: absolute;
+                z-index: 1;
+                top: 10%;
+                left: 20%;
+
+                h1 {
+                    font-size: 6rem;
+                    font-weight: bold;
+                    font-style: italic;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    width: 24.25rem;
+                }
+            }
+
+            img {
+                width: 35.625rem;
+                height: 60.0625rem;
+                object-fit: contain;
+                position: absolute;
+                top: 8.075rem;
+                left: 67.75rem;
+                z-index: -1;
+            }
+        }
+
+
+        #seccion2 {
+            margin-top: 42.5625rem;
+            @include flex(none, space-between, none, none);
+            position: relative;
+
+            .box {
+                height: 12.5rem;
+                flex: 1;
+                padding: 1.25rem;
+                color: black;
+                border-radius: 1.625rem 1.625rem 0 0;
+                text-align: left;
+
+                h3 {
+                    font-size: 1.125rem;
+                    font-weight: bold;
+                    margin-bottom: .625rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                    line-height: 1.5;
+                }
+            }
+
+            #negro {
+                height: 18.75rem;
+                background-color: black;
+                color: white;
+                position: relative;
+                align-self: flex-end;
+            }
+
+            #celeste {
+                @extend #negro;
+                background-color: #00aaff;
+            }
+
+            #blanco {
+                @extend #negro;
+                background-color: #ffffff;
+                color: black;
+            }
+        }
+
+        #productos-pepsi {
+            padding: 2.5rem 1rem;
+            border-radius: .9375rem;
+            margin: 1.25rem auto;
+            margin-top: -4.375rem;
+            max-width: 81.25rem;
+
+            .grilla {
+                @include grid(repeat(4, 1fr), none, center, center, none);
+                margin: 2.5rem auto;
+                max-width: 75rem;
+
+                .producto {
+                    text-align: center;
+                    color: rgb(255, 255, 255);
+                    margin-bottom: 50px;
+
+                    img {
+                        width: 15.875rem;
+                        height: 20rem;
+                        object-fit: contain;
+                        border-radius: .625rem;
+                        display: block;
+                        margin: 0 auto;
+
+                        &:hover {
+                            transform: scale(1.05);
+                        }
+                    }
+
+                    p {
+                        margin-bottom: 1.25rem;
+                        margin-top: .625rem;
+                        font-size: 1.225rem;
+                        font-style: italic;
+                        font-weight: bold;
+                    }
+
+                }
+            }
+        }
+
+        #historia {
+            @include flex(none, center, center, none);
+            margin: 2.5rem auto;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            gap: 12.5rem;
+
+            #primer-texto {
+                font-size: 1.25rem;
+                width: 40.3125rem;
+                height: 11.4375rem;
+            }
+
+            #segundo-texto {
+                @extend #primer-texto;
+            }
+        }
+
+        #logos-pepsi {
+            background-color: white;
+            padding: 2.5rem 1rem;
+            border-radius: .9375rem;
+            margin: 1.25rem auto;
+            margin-top: 12rem;
+            max-width: 100.5rem;
+
+            .grilla-logos {
+                @include grid(repeat(5, 1fr), none, center, center, none);
+                margin: 2.5rem auto;
+                max-width: 70rem;
+
+                .logos {
+                    text-align: center;
+                    color: rgb(0, 0, 0);
+
+                    img {
+                        width: 13.875rem;
+                        height: 20rem;
+                        object-fit: contain;
+                        border-radius: .625rem;
+                        display: block;
+                        margin: 0 auto;
+                    }
+
+                    p {
+                        margin-top: .625rem;
+                        font-size: 1.225rem;
+                        font-style: italic;
+                        font-weight: bold;
+                    }
+
+                }
+
+                #resaltador {
+                    color: rgb(255, 0, 0);
+                    width: 18.875rem;
+                    height: 22rem;
+                }
+            }
+        }
+
+        .contacto {
+            @include flex(none, center, center, none);
+            color: white;
+            text-align: center;
+        }
+
+        .contacto-info {
+            margin-top: 6.25rem;
+            margin-bottom: 6.25rem;
+            @include flex(none, center, center, none);
+            color: white;
+            text-align: center;
+
+            .iconos {
+                @include flex(none, center, center, none);
+                gap: 1.25rem;
+                margin-top: 1.25rem;
+
+                img {
+                    width: 2.5rem;
+                    height: 2.5rem;
+                }
+            }
+        }
+    }
+
+}
+
+
+.fondo-clasica {
+    overflow-y: hidden;
+    @extend .bodygeneral;
+
+    #principal-clasica {
+        @include flex(none, center, center, none);
+        color: white;
+        text-align: center;
+
+        #textoprincipal-clasica {
+            width: 52.375rem;
+            height: 28.8125rem;
+            text-align: left;
+            position: absolute;
+            z-index: 1;
+            top: 20%;
+            left: 10%;
+
+            h1 {
+                font-size: 6rem;
+                font-weight: bold;
+                font-style: normal;
+            }
+
+            p {
+                margin-top: 3.25rem;
+                font-size: 1.5rem;
+                font-weight: 300;
+                width: 60.25rem;
+            }
+        }
+
+        img {
+            width: 28.625rem;
+            height: 47.8125rem;
+            object-fit: contain;
+            position: absolute;
+            top: 10rem;
+            left: 78.8125rem;
+            z-index: 1;
+            overflow: hidden;
+        }
+    }
+
+    #nutricion-info {
+        @include grid(repeat(5, 1fr), repeat(3, 6.25rem), center, center, none);
+        margin: 22.5rem 17.5875rem;
+        max-width: 40rem;
+        column-gap: 1.25rem;
+
+        .nutri {
+            grid-column: 1/6;
+            grid-row: 1/2;
+            height: 3.125rem;
+            font-size: 1.5rem;
+            margin-bottom: 1.25rem;
+            color: white;
+            @include flex(none, flex-start, center, none);
+        }
+
+        .box-nutri {
+            background-color: map-get($colores, nutri-clasica1);
+            flex: 1;
+            color: white;
+            text-align: center;
+            width: 9.375rem;
+            height: 10.5rem;
+            transition: transform .2s;
+
+            &:hover {
+                transform: scale(1.1);
+                background-color: map-get($colores, nutri-clasica1-hover);
+            }
+
+            h2 {
+                font-size: 1.525rem;
+                font-weight: bold;
+                height: 8.375rem;
+                margin-bottom: auto;
+                margin-top: auto;
+                text-align: center;
+                @include flex(none, center, center, none);
+
+                &:hover {
+                    background-color: map-get($colores, nutri-clasica1-hover);
+                }
+            }
+
+            p {
+                border-radius: 0rem 0rem .625rem .625rem;
+                background-color: map-get($colores, nutri-clasica2);
+                font-size: 1rem;
+                line-height: 1.5;
+                height: 3.125rem;
+                @include flex(none, center, center, none);
+
+
+                &:hover {
+                    background-color: map-get($colores, nutri-clasica2-hover);
+                }
+            }
+        }
+
+        .descripcion-nutri {
+            height: .125rem;
+            align-self: end;
+            justify-self: start;
+            font-size: 1.5rem;
+            margin-bottom: 1.25rem;
+            color: white;
+            grid-column-start: 1;
+            grid-column-end: 6;
+
+            p {
+                font-size: .825rem;
+                font-weight: 200;
+            }
+        }
+
+    }
+
+    .ml {
+        position: absolute;
+        bottom: .3125rem;
+        right: 0rem;
+        background-color: map-get($colores, nutri-clasica2-ml);
+        border-radius: .625rem;
+        box-shadow: 0 .25rem .375rem rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 12.5rem;
+        height: 9.375rem;
+
+        h2 {
+            margin: 1.25rem;
+            font-size: 2.125rem;
+            color: #ffffff;
+        }
+
+        p {
+            font-size: .875rem;
+            font-weight: bold;
+            align-items: center;
+            justify-content: center;
+            color: map-get($colores, nutri-diet1-hover);
+        }
+    }
+
+}
+
+.fondo-cero {
+    overflow-y: hidden;
+    @extend .bodygeneral;
+    background: map-get($colores, fondo-cero);
+
+    #principal-cero {
+        @include flex(none, center, center, none);
+        color: white;
+        text-align: center;
+
+        #textoprincipal-cero {
+            width: 52.375rem;
+            height: 28.8125rem;
+            text-align: left;
+            position: absolute;
+            z-index: 1;
+            top: 20%;
+            left: 10%;
+
+            h1 {
+                font-size: 6rem;
+                font-weight: bold;
+                font-style: normal;
+            }
+
+            p {
+                margin-top: 3.25rem;
+                font-size: 1.5rem;
+                font-weight: 300;
+                width: 60.25rem;
+            }
+        }
+
+        img {
+            width: 28.625rem;
+            height: 47.8125rem;
+            object-fit: contain;
+            position: absolute;
+            top: 10rem;
+            left: 78.8125rem;
+            z-index: 1;
+            overflow: hidden;
+        }
+    }
+
+    #nutricion-info {
+        @include grid(repeat(5, 1fr), repeat(3, 6.25rem), center, center, none);
+        margin: 22.5rem 17.5875rem;
+        max-width: 40rem;
+        column-gap: 1.25rem;
+
+        .nutri {
+            grid-column: 1/6;
+            grid-row: 1/2;
+            height: 3.125rem;
+            font-size: 1.5rem;
+            margin-bottom: 1.25rem;
+            color: white;
+            @include flex(none, flex-start, center, none);
+
+        }
+
+        .box-nutri-cero {
+            background-color: map-get($colores, nutri-cero1);
+            flex: 1;
+            color: white;
+            text-align: center;
+            width: 9.375rem;
+            height: 10.5rem;
+            transition: transform .2s;
+
+            &:hover {
+                transform: scale(1.1);
+                background-color: map-get($colores, nutri-cero1-hover);
+            }
+
+            h2 {
+                font-size: 1.525rem;
+                font-weight: bold;
+                height: 8.375rem;
+                margin-bottom: auto;
+                margin-top: auto;
+                text-align: center;
+                @include flex(none, center, center, none);
+
+                &:hover {
+                    background-color: map-get($colores, nutri-cero1-hover);
+                }
+            }
+
+            p {
+                border-radius: 0rem 0rem .625rem .625rem;
+                background-color: map-get($colores, nutri-cero2);
+                font-size: 1rem;
+                line-height: 1.5;
+                height: 3.125rem;
+                @include flex(none, center, center, none);
+
+                &:hover {
+                    background-color: map-get($colores, nutri-cero2-hover);
+                }
+            }
+        }
+
+        .descripcion-nutri-cero {
+            height: .125rem;
+            align-self: end;
+            justify-self: start;
+            font-size: 1.5rem;
+            margin-bottom: 1.25rem;
+            color: white;
+            grid-column-start: 1;
+            grid-column-end: 6;
+
+            p {
+                font-size: .825rem;
+                font-weight: 200;
+            }
+        }
+
+    }
+
+    .ml-cero {
+        position: absolute;
+        bottom: .3125rem;
+        right: 0rem;
+        background-color: map-get($colores, nutri-cero2-ml);
+        border-radius: .625rem;
+        box-shadow: 0 .25rem .375rem rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 12.5rem;
+        height: 9.375rem;
+
+        h2 {
+            margin: 1.25rem;
+            font-size: 2.125rem;
+            color: #ffffff;
+        }
+
+        p {
+            font-size: .875rem;
+            font-weight: bold;
+            align-items: center;
+            justify-content: center;
+            color: map-get($colores, nutri-diet1-hover);
+        }
+    }
+}
+
+
+
+.fondo-diet {
+    overflow-y: hidden;
+    @extend .bodygeneral;
+    background: map-get($colores, fondo-diet);
+
+    #principal-diet {
+        @include flex(none, center, center, none);
+        color: white;
+        text-align: center;
+
+        #textoprincipal-diet {
+            width: 52.375rem;
+            height: 28.8125rem;
+            text-align: left;
+            position: absolute;
+            z-index: 1;
+            top: 20%;
+            left: 10%;
+
+            h1 {
+                font-size: 6rem;
+                font-weight: bold;
+                font-style: normal;
+            }
+
+            p {
+                margin-top: 3.25rem;
+                font-size: 1.5rem;
+                font-weight: 300;
+                width: 60.25rem;
+            }
+        }
+
+        img {
+            width: 28.625rem;
+            height: 47.8125rem;
+            object-fit: contain;
+            position: absolute;
+            top: 10rem;
+            left: 78.8125rem;
+            overflow: hidden;
+        }
+    }
+
+    #nutricion-info {
+        @include grid(repeat(5, 1fr), repeat(3, 6.25rem), center, center, none);
+        margin: 22.5rem 17.5875rem;
+        max-width: 40rem;
+        column-gap: 1.25rem;
+
+        .nutri {
+            grid-column: 1/6;
+            grid-row: 1/2;
+            height: 3.125rem;
+            font-size: 1.5rem;
+            margin-bottom: 1.25rem;
+            color: white;
+            @include flex(none, flex-start, center, none);
+        }
+
+        .box-nutri-diet {
+            background-color: map-get($colores, nutri-diet1);
+            flex: 1;
+            color: white;
+            text-align: center;
+            width: 9.375rem;
+            height: 10.5rem;
+            transition: transform .2s;
+
+            &:hover {
+                transform: scale(1.1);
+                background-color: map-get($colores, nutri-diet1-hover);
+            }
+
+            h2 {
+                font-size: 1.525rem;
+                font-weight: bold;
+                height: 8.375rem;
+                margin-bottom: auto;
+                margin-top: auto;
+                text-align: center;
+                @include flex(none, center, center, none);
+
+                &:hover {
+                    background-color: map-get($colores, nutri-diet1-hover);
+                }
+            }
+
+            p {
+                border-radius: 0rem 0rem .625rem .625rem;
+                background-color: map-get($colores, nutri-diet2);
+                font-size: 1rem;
+                line-height: 1.5;
+                height: 3.125rem;
+                @include flex(none, center, center, none);
+
+                &:hover {
+                    background-color: map-get($colores, nutri-diet2-hover);
+                }
+            }
+        }
+
+
+        .descripcion-nutri-diet {
+            height: .125rem;
+            align-self: end;
+            justify-self: start;
+            font-size: 1.5rem;
+            margin-bottom: 1.25rem;
+            color: white;
+            grid-column-start: 1;
+            grid-column-end: 6;
+
+            p {
+                font-size: .825rem;
+                font-weight: 200;
+            }
+        }
+
+    }
+
+    .ml-diet {
+        position: absolute;
+        bottom: .3125rem;
+        right: 0rem;
+        background-color: map-get($colores, nutri-diet2-ml);
+        border-radius: .625rem;
+        box-shadow: 0 .25rem .375rem rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 12.5rem;
+        height: 9.375rem;
+
+        h2 {
+            margin: 1.25rem;
+            font-size: 2.125rem;
+            color: #ffffff;
+        }
+
+        p {
+            font-size: .875rem;
+            font-weight: bold;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+        }
+    }
+
+}
+
+@import"./utilities/media/1440px";
+@import"./utilities/media/1024px";
+@import"./utilities/media/768px";
+@import"./utilities/media/425px";
+@import"./utilities/media/375px";
+@import"./utilities/media/320px";

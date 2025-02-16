@@ -1,0 +1,294 @@
+@import "../../utilities/map";
+@import"../../utilities/mixins";
+
+@import"../../base/reset";
+
+@import"../../layout/footer";
+
+@import"../../components/botones";
+@import"../../components/add-responsive";
+
+@media (max-width: 425px) {
+    .bodygeneral {
+
+        header{
+            @include flex(none,space-between,center,none);
+            padding: 10px 15px;
+            color: #fff;
+            position: relative;
+
+            .nav-links {
+                display: none; 
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 35px;
+                width: 100%;
+                background: #00000000;
+                text-align: center;
+                padding: 10px 0;
+
+                ul {
+                    list-style: none;
+                    padding: 10px 20px;
+                    gap: 10px;
+                    margin: 0;
+                    text-align: center;
+    
+                    li {
+                        margin: 10px 0;
+    
+                        a {
+                            padding: 4px 5px;
+                            text-decoration: none;
+                            color: #ffffff;
+                            text-align: center;
+                            font-size: 15px;
+                        }
+    
+                        &:hover {
+                            background-color: #5f5f5fc9;
+                            border-radius: 20px;
+                        }
+                    }
+                }
+            }
+        
+            .menu-icon {
+                display: block; /* Se muestra en pantallas pequeñas */
+                font-size: 45px;
+                cursor: pointer;
+                color: #fff;
+            }
+        
+            .nav-links.show {
+                display: flex;
+            }
+    
+            #PepsiLogoPrincipal {
+                position: absolute;
+                top: 10px;
+                left: 49%;
+                transform: translateX(-50%);
+                height: 60px;
+            }
+        }
+
+        main {
+            #seccion1 {
+                #textoseccion1 {
+                    width: 275px;
+                    height: 413px;
+                    text-align: center;
+                    position: absolute;
+                    left: 12%;
+                    top: 15%;
+                    z-index: 1;
+                    margin: 20px;
+
+                    h1 {
+                        font-size: 48px;
+                        font-weight: bold;
+                        font-style: italic;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        font-weight: bold;
+                        margin-left: 20px;
+                        width: 244px;
+                    }
+                }
+
+                img {
+                    width: 250px;
+                    height: 961px;
+                    object-fit: contain;
+                    position: absolute;
+                    top: 250px;
+                    left: 90px;
+                    z-index: -1;
+                    overflow: hidden;
+                }
+
+            }
+
+            #productos-pepsi {
+                margin-top: 10px;
+
+                .grilla {
+                    top: 50%;
+                    @include grid(repeat(1, 1fr),none,center,center,none);
+                    margin: 56px auto;
+                    max-width: 1200px;
+
+                    .producto {
+                        img {
+                            width: 206px;
+                            height: 240px;
+                        }
+
+                        p {
+                            font-size: 13.6px;
+
+                        }
+
+                    }
+                }
+            }
+
+            #historia {
+                @include flex(column,none,none,none);
+                margin: auto;
+
+                #primer-texto {
+                    margin-top: 50px;
+                    font-size: 12.8px;
+                    width: 300px;
+                    height: 71px;
+                }
+
+                #segundo-texto {
+                    margin-top: 250px;
+                    margin-bottom: 100px;
+                    font-size: 12.8px;
+                    width: 300px;
+                    height: 135px;
+                }
+            }
+
+            #logos-pepsi {
+                padding: 24px 16px;
+                border-radius: 15px;
+                margin: 16px auto;
+                margin-top: 192px;
+
+                .grilla-logos {
+                    @include grid(repeat(1, 1fr),none,center,center,none);
+                    margin: 40px auto;
+                    max-width: 70rem;
+
+                    .logos {
+                        text-align: center;
+                        color: rgb(0, 0, 0);
+
+                        img {
+                            width: 112px;
+                            height: 160px;
+                        }
+
+                        p {
+                            font-size: 13.6px;
+
+                        }
+                    }
+
+                    #resaltador {
+                        padding-top: 88px;
+                        padding-left: 96px;
+                        color: rgb(255, 0, 0);
+                        width: 302px;
+                        height: 352px;
+                    }
+                }
+            }
+
+            #mapita {
+                margin-top: 50px;
+                width: 350px;
+                height: 350px;
+            }
+
+            .contacto-info{
+                .iconos{
+                    @include flex(column,none,none,none);
+                }
+            }
+        }
+
+        .footer-social a img {
+            width: 15px;
+            height: 15px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+    }
+
+
+    .fondo-cero,
+    .fondo-clasica,
+    .fondo-diet {
+        main {
+
+            #principal-clasica,
+            #principal-cero,
+            #principal-diet {
+                #textoprincipal-clasica {
+                    top: 15%;
+                    left: 15%;
+                    width: 300px;
+
+                    h1 {
+                        text-align: center;
+                        font-size: 40px;
+                    }
+
+                    p {
+                        display: none;
+
+                    }
+                }
+
+                #textoprincipal-cero,
+                #textoprincipal-diet {
+                    top: 15%;
+                    left: 9%;
+                    width: 350px;
+
+                    h1 {
+                        text-align: center;
+                        font-size: 40px;
+                    }
+
+                    p {
+                        display: none;
+
+                    }
+                }
+
+
+
+                img {
+                    width: 218px;
+                    height: 413px;
+                    object-fit: contain;
+                    position: absolute;
+                    top: 237px;
+                    left: 103px;
+                    overflow: hidden;
+                }
+            }
+
+            #nutricion-info {
+
+                .nutri,
+                .box-nutri,
+                .box-nutri-cero,
+                .box-nutri-diet,
+                .descripcion-nutri,
+                .descripcion-nutri-cero,
+                .descripcion-nutri-diet {
+                    display: none;
+                }
+
+            }
+
+            .ml,
+            .ml-cero,
+            .ml-diet {
+                display: none;
+            }
+
+        }        
+    }
+}
