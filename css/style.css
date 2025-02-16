@@ -323,6 +323,7 @@ footer .footer-social img {
 .bodygeneral main #productos-pepsi .grilla .producto, .fondo-diet main #productos-pepsi .grilla .producto, .fondo-cero main #productos-pepsi .grilla .producto, .fondo-clasica main #productos-pepsi .grilla .producto {
   text-align: center;
   color: rgb(255, 255, 255);
+  margin-bottom: 50px;
 }
 .bodygeneral main #productos-pepsi .grilla .producto img, .fondo-diet main #productos-pepsi .grilla .producto img, .fondo-cero main #productos-pepsi .grilla .producto img, .fondo-clasica main #productos-pepsi .grilla .producto img {
   width: 15.875rem;
@@ -2229,21 +2230,21 @@ footer .footer-social img {
     font-weight: 300;
     width: 324px;
   }
-  .fondo-cero #principal-clasica img,
-  .fondo-cero #principal-cero img,
-  .fondo-cero #principal-diet img,
-  .fondo-clasica #principal-clasica img,
-  .fondo-clasica #principal-cero img,
-  .fondo-clasica #principal-diet img,
-  .fondo-diet #principal-clasica img,
-  .fondo-diet #principal-cero img,
-  .fondo-diet #principal-diet img {
-    width: 298px;
-    height: 493px;
+  .fondo-cero #principal-clasica div img,
+  .fondo-cero #principal-cero div img,
+  .fondo-cero #principal-diet div img,
+  .fondo-clasica #principal-clasica div img,
+  .fondo-clasica #principal-cero div img,
+  .fondo-clasica #principal-diet div img,
+  .fondo-diet #principal-clasica div img,
+  .fondo-diet #principal-cero div img,
+  .fondo-diet #principal-diet div img {
+    width: 300px;
+    height: 450px;
     object-fit: contain;
     position: absolute;
-    top: 288px;
-    left: 461px;
+    top: 300px;
+    left: 425px;
     z-index: -1;
     overflow: hidden;
   }
@@ -2381,11 +2382,33 @@ footer .footer-social img {
   .fondo-diet .ml,
   .fondo-diet .ml-cero,
   .fondo-diet .ml-diet {
-    width: 200px;
+    width: 150px;
     height: 150px;
     z-index: 10;
     top: 700px;
-    left: 700px;
+    left: 600px;
+  }
+  .fondo-cero .ml h2,
+  .fondo-cero .ml-cero h2,
+  .fondo-cero .ml-diet h2,
+  .fondo-clasica .ml h2,
+  .fondo-clasica .ml-cero h2,
+  .fondo-clasica .ml-diet h2,
+  .fondo-diet .ml h2,
+  .fondo-diet .ml-cero h2,
+  .fondo-diet .ml-diet h2 {
+    font-size: 24px;
+  }
+  .fondo-cero .ml p,
+  .fondo-cero .ml-cero p,
+  .fondo-cero .ml-diet p,
+  .fondo-clasica .ml p,
+  .fondo-clasica .ml-cero p,
+  .fondo-clasica .ml-diet p,
+  .fondo-diet .ml p,
+  .fondo-diet .ml-cero p,
+  .fondo-diet .ml-diet p {
+    font-size: 16px;
   }
 }
 * {
@@ -3798,7 +3821,7 @@ footer .footer-social img {
   }
   .bodygeneral header .nav-links ul, .fondo-clasica header .nav-links ul, .fondo-cero header .nav-links ul, .fondo-diet header .nav-links ul {
     list-style: none;
-    padding: 8px 0px;
+    padding: 6px 0px;
     gap: 8px;
     margin: 0;
     text-align: center;
@@ -4636,11 +4659,12 @@ footer .footer-social img {
     height: 60px;
   }
   .bodygeneral header .nav-links, .fondo-clasica header .nav-links, .fondo-cero header .nav-links, .fondo-diet header .nav-links {
+    left: 50px;
     width: 100%;
   }
   .bodygeneral header .nav-links ul, .fondo-clasica header .nav-links ul, .fondo-cero header .nav-links ul, .fondo-diet header .nav-links ul {
     list-style: none;
-    padding: 6px 0px;
+    padding: 4px 0px;
     gap: 8px;
     margin: 0;
     text-align: center;

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="./assets/logos/pepsi_logo.png">
     <link rel="stylesheet" href="../css/style.css">
     <title>Pepsi Página - Contacto</title>
@@ -13,7 +14,7 @@
 </head>
 <body class="bodygeneral">
     <header>
-        <img id="PepsiLogoPrincipal" src="../assets/logos/pepsi_logo.png" alt="logo principal de Pepsi">
+        <img data-aos="zoom-out-down" data-aos-duration="1500" id="PepsiLogoPrincipal" src="../assets/logos/pepsi_logo.png" alt="logo principal de Pepsi">
         
         <nav class="nav-links">
             <ul>
@@ -30,12 +31,12 @@
     </header>
     <main>
         <section class="contacto">
-            <div class="map">
+            <div data-aos="zoom-in-down" data-aos-duration="1500" class="map">
                 <iframe id="mapita" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32604654.861132003!2d-87.13787535!3d4.008003409710985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c297aebff7e003%3A0x5ba219486f4ff55f!2s700%20Anderson%20Hill%20Rd%2C%20Purchase%2C%20NY%2010577%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1738177918435!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>       
             </div>        
         </section>
         <section class="contacto-info">
-            <div class="iconos">
+            <div data-aos="zoom-in-up" data-aos-duration="1500" class="iconos">
                 <div>
                     <img src="../assets/logos/map.png" alt="map-icon">
                     <p>700 Anderson Hill Rd, Purchase, NY 10577, EE. UU.<p>
@@ -74,6 +75,10 @@
     </footer>
 
     <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 
 
 </body>

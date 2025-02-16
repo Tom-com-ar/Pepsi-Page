@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="./assets/logos/pepsi_logo.png">
     <link rel="stylesheet" href="../../css/style.css">
     <title>Productos - Pepsi Clásica</title>
@@ -13,7 +14,7 @@
 </head>
 <body class="fondo-clasica">
     <header>
-        <img id="PepsiLogoPrincipal" src="../../assets/logos/pepsi_logo.png" alt="logo principal de Pepsi">
+        <img data-aos="zoom-out-down" data-aos-duration="1500" id="PepsiLogoPrincipal" src="../../assets/logos/pepsi_logo.png" alt="logo principal de Pepsi">
         
         <nav class="nav-links">
             <ul>
@@ -30,16 +31,16 @@
     </header>
     <main>
         <section id="principal-clasica">
-            <div id="textoprincipal-clasica">
+            <div data-aos="zoom-in-right" data-aos-delay="500" data-aos-duration="1500" id="textoprincipal-clasica">
                 <h1>Pepsi Clásica</h1>
                 <p>Agua carbonatada, jarabe de maíz con alta fructosa, color caramelo, azúcar, ácido fosfórico, cafeína, ácido cítrico, sabores naturales</p>
             </div>
 
             <div>
-                <img src="../../assets/latas/pepsi_classic.png" alt="lata de Pepsi clásica">
+                <img data-aos="zoom-in-left" data-aos-delay="950" data-aos-duration="1500" src="../../assets/latas/pepsi_classic.png" alt="lata de Pepsi clásica">
             </div>
         </section>
-        <section id="nutricion-info">
+        <section data-aos="zoom-in-right" data-aos-delay="500" data-aos-duration="1500" id="nutricion-info">
             <h2 class="nutri">Datos Nutricionales</h2>
             <div class="box-nutri">
                 <h2>150kcal</h2>
@@ -75,12 +76,16 @@
         <div class="productos-clasica">
             <a href="../productos.html"><button class="btn productos">Productos</button></a>
         </div>
-        <div class="ml">
+        <div data-aos="zoom-out-up" data-aos-delay="1250" data-aos-duration="1500" class="ml">
             <h2>330 ml</h2>
             <p>¡El que más se ajusta a tu momento!</p>
         </div>
     </main>
 
     <script src="../../js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
