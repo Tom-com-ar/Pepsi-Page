@@ -3,7 +3,6 @@
 
 @import"../../base/reset";
 
-@import"../../layout/header-resp";
 @import"../../layout/footer";
 
 @import"../../components/botones";
@@ -12,14 +11,24 @@
     .bodygeneral {
         main {
 
-            nav {
+            .nav-links {
                 margin-top: 16px;
-                @include flex(none,center,center,none);
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
                 width: 100%;
+                background: #fff;
+                text-align: center;
+
+                .menu-icon {
+                    display: none;
+                }
 
                 ul li a {
                     margin-top: 16px;
-                    @include flex(none,center,center,none);
+                    @include flex(none, center, center, none);
                     width: 100%;
                 }
             }
@@ -56,7 +65,7 @@
 
             #seccion2 {
                 margin-top: 841px;
-                @include flex(column,space-between,none,none);
+                @include flex(column, space-between, none, none);
                 position: relative;
                 background-color: #ffffff00;
                 width: 100%;
@@ -118,7 +127,7 @@
                 max-width: 1608px;
 
                 .grilla-logos {
-                    @include grid(repeat(2, 1fr),none,center,center,none);
+                    @include grid(repeat(2, 1fr), none, center, center, none);
                     margin: 40px auto;
                     max-width: 1120px;
 
@@ -142,7 +151,7 @@
             }
 
             #historia {
-                @include flex(column,none,none,none);
+                @include flex(column, none, none, none);
                 row-gap: 75px;
                 margin: auto;
 
@@ -204,7 +213,7 @@
         }
 
         #nutricion-info {
-            @include grid(repeat(5, 1fr),repeat(3, 100px),center,center,none);
+            @include grid(repeat(5, 1fr), repeat(3, 100px), center, center, none);
             margin: 300px 77px;
             max-width: 640px;
             column-gap: 20px;
@@ -238,7 +247,7 @@
                     margin-bottom: auto;
                     margin-top: auto;
                     text-align: center;
-                    @include flex(none,center,center,none);
+                    @include flex(none, center, center, none);
                 }
 
                 p {
@@ -246,7 +255,7 @@
                     font-size: 16px;
                     line-height: 1.5;
                     height: 50px;
-                    @include flex(none,center,center,none);
+                    @include flex(none, center, center, none);
                 }
             }
 
@@ -270,7 +279,9 @@
                 }
             }
 
-            .datos-diet,.datos-clasica,.datos-cero{
+            .datos-diet,
+            .datos-clasica,
+            .datos-cero {
                 display: none;
             }
 

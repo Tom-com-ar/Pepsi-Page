@@ -9,10 +9,14 @@ header {
         height: 70px;
     }
 
-    nav {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+    .nav-links{
+        display: flex; 
+        gap: 20px;
+        
+        .menu-icon {
+            display: none; 
+            cursor: pointer;
+        }
 
         ul {
             display: flex;

@@ -3,22 +3,26 @@
 
 @import"../../base/reset";
 
-@import"../../layout/header-resp";
 @import"../../layout/footer";
 
 @import"../../components/botones";
 
 @media (max-width: 1024px) {
     .bodygeneral {
+
+        .menu-icon {
+            display: none;
+        }
+
         main {
             nav {
                 margin-top: 16px;
-                @include flex(none,center,center,none);
+                @include flex(none, center, center, none);
                 width: 100%;
 
                 ul {
                     margin-top: 16px;
-                    @include flex(none,center,center,none);
+                    @include flex(none, center, center, none);
                     width: 100%;
 
                     li {
@@ -60,7 +64,7 @@
             }
 
             #seccion2 {
-                @include flex(none,space-between,none,none);
+                @include flex(none, space-between, none, none);
                 margin-top: 841px;
                 position: relative;
                 background-color: #ffffff00;
@@ -88,7 +92,7 @@
 
             #productos-pepsi {
                 .grilla {
-                    @include grid(repeat(3, 1fr),none,center,center,none);
+                    @include grid(repeat(3, 1fr), none, center, center, none);
                     margin: 56px auto;
                     max-width: 1200px;
 
@@ -126,7 +130,7 @@
                 max-width: 1608px;
 
                 .grilla-logos {
-                    @include grid(repeat(3, 1fr),none,center,center,none);
+                    @include grid(repeat(3, 1fr), none, center, center, none);
                     margin: 40px auto;
                     max-width: 1120px;
 
@@ -197,8 +201,8 @@
         }
 
         #nutricion-info {
-            @include grid(repeat(3, 1fr),repeat(3, 100px),center,center,none);
-            column-gap:20px;
+            @include grid(repeat(3, 1fr), repeat(3, 100px), center, center, none);
+            column-gap: 20px;
             margin: 250px 105px;
             max-width: 400px;
 
@@ -219,14 +223,18 @@
                 display: none;
             }
 
-            .datos-diet,.datos-clasica,.datos-cero{
+            .datos-diet,
+            .datos-clasica,
+            .datos-cero {
                 display: none;
             }
         }
 
-        .ml,.ml-cero,.ml-diet{
-            h2 p{
-                font-size:20px ;
+        .ml,
+        .ml-cero,
+        .ml-diet {
+            h2 p {
+                font-size: 20px;
             }
         }
     }

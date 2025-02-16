@@ -3,14 +3,22 @@
 
 @import"../../base/reset";
 
-@import"../../layout/header-resp";
 @import"../../layout/footer";
 
 @import"../../components/botones";
 
 @media (max-width: 1440px) {
-    
+
     .bodygeneral {
+
+
+        .nav-links{
+            left: 600px;
+        }
+        .menu-icon {
+            display: none;
+        }
+
         main {
             #seccion1 {
                 height: 60%;
@@ -42,7 +50,7 @@
             }
 
             #seccion2 {
-                @include flex(none,space-between,none,none);
+                @include flex(none, space-between, none, none);
                 margin-top: 681px;
                 position: relative;
                 background-color: #ffffff00;
@@ -96,7 +104,7 @@
                 max-width: 1608px;
 
                 .grilla-logos {
-                    @include grid(repeat(4, 1fr),none,center,center,none);
+                    @include grid(repeat(4, 1fr), none, center, center, none);
                     margin: 40px auto;
                     max-width: 1120px;
 
@@ -200,7 +208,9 @@
                 bottom: 0px;
             }
 
-            .datos-diet,.datos-clasica,.datos-cero{
+            .datos-diet,
+            .datos-clasica,
+            .datos-cero {
                 display: none;
             }
         }

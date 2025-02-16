@@ -3,7 +3,6 @@
 
 @import"../../base/reset";
 
-@import"../../layout/header-resp";
 @import"../../layout/footer";
 
 @import"../../components/botones";
@@ -11,11 +10,7 @@
 
 @media (max-width: 320px) {
     .bodygeneral {
-        header {
-            display: none;
-        }
-
-        .header-resposive {
+        header{
             @include flex(none,space-between,center,none);
             padding: 10px 15px;
             color: #fff;
@@ -36,16 +31,11 @@
             }
     
             .nav-links {
-                display: none;
-                position: absolute;
-                top: 60px;
-                left: 50%;
                 width: 100%;
-                z-index: 999;
     
                 ul {
                     list-style: none;
-                    padding: 10px 0px;
+                    padding: 6px 0px;
                     gap: 8px;
                     margin: 0;
                     text-align: center;
@@ -57,7 +47,8 @@
                             text-decoration: none;
                             color: #ffffff;
                             text-align: center;
-                            font-size: 15px;
+                            font-size: 13px;
+                            padding: 8px 0;
                         }
     
                         &:hover {

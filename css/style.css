@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 * {
   margin: 0;
@@ -20,21 +21,24 @@ header {
 header #PepsiLogoPrincipal {
   height: 70px;
 }
-header nav {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+header .nav-links {
+  display: flex;
+  gap: 20px;
 }
-header nav ul {
+header .nav-links .menu-icon {
+  display: none;
+  cursor: pointer;
+}
+header .nav-links ul {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-header nav ul li {
+header .nav-links ul li {
   margin: 0 20px;
 }
-header nav ul li a {
+header .nav-links ul li a {
   text-decoration: none;
   color: white;
   font-size: 18px;
@@ -217,6 +221,9 @@ footer .footer-social img {
   height: 100%;
   min-height: 100vh;
   overflow-x: hidden;
+}
+.bodygeneral .menu-icon, .fondo-diet .menu-icon, .fondo-cero .menu-icon, .fondo-clasica .menu-icon {
+  display: none;
 }
 .bodygeneral main #seccion1, .fondo-diet main #seccion1, .fondo-cero main #seccion1, .fondo-clasica main #seccion1 {
   display: flex;
@@ -882,22 +889,6 @@ a {
   cursor: pointer;
 }
 
-.header-resposive {
-  display: none;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  color: #fff;
-  position: relative;
-}
-.header-resposive .menu-icon {
-  font-size: 24px;
-  cursor: pointer;
-}
-.header-resposive .menu-icon .nav-links {
-  display: none;
-}
-
 footer {
   align-content: end;
   background-color: #004f91;
@@ -1067,6 +1058,12 @@ footer .footer-social img {
   }
 }
 @media (max-width: 1440px) {
+  .bodygeneral .nav-links, .fondo-clasica .nav-links, .fondo-cero .nav-links, .fondo-diet .nav-links {
+    left: 600px;
+  }
+  .bodygeneral .menu-icon, .fondo-clasica .menu-icon, .fondo-cero .menu-icon, .fondo-diet .menu-icon {
+    display: none;
+  }
   .bodygeneral main #seccion1, .fondo-clasica main #seccion1, .fondo-cero main #seccion1, .fondo-diet main #seccion1 {
     height: 60%;
   }
@@ -1328,7 +1325,9 @@ footer .footer-social img {
     z-index: 10;
     bottom: 0px;
   }
-  .fondo-clasica #nutricion-info .datos-diet, .fondo-clasica #nutricion-info .datos-clasica, .fondo-clasica #nutricion-info .datos-cero,
+  .fondo-clasica #nutricion-info .datos-diet,
+  .fondo-clasica #nutricion-info .datos-clasica,
+  .fondo-clasica #nutricion-info .datos-cero,
   .fondo-cero #nutricion-info .datos-diet,
   .fondo-cero #nutricion-info .datos-clasica,
   .fondo-cero #nutricion-info .datos-cero,
@@ -1347,22 +1346,6 @@ footer .footer-social img {
 a {
   text-decoration: none;
   cursor: pointer;
-}
-
-.header-resposive {
-  display: none;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  color: #fff;
-  position: relative;
-}
-.header-resposive .menu-icon {
-  font-size: 24px;
-  cursor: pointer;
-}
-.header-resposive .menu-icon .nav-links {
-  display: none;
 }
 
 footer {
@@ -1534,6 +1517,9 @@ footer .footer-social img {
   }
 }
 @media (max-width: 1024px) {
+  .bodygeneral .menu-icon, .fondo-clasica .menu-icon, .fondo-cero .menu-icon, .fondo-diet .menu-icon {
+    display: none;
+  }
   .bodygeneral main nav, .fondo-clasica main nav, .fondo-cero main nav, .fondo-diet main nav {
     margin-top: 16px;
     display: flex;
@@ -1806,7 +1792,9 @@ footer .footer-social img {
   .fondo-diet #nutricion-info #chau {
     display: none;
   }
-  .fondo-clasica #nutricion-info .datos-diet, .fondo-clasica #nutricion-info .datos-clasica, .fondo-clasica #nutricion-info .datos-cero,
+  .fondo-clasica #nutricion-info .datos-diet,
+  .fondo-clasica #nutricion-info .datos-clasica,
+  .fondo-clasica #nutricion-info .datos-cero,
   .fondo-cero #nutricion-info .datos-diet,
   .fondo-cero #nutricion-info .datos-clasica,
   .fondo-cero #nutricion-info .datos-cero,
@@ -1815,7 +1803,9 @@ footer .footer-social img {
   .fondo-diet #nutricion-info .datos-cero {
     display: none;
   }
-  .fondo-clasica .ml h2 p, .fondo-clasica .ml-cero h2 p, .fondo-clasica .ml-diet h2 p,
+  .fondo-clasica .ml h2 p,
+  .fondo-clasica .ml-cero h2 p,
+  .fondo-clasica .ml-diet h2 p,
   .fondo-cero .ml h2 p,
   .fondo-cero .ml-cero h2 p,
   .fondo-cero .ml-diet h2 p,
@@ -1834,22 +1824,6 @@ footer .footer-social img {
 a {
   text-decoration: none;
   cursor: pointer;
-}
-
-.header-resposive {
-  display: none;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  color: #fff;
-  position: relative;
-}
-.header-resposive .menu-icon {
-  font-size: 24px;
-  cursor: pointer;
-}
-.header-resposive .menu-icon .nav-links {
-  display: none;
 }
 
 footer {
@@ -2021,16 +1995,21 @@ footer .footer-social img {
   }
 }
 @media (max-width: 768px) {
-  .bodygeneral main nav, .fondo-clasica main nav, .fondo-cero main nav, .fondo-diet main nav {
+  .bodygeneral main .nav-links, .fondo-clasica main .nav-links, .fondo-cero main .nav-links, .fondo-diet main .nav-links {
     margin-top: 16px;
-    display: flex;
-    flex-direction: none;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: none;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
     width: 100%;
+    background: #fff;
+    text-align: center;
   }
-  .bodygeneral main nav ul li a, .fondo-clasica main nav ul li a, .fondo-cero main nav ul li a, .fondo-diet main nav ul li a {
+  .bodygeneral main .nav-links .menu-icon, .fondo-clasica main .nav-links .menu-icon, .fondo-cero main .nav-links .menu-icon, .fondo-diet main .nav-links .menu-icon {
+    display: none;
+  }
+  .bodygeneral main .nav-links ul li a, .fondo-clasica main .nav-links ul li a, .fondo-cero main .nav-links ul li a, .fondo-diet main .nav-links ul li a {
     margin-top: 16px;
     display: flex;
     flex-direction: none;
@@ -2382,7 +2361,9 @@ footer .footer-social img {
     margin-top: 10px;
     font-weight: 200;
   }
-  .fondo-cero #nutricion-info .datos-diet, .fondo-cero #nutricion-info .datos-clasica, .fondo-cero #nutricion-info .datos-cero,
+  .fondo-cero #nutricion-info .datos-diet,
+  .fondo-cero #nutricion-info .datos-clasica,
+  .fondo-cero #nutricion-info .datos-cero,
   .fondo-clasica #nutricion-info .datos-diet,
   .fondo-clasica #nutricion-info .datos-clasica,
   .fondo-clasica #nutricion-info .datos-cero,
@@ -2416,22 +2397,6 @@ footer .footer-social img {
 a {
   text-decoration: none;
   cursor: pointer;
-}
-
-.header-resposive {
-  display: none;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  color: #fff;
-  position: relative;
-}
-.header-resposive .menu-icon {
-  font-size: 24px;
-  cursor: pointer;
-}
-.header-resposive .menu-icon .nav-links {
-  display: none;
 }
 
 footer {
@@ -2948,9 +2913,6 @@ footer .footer-social img {
 }
 @media (max-width: 425px) {
   .bodygeneral header, .fondo-clasica header, .fondo-cero header, .fondo-diet header {
-    display: none;
-  }
-  .bodygeneral .header-resposive, .fondo-clasica .header-resposive, .fondo-cero .header-resposive, .fondo-diet .header-resposive {
     display: flex;
     flex-direction: none;
     justify-content: space-between;
@@ -2960,46 +2922,53 @@ footer .footer-social img {
     color: #fff;
     position: relative;
   }
-  .bodygeneral .header-resposive .menu-icon, .fondo-clasica .header-resposive .menu-icon, .fondo-cero .header-resposive .menu-icon, .fondo-diet .header-resposive .menu-icon {
-    font-size: 45px;
-    cursor: pointer;
-    color: #fff;
-  }
-  .bodygeneral .header-resposive #PepsiLogoPrincipal, .fondo-clasica .header-resposive #PepsiLogoPrincipal, .fondo-cero .header-resposive #PepsiLogoPrincipal, .fondo-diet .header-resposive #PepsiLogoPrincipal {
-    position: absolute;
-    top: 10px;
-    left: 49%;
-    transform: translateX(-50%);
-    height: 60px;
-  }
-  .bodygeneral .header-resposive .nav-links, .fondo-clasica .header-resposive .nav-links, .fondo-cero .header-resposive .nav-links, .fondo-diet .header-resposive .nav-links {
+  .bodygeneral header .nav-links, .fondo-clasica header .nav-links, .fondo-cero header .nav-links, .fondo-diet header .nav-links {
     display: none;
+    flex-direction: column;
     position: absolute;
     top: 60px;
-    left: 50%;
+    left: 35px;
     width: 100%;
-    z-index: 999;
+    background: rgba(0, 0, 0, 0);
+    text-align: center;
+    padding: 10px 0;
   }
-  .bodygeneral .header-resposive .nav-links ul, .fondo-clasica .header-resposive .nav-links ul, .fondo-cero .header-resposive .nav-links ul, .fondo-diet .header-resposive .nav-links ul {
+  .bodygeneral header .nav-links ul, .fondo-clasica header .nav-links ul, .fondo-cero header .nav-links ul, .fondo-diet header .nav-links ul {
     list-style: none;
     padding: 10px 20px;
     gap: 10px;
     margin: 0;
     text-align: center;
   }
-  .bodygeneral .header-resposive .nav-links ul li, .fondo-clasica .header-resposive .nav-links ul li, .fondo-cero .header-resposive .nav-links ul li, .fondo-diet .header-resposive .nav-links ul li {
+  .bodygeneral header .nav-links ul li, .fondo-clasica header .nav-links ul li, .fondo-cero header .nav-links ul li, .fondo-diet header .nav-links ul li {
     margin: 10px 0;
   }
-  .bodygeneral .header-resposive .nav-links ul li a, .fondo-clasica .header-resposive .nav-links ul li a, .fondo-cero .header-resposive .nav-links ul li a, .fondo-diet .header-resposive .nav-links ul li a {
+  .bodygeneral header .nav-links ul li a, .fondo-clasica header .nav-links ul li a, .fondo-cero header .nav-links ul li a, .fondo-diet header .nav-links ul li a {
     padding: 4px 5px;
     text-decoration: none;
     color: #ffffff;
     text-align: center;
     font-size: 15px;
   }
-  .bodygeneral .header-resposive .nav-links ul li:hover, .fondo-clasica .header-resposive .nav-links ul li:hover, .fondo-cero .header-resposive .nav-links ul li:hover, .fondo-diet .header-resposive .nav-links ul li:hover {
+  .bodygeneral header .nav-links ul li:hover, .fondo-clasica header .nav-links ul li:hover, .fondo-cero header .nav-links ul li:hover, .fondo-diet header .nav-links ul li:hover {
     background-color: rgba(95, 95, 95, 0.7882352941);
     border-radius: 20px;
+  }
+  .bodygeneral header .menu-icon, .fondo-clasica header .menu-icon, .fondo-cero header .menu-icon, .fondo-diet header .menu-icon {
+    display: block; /* Se muestra en pantallas pequeñas */
+    font-size: 45px;
+    cursor: pointer;
+    color: #fff;
+  }
+  .bodygeneral header .nav-links.show, .fondo-clasica header .nav-links.show, .fondo-cero header .nav-links.show, .fondo-diet header .nav-links.show {
+    display: flex;
+  }
+  .bodygeneral header #PepsiLogoPrincipal, .fondo-clasica header #PepsiLogoPrincipal, .fondo-cero header #PepsiLogoPrincipal, .fondo-diet header #PepsiLogoPrincipal {
+    position: absolute;
+    top: 10px;
+    left: 49%;
+    transform: translateX(-50%);
+    height: 60px;
   }
   .bodygeneral main #seccion1 #textoseccion1, .fondo-clasica main #seccion1 #textoseccion1, .fondo-cero main #seccion1 #textoseccion1, .fondo-diet main #seccion1 #textoseccion1 {
     width: 275px;
@@ -3288,22 +3257,6 @@ a {
   cursor: pointer;
 }
 
-.header-resposive {
-  display: none;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  color: #fff;
-  position: relative;
-}
-.header-resposive .menu-icon {
-  font-size: 24px;
-  cursor: pointer;
-}
-.header-resposive .menu-icon .nav-links {
-  display: none;
-}
-
 footer {
   align-content: end;
   background-color: #004f91;
@@ -3818,9 +3771,6 @@ footer .footer-social img {
 }
 @media (max-width: 375px) {
   .bodygeneral header, .fondo-clasica header, .fondo-cero header, .fondo-diet header {
-    display: none;
-  }
-  .bodygeneral .header-resposive, .fondo-clasica .header-resposive, .fondo-cero .header-resposive, .fondo-diet .header-resposive {
     display: flex;
     flex-direction: none;
     justify-content: space-between;
@@ -3830,43 +3780,40 @@ footer .footer-social img {
     color: #fff;
     position: relative;
   }
-  .bodygeneral .header-resposive .menu-icon, .fondo-clasica .header-resposive .menu-icon, .fondo-cero .header-resposive .menu-icon, .fondo-diet .header-resposive .menu-icon {
+  .bodygeneral header .menu-icon, .fondo-clasica header .menu-icon, .fondo-cero header .menu-icon, .fondo-diet header .menu-icon {
     font-size: 45px;
     cursor: pointer;
     color: #fff;
   }
-  .bodygeneral .header-resposive #PepsiLogoPrincipal, .fondo-clasica .header-resposive #PepsiLogoPrincipal, .fondo-cero .header-resposive #PepsiLogoPrincipal, .fondo-diet .header-resposive #PepsiLogoPrincipal {
+  .bodygeneral header #PepsiLogoPrincipal, .fondo-clasica header #PepsiLogoPrincipal, .fondo-cero header #PepsiLogoPrincipal, .fondo-diet header #PepsiLogoPrincipal {
     position: absolute;
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
     height: 60px;
   }
-  .bodygeneral .header-resposive .nav-links, .fondo-clasica .header-resposive .nav-links, .fondo-cero .header-resposive .nav-links, .fondo-diet .header-resposive .nav-links {
-    display: none;
-    position: absolute;
-    top: 60px;
-    left: 50%;
-    width: 100%;
-    z-index: 999;
+  .bodygeneral header .nav-links, .fondo-clasica header .nav-links, .fondo-cero header .nav-links, .fondo-diet header .nav-links {
+    left: 53px;
+    padding: 8px 0;
   }
-  .bodygeneral .header-resposive .nav-links ul, .fondo-clasica .header-resposive .nav-links ul, .fondo-cero .header-resposive .nav-links ul, .fondo-diet .header-resposive .nav-links ul {
+  .bodygeneral header .nav-links ul, .fondo-clasica header .nav-links ul, .fondo-cero header .nav-links ul, .fondo-diet header .nav-links ul {
     list-style: none;
-    padding: 10px 0px;
+    padding: 8px 0px;
     gap: 8px;
     margin: 0;
     text-align: center;
   }
-  .bodygeneral .header-resposive .nav-links ul li, .fondo-clasica .header-resposive .nav-links ul li, .fondo-cero .header-resposive .nav-links ul li, .fondo-diet .header-resposive .nav-links ul li {
+  .bodygeneral header .nav-links ul li, .fondo-clasica header .nav-links ul li, .fondo-cero header .nav-links ul li, .fondo-diet header .nav-links ul li {
     margin: 10px 0;
   }
-  .bodygeneral .header-resposive .nav-links ul li a, .fondo-clasica .header-resposive .nav-links ul li a, .fondo-cero .header-resposive .nav-links ul li a, .fondo-diet .header-resposive .nav-links ul li a {
+  .bodygeneral header .nav-links ul li a, .fondo-clasica header .nav-links ul li a, .fondo-cero header .nav-links ul li a, .fondo-diet header .nav-links ul li a {
     text-decoration: none;
     color: #ffffff;
     text-align: center;
     font-size: 15px;
+    padding: 10px 0;
   }
-  .bodygeneral .header-resposive .nav-links ul li:hover, .fondo-clasica .header-resposive .nav-links ul li:hover, .fondo-cero .header-resposive .nav-links ul li:hover, .fondo-diet .header-resposive .nav-links ul li:hover {
+  .bodygeneral header .nav-links ul li:hover, .fondo-clasica header .nav-links ul li:hover, .fondo-cero header .nav-links ul li:hover, .fondo-diet header .nav-links ul li:hover {
     background-color: rgba(95, 95, 95, 0.7882352941);
     border-radius: 20px;
   }
@@ -4153,22 +4100,6 @@ a {
   cursor: pointer;
 }
 
-.header-resposive {
-  display: none;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  color: #fff;
-  position: relative;
-}
-.header-resposive .menu-icon {
-  font-size: 24px;
-  cursor: pointer;
-}
-.header-resposive .menu-icon .nav-links {
-  display: none;
-}
-
 footer {
   align-content: end;
   background-color: #004f91;
@@ -4683,9 +4614,6 @@ footer .footer-social img {
 }
 @media (max-width: 320px) {
   .bodygeneral header, .fondo-clasica header, .fondo-cero header, .fondo-diet header {
-    display: none;
-  }
-  .bodygeneral .header-resposive, .fondo-clasica .header-resposive, .fondo-cero .header-resposive, .fondo-diet .header-resposive {
     display: flex;
     flex-direction: none;
     justify-content: space-between;
@@ -4695,43 +4623,39 @@ footer .footer-social img {
     color: #fff;
     position: relative;
   }
-  .bodygeneral .header-resposive .menu-icon, .fondo-clasica .header-resposive .menu-icon, .fondo-cero .header-resposive .menu-icon, .fondo-diet .header-resposive .menu-icon {
+  .bodygeneral header .menu-icon, .fondo-clasica header .menu-icon, .fondo-cero header .menu-icon, .fondo-diet header .menu-icon {
     font-size: 45px;
     cursor: pointer;
     color: #fff;
   }
-  .bodygeneral .header-resposive #PepsiLogoPrincipal, .fondo-clasica .header-resposive #PepsiLogoPrincipal, .fondo-cero .header-resposive #PepsiLogoPrincipal, .fondo-diet .header-resposive #PepsiLogoPrincipal {
+  .bodygeneral header #PepsiLogoPrincipal, .fondo-clasica header #PepsiLogoPrincipal, .fondo-cero header #PepsiLogoPrincipal, .fondo-diet header #PepsiLogoPrincipal {
     position: absolute;
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
     height: 60px;
   }
-  .bodygeneral .header-resposive .nav-links, .fondo-clasica .header-resposive .nav-links, .fondo-cero .header-resposive .nav-links, .fondo-diet .header-resposive .nav-links {
-    display: none;
-    position: absolute;
-    top: 60px;
-    left: 50%;
+  .bodygeneral header .nav-links, .fondo-clasica header .nav-links, .fondo-cero header .nav-links, .fondo-diet header .nav-links {
     width: 100%;
-    z-index: 999;
   }
-  .bodygeneral .header-resposive .nav-links ul, .fondo-clasica .header-resposive .nav-links ul, .fondo-cero .header-resposive .nav-links ul, .fondo-diet .header-resposive .nav-links ul {
+  .bodygeneral header .nav-links ul, .fondo-clasica header .nav-links ul, .fondo-cero header .nav-links ul, .fondo-diet header .nav-links ul {
     list-style: none;
-    padding: 10px 0px;
+    padding: 6px 0px;
     gap: 8px;
     margin: 0;
     text-align: center;
   }
-  .bodygeneral .header-resposive .nav-links ul li, .fondo-clasica .header-resposive .nav-links ul li, .fondo-cero .header-resposive .nav-links ul li, .fondo-diet .header-resposive .nav-links ul li {
+  .bodygeneral header .nav-links ul li, .fondo-clasica header .nav-links ul li, .fondo-cero header .nav-links ul li, .fondo-diet header .nav-links ul li {
     margin: 10px 0;
   }
-  .bodygeneral .header-resposive .nav-links ul li a, .fondo-clasica .header-resposive .nav-links ul li a, .fondo-cero .header-resposive .nav-links ul li a, .fondo-diet .header-resposive .nav-links ul li a {
+  .bodygeneral header .nav-links ul li a, .fondo-clasica header .nav-links ul li a, .fondo-cero header .nav-links ul li a, .fondo-diet header .nav-links ul li a {
     text-decoration: none;
     color: #ffffff;
     text-align: center;
-    font-size: 15px;
+    font-size: 13px;
+    padding: 8px 0;
   }
-  .bodygeneral .header-resposive .nav-links ul li:hover, .fondo-clasica .header-resposive .nav-links ul li:hover, .fondo-cero .header-resposive .nav-links ul li:hover, .fondo-diet .header-resposive .nav-links ul li:hover {
+  .bodygeneral header .nav-links ul li:hover, .fondo-clasica header .nav-links ul li:hover, .fondo-cero header .nav-links ul li:hover, .fondo-diet header .nav-links ul li:hover {
     background-color: rgba(95, 95, 95, 0.7882352941);
     border-radius: 20px;
   }
