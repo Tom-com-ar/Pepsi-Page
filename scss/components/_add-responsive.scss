@@ -1,3 +1,4 @@
+@import"../utilities/mixins";
 @media (max-width: 425px) {
     .productos-clasica {
         background-color: #003865;
@@ -6,9 +7,7 @@
         margin-top: -125px;
         width: 425px;
         height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(none,center,center,none)
     }
 
     .productos-cero {
@@ -18,9 +17,7 @@
         margin-top: -125px;
         width: 425px;
         height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(none,center,center,none)
     }
 
     .productos-diet {
@@ -30,9 +27,7 @@
         margin-top: -125px;
         width: 425px;
         height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(none,center,center,none)
     }
 
     .btn.productos {
@@ -124,9 +119,7 @@
         margin-top: -125px;
         width: 375px;
         height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(none,center,center,none)
     }
 
     .productos-cero {
@@ -136,9 +129,7 @@
         margin-top: -125px;
         width: 375px;
         height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(none,center,center,none)
     }
 
     .productos-diet {
@@ -148,9 +139,7 @@
         margin-top: -125px;
         width: 375px;
         height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(none,center,center,none)
     }
 
     .btn.productos {
@@ -244,9 +233,7 @@
         margin-top: -125px;
         width: 320px;
         height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(none,center,center,none)
     }
 
     .productos-cero {
@@ -256,9 +243,7 @@
         margin-top: -125px;
         width: 320px;
         height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(none,center,center,none)
     }
 
     .productos-diet {
@@ -268,9 +253,7 @@
         margin-top: -125px;
         width: 320px;
         height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(none,center,center,none)
     }
 
     .btn.productos {

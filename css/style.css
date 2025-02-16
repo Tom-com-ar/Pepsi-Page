@@ -220,8 +220,10 @@ footer .footer-social img {
 }
 .bodygeneral main #seccion1, .fondo-diet main #seccion1, .fondo-cero main #seccion1, .fondo-clasica main #seccion1 {
   display: flex;
+  flex-direction: none;
   justify-content: center;
   align-items: center;
+  flex-wrap: none;
   height: 80%;
   color: white;
   text-align: center;
@@ -257,8 +259,11 @@ footer .footer-social img {
 .bodygeneral main #seccion2, .fondo-diet main #seccion2, .fondo-cero main #seccion2, .fondo-clasica main #seccion2 {
   margin-top: 42.5625rem;
   display: flex;
-  position: relative;
+  flex-direction: none;
   justify-content: space-between;
+  align-items: none;
+  flex-wrap: none;
+  position: relative;
 }
 .bodygeneral main #seccion2 .box, .fondo-diet main #seccion2 .box, .fondo-cero main #seccion2 .box, .fondo-clasica main #seccion2 .box {
   height: 12.5rem;
@@ -277,7 +282,7 @@ footer .footer-social img {
   font-size: 1rem;
   line-height: 1.5;
 }
-.bodygeneral main #seccion2 #negro, .fondo-diet main #seccion2 #negro, .fondo-cero main #seccion2 #negro, .fondo-clasica main #seccion2 #negro {
+.bodygeneral main #seccion2 #negro, .fondo-diet main #seccion2 #negro, .fondo-cero main #seccion2 #negro, .fondo-clasica main #seccion2 #negro, .bodygeneral main #seccion2 #blanco, .fondo-diet main #seccion2 #blanco, .fondo-cero main #seccion2 #blanco, .fondo-clasica main #seccion2 #blanco, .bodygeneral main #seccion2 #celeste, .fondo-diet main #seccion2 #celeste, .fondo-cero main #seccion2 #celeste, .fondo-clasica main #seccion2 #celeste {
   height: 18.75rem;
   background-color: black;
   color: white;
@@ -285,18 +290,11 @@ footer .footer-social img {
   align-self: flex-end;
 }
 .bodygeneral main #seccion2 #celeste, .fondo-diet main #seccion2 #celeste, .fondo-cero main #seccion2 #celeste, .fondo-clasica main #seccion2 #celeste {
-  height: 18.75rem;
   background-color: #00aaff;
-  color: white;
-  position: relative;
-  align-self: flex-end;
 }
 .bodygeneral main #seccion2 #blanco, .fondo-diet main #seccion2 #blanco, .fondo-cero main #seccion2 #blanco, .fondo-clasica main #seccion2 #blanco {
-  height: 14.75rem;
-  background-color: white;
+  background-color: #ffffff;
   color: black;
-  position: relative;
-  align-self: flex-end;
 }
 .bodygeneral main #productos-pepsi, .fondo-diet main #productos-pepsi, .fondo-cero main #productos-pepsi, .fondo-clasica main #productos-pepsi {
   padding: 2.5rem 1rem;
@@ -308,8 +306,10 @@ footer .footer-social img {
 .bodygeneral main #productos-pepsi .grilla, .fondo-diet main #productos-pepsi .grilla, .fondo-cero main #productos-pepsi .grilla, .fondo-clasica main #productos-pepsi .grilla {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: none;
   justify-content: center;
   align-items: center;
+  gap: none;
   margin: 2.5rem auto;
   max-width: 75rem;
 }
@@ -337,19 +337,16 @@ footer .footer-social img {
 }
 .bodygeneral main #historia, .fondo-diet main #historia, .fondo-cero main #historia, .fondo-clasica main #historia {
   display: flex;
-  margin: 2.5rem auto;
-  align-items: center;
+  flex-direction: none;
   justify-content: center;
+  align-items: center;
+  flex-wrap: none;
+  margin: 2.5rem auto;
   color: rgb(255, 255, 255);
   font-weight: bold;
   gap: 12.5rem;
 }
-.bodygeneral main #historia #primer-texto, .fondo-diet main #historia #primer-texto, .fondo-cero main #historia #primer-texto, .fondo-clasica main #historia #primer-texto {
-  font-size: 1.25rem;
-  width: 40.3125rem;
-  height: 11.4375rem;
-}
-.bodygeneral main #historia #segundo-texto, .fondo-diet main #historia #segundo-texto, .fondo-cero main #historia #segundo-texto, .fondo-clasica main #historia #segundo-texto {
+.bodygeneral main #historia #primer-texto, .fondo-diet main #historia #primer-texto, .fondo-cero main #historia #primer-texto, .fondo-clasica main #historia #primer-texto, .bodygeneral main #historia #segundo-texto, .fondo-diet main #historia #segundo-texto, .fondo-cero main #historia #segundo-texto, .fondo-clasica main #historia #segundo-texto {
   font-size: 1.25rem;
   width: 40.3125rem;
   height: 11.4375rem;
@@ -365,8 +362,10 @@ footer .footer-social img {
 .bodygeneral main #logos-pepsi .grilla-logos, .fondo-diet main #logos-pepsi .grilla-logos, .fondo-cero main #logos-pepsi .grilla-logos, .fondo-clasica main #logos-pepsi .grilla-logos {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: none;
   justify-content: center;
   align-items: center;
+  gap: none;
   margin: 2.5rem auto;
   max-width: 70rem;
 }
@@ -395,8 +394,10 @@ footer .footer-social img {
 }
 .bodygeneral main .contacto, .fondo-diet main .contacto, .fondo-cero main .contacto, .fondo-clasica main .contacto {
   display: flex;
+  flex-direction: none;
   justify-content: center;
   align-items: center;
+  flex-wrap: none;
   color: white;
   text-align: center;
 }
@@ -404,15 +405,19 @@ footer .footer-social img {
   margin-top: 6.25rem;
   margin-bottom: 6.25rem;
   display: flex;
+  flex-direction: none;
   justify-content: center;
   align-items: center;
+  flex-wrap: none;
   color: white;
   text-align: center;
 }
 .bodygeneral main .contacto-info .iconos, .fondo-diet main .contacto-info .iconos, .fondo-cero main .contacto-info .iconos, .fondo-clasica main .contacto-info .iconos {
   display: flex;
+  flex-direction: none;
   justify-content: center;
   align-items: center;
+  flex-wrap: none;
   gap: 1.25rem;
   margin-top: 1.25rem;
 }
@@ -426,8 +431,10 @@ footer .footer-social img {
 }
 .fondo-clasica #principal-clasica {
   display: flex;
+  flex-direction: none;
   justify-content: center;
   align-items: center;
+  flex-wrap: none;
   color: white;
   text-align: center;
 }
@@ -467,6 +474,7 @@ footer .footer-social img {
   grid-template-rows: repeat(3, 6.25rem);
   justify-content: center;
   align-items: center;
+  gap: none;
   margin: 22.5rem 17.5875rem;
   max-width: 40rem;
   column-gap: 1.25rem;
@@ -479,8 +487,10 @@ footer .footer-social img {
   margin-bottom: 1.25rem;
   color: white;
   display: flex;
+  flex-direction: none;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: none;
 }
 .fondo-clasica #nutricion-info .box-nutri {
   background-color: #0058a2;
@@ -503,21 +513,25 @@ footer .footer-social img {
   margin-top: auto;
   text-align: center;
   display: flex;
-  align-items: center;
+  flex-direction: none;
   justify-content: center;
+  align-items: center;
+  flex-wrap: none;
 }
 .fondo-clasica #nutricion-info .box-nutri h2:hover {
   background-color: #5bb4ff;
 }
 .fondo-clasica #nutricion-info .box-nutri p {
   border-radius: 0rem 0rem 0.625rem 0.625rem;
-  display: flex;
   background-color: #003D6B;
   font-size: 1rem;
   line-height: 1.5;
   height: 3.125rem;
-  align-items: center;
+  display: flex;
+  flex-direction: none;
   justify-content: center;
+  align-items: center;
+  flex-wrap: none;
 }
 .fondo-clasica #nutricion-info .box-nutri p:hover {
   background-color: #006cbc;
@@ -566,11 +580,12 @@ footer .footer-social img {
 }
 .fondo-cero #principal-cero {
   display: flex;
+  flex-direction: none;
   justify-content: center;
   align-items: center;
+  flex-wrap: none;
   color: white;
   text-align: center;
-  color: white;
 }
 .fondo-cero #principal-cero #textoprincipal-cero {
   width: 52.375rem;
@@ -608,6 +623,7 @@ footer .footer-social img {
   grid-template-rows: repeat(3, 6.25rem);
   justify-content: center;
   align-items: center;
+  gap: none;
   margin: 22.5rem 17.5875rem;
   max-width: 40rem;
   column-gap: 1.25rem;
@@ -620,8 +636,10 @@ footer .footer-social img {
   margin-bottom: 1.25rem;
   color: white;
   display: flex;
+  flex-direction: none;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: none;
 }
 .fondo-cero #nutricion-info .box-nutri-cero {
   background-color: #a0a0a0;
@@ -644,21 +662,25 @@ footer .footer-social img {
   margin-top: auto;
   text-align: center;
   display: flex;
-  align-items: center;
+  flex-direction: none;
   justify-content: center;
+  align-items: center;
+  flex-wrap: none;
 }
 .fondo-cero #nutricion-info .box-nutri-cero h2:hover {
   background-color: #ff0000;
 }
 .fondo-cero #nutricion-info .box-nutri-cero p {
   border-radius: 0rem 0rem 0.625rem 0.625rem;
-  display: flex;
   background-color: #535353;
   font-size: 1rem;
   line-height: 1.5;
   height: 3.125rem;
-  align-items: center;
+  display: flex;
+  flex-direction: none;
   justify-content: center;
+  align-items: center;
+  flex-wrap: none;
 }
 .fondo-cero #nutricion-info .box-nutri-cero p:hover {
   background-color: #830000;
@@ -707,11 +729,12 @@ footer .footer-social img {
 }
 .fondo-diet #principal-diet {
   display: flex;
+  flex-direction: none;
   justify-content: center;
   align-items: center;
+  flex-wrap: none;
   color: white;
   text-align: center;
-  color: white;
 }
 .fondo-diet #principal-diet #textoprincipal-diet {
   width: 52.375rem;
@@ -748,6 +771,7 @@ footer .footer-social img {
   grid-template-rows: repeat(3, 6.25rem);
   justify-content: center;
   align-items: center;
+  gap: none;
   margin: 22.5rem 17.5875rem;
   max-width: 40rem;
   column-gap: 1.25rem;
@@ -760,8 +784,10 @@ footer .footer-social img {
   margin-bottom: 1.25rem;
   color: white;
   display: flex;
+  flex-direction: none;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: none;
 }
 .fondo-diet #nutricion-info .box-nutri-diet {
   background-color: #929292;
@@ -784,21 +810,25 @@ footer .footer-social img {
   margin-top: auto;
   text-align: center;
   display: flex;
-  align-items: center;
+  flex-direction: none;
   justify-content: center;
+  align-items: center;
+  flex-wrap: none;
 }
 .fondo-diet #nutricion-info .box-nutri-diet h2:hover {
   background-color: #000000;
 }
 .fondo-diet #nutricion-info .box-nutri-diet p {
   border-radius: 0rem 0rem 0.625rem 0.625rem;
-  display: flex;
   background-color: #5f5f5f;
   font-size: 1rem;
   line-height: 1.5;
   height: 3.125rem;
-  align-items: center;
+  display: flex;
+  flex-direction: none;
   justify-content: center;
+  align-items: center;
+  flex-wrap: none;
 }
 .fondo-diet #nutricion-info .box-nutri-diet p:hover {
   background-color: #ff0000;
@@ -1059,10 +1089,13 @@ footer .footer-social img {
     left: 750px;
   }
   .bodygeneral main #seccion2, .fondo-clasica main #seccion2, .fondo-cero main #seccion2, .fondo-diet main #seccion2 {
-    margin-top: 681px;
     display: flex;
-    position: relative;
+    flex-direction: none;
     justify-content: space-between;
+    align-items: none;
+    flex-wrap: none;
+    margin-top: 681px;
+    position: relative;
     background-color: rgba(255, 255, 255, 0);
     width: 100%;
     max-width: 1440px;
@@ -1073,15 +1106,9 @@ footer .footer-social img {
   .bodygeneral main #seccion2 .box p, .fondo-clasica main #seccion2 .box p, .fondo-cero main #seccion2 .box p, .fondo-diet main #seccion2 .box p {
     font-size: 16px;
   }
-  .bodygeneral main #seccion2 .box #negro, .fondo-clasica main #seccion2 .box #negro, .fondo-cero main #seccion2 .box #negro, .fondo-diet main #seccion2 .box #negro,
+  .bodygeneral main #seccion2 .box #negro, .fondo-clasica main #seccion2 .box #negro, .fondo-cero main #seccion2 .box #negro, .fondo-diet main #seccion2 .box #negro, .fondo-clasica main #seccion2 .box #celeste, .fondo-clasica main #seccion2 .box #blanco, .fondo-cero main #seccion2 .box #celeste, .fondo-cero main #seccion2 .box #blanco, .fondo-diet main #seccion2 .box #celeste, .fondo-diet main #seccion2 .box #blanco,
   .bodygeneral main #seccion2 .box #celeste,
-  .fondo-clasica main #seccion2 .box #celeste,
-  .fondo-cero main #seccion2 .box #celeste,
-  .fondo-diet main #seccion2 .box #celeste,
-  .bodygeneral main #seccion2 .box #blanco,
-  .fondo-clasica main #seccion2 .box #blanco,
-  .fondo-cero main #seccion2 .box #blanco,
-  .fondo-diet main #seccion2 .box #blanco {
+  .bodygeneral main #seccion2 .box #blanco {
     flex: 1;
     width: 100%;
     max-width: 1440px;
@@ -1093,11 +1120,8 @@ footer .footer-social img {
   .bodygeneral main #historia, .fondo-clasica main #historia, .fondo-cero main #historia, .fondo-diet main #historia {
     margin: 20px;
   }
-  .bodygeneral main #historia #primer-texto, .fondo-clasica main #historia #primer-texto, .fondo-cero main #historia #primer-texto, .fondo-diet main #historia #primer-texto,
-  .bodygeneral main #historia #segundo-texto,
-  .fondo-clasica main #historia #segundo-texto,
-  .fondo-cero main #historia #segundo-texto,
-  .fondo-diet main #historia #segundo-texto {
+  .bodygeneral main #historia #primer-texto, .fondo-clasica main #historia #primer-texto, .fondo-cero main #historia #primer-texto, .fondo-diet main #historia #primer-texto, .fondo-clasica main #historia #segundo-texto, .fondo-cero main #historia #segundo-texto, .fondo-diet main #historia #segundo-texto,
+  .bodygeneral main #historia #segundo-texto {
     font-size: 18px;
     width: 565px;
     height: 135px;
@@ -1112,8 +1136,10 @@ footer .footer-social img {
   .bodygeneral main #logos-pepsi .grilla-logos, .fondo-clasica main #logos-pepsi .grilla-logos, .fondo-cero main #logos-pepsi .grilla-logos, .fondo-diet main #logos-pepsi .grilla-logos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: none;
     justify-content: center;
     align-items: center;
+    gap: none;
     margin: 40px auto;
     max-width: 1120px;
   }
@@ -1511,15 +1537,19 @@ footer .footer-social img {
   .bodygeneral main nav, .fondo-clasica main nav, .fondo-cero main nav, .fondo-diet main nav {
     margin-top: 16px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
     width: 100%;
   }
   .bodygeneral main nav ul, .fondo-clasica main nav ul, .fondo-cero main nav ul, .fondo-diet main nav ul {
     margin-top: 16px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
     width: 100%;
   }
   .bodygeneral main nav ul li, .fondo-clasica main nav ul li, .fondo-cero main nav ul li, .fondo-diet main nav ul li {
@@ -1548,10 +1578,13 @@ footer .footer-social img {
     left: 570px;
   }
   .bodygeneral main #seccion2, .fondo-clasica main #seccion2, .fondo-cero main #seccion2, .fondo-diet main #seccion2 {
-    margin-top: 841px;
     display: flex;
-    position: relative;
+    flex-direction: none;
     justify-content: space-between;
+    align-items: none;
+    flex-wrap: none;
+    margin-top: 841px;
+    position: relative;
     background-color: rgba(255, 255, 255, 0);
     width: 100%;
     max-width: 1440px;
@@ -1570,8 +1603,10 @@ footer .footer-social img {
   .bodygeneral main #productos-pepsi .grilla, .fondo-clasica main #productos-pepsi .grilla, .fondo-cero main #productos-pepsi .grilla, .fondo-diet main #productos-pepsi .grilla {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: none;
     justify-content: center;
     align-items: center;
+    gap: none;
     margin: 56px auto;
     max-width: 1200px;
   }
@@ -1582,11 +1617,8 @@ footer .footer-social img {
   .bodygeneral main #productos-pepsi .grilla .producto p, .fondo-clasica main #productos-pepsi .grilla .producto p, .fondo-cero main #productos-pepsi .grilla .producto p, .fondo-diet main #productos-pepsi .grilla .producto p {
     font-size: 18px;
   }
-  .bodygeneral main #historia #primer-texto, .fondo-clasica main #historia #primer-texto, .fondo-cero main #historia #primer-texto, .fondo-diet main #historia #primer-texto,
-  .bodygeneral main #historia #segundo-texto,
-  .fondo-clasica main #historia #segundo-texto,
-  .fondo-cero main #historia #segundo-texto,
-  .fondo-diet main #historia #segundo-texto {
+  .bodygeneral main #historia #primer-texto, .fondo-clasica main #historia #primer-texto, .fondo-cero main #historia #primer-texto, .fondo-diet main #historia #primer-texto, .fondo-clasica main #historia #segundo-texto, .fondo-cero main #historia #segundo-texto, .fondo-diet main #historia #segundo-texto,
+  .bodygeneral main #historia #segundo-texto {
     font-size: 13.6px;
     width: 645px;
     height: 135px;
@@ -1602,8 +1634,10 @@ footer .footer-social img {
   .bodygeneral main #logos-pepsi .grilla-logos, .fondo-clasica main #logos-pepsi .grilla-logos, .fondo-cero main #logos-pepsi .grilla-logos, .fondo-diet main #logos-pepsi .grilla-logos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: none;
     justify-content: center;
     align-items: center;
+    gap: none;
     margin: 40px auto;
     max-width: 1120px;
   }
@@ -1739,9 +1773,10 @@ footer .footer-social img {
     grid-template-rows: repeat(3, 100px);
     justify-content: center;
     align-items: center;
+    gap: none;
+    column-gap: 20px;
     margin: 250px 105px;
     max-width: 400px;
-    column-gap: 20px;
   }
   .fondo-clasica #nutricion-info .box-nutri,
   .fondo-clasica #nutricion-info .box-nutri-cero,
@@ -1989,15 +2024,19 @@ footer .footer-social img {
   .bodygeneral main nav, .fondo-clasica main nav, .fondo-cero main nav, .fondo-diet main nav {
     margin-top: 16px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
     width: 100%;
   }
   .bodygeneral main nav ul li a, .fondo-clasica main nav ul li a, .fondo-cero main nav ul li a, .fondo-diet main nav ul li a {
     margin-top: 16px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
     width: 100%;
   }
   .bodygeneral main #seccion1, .fondo-clasica main #seccion1, .fondo-cero main #seccion1, .fondo-diet main #seccion1 {
@@ -2026,8 +2065,10 @@ footer .footer-social img {
     margin-top: 841px;
     display: flex;
     flex-direction: column;
-    position: relative;
     justify-content: space-between;
+    align-items: none;
+    flex-wrap: none;
+    position: relative;
     background-color: rgba(255, 255, 255, 0);
     width: 100%;
     height: 500px;
@@ -2047,10 +2088,10 @@ footer .footer-social img {
   .fondo-clasica main #seccion2 #negro,
   .fondo-cero main #seccion2 #negro,
   .fondo-diet main #seccion2 #negro,
-  .bodygeneral main #seccion2 #blanco,
   .fondo-clasica main #seccion2 #blanco,
   .fondo-cero main #seccion2 #blanco,
-  .fondo-diet main #seccion2 #blanco {
+  .fondo-diet main #seccion2 #blanco,
+  .bodygeneral main #seccion2 #blanco {
     flex: 1;
     width: 100%;
     height: 200px;
@@ -2077,8 +2118,10 @@ footer .footer-social img {
   .bodygeneral main #logos-pepsi .grilla-logos, .fondo-clasica main #logos-pepsi .grilla-logos, .fondo-cero main #logos-pepsi .grilla-logos, .fondo-diet main #logos-pepsi .grilla-logos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: none;
     justify-content: center;
     align-items: center;
+    gap: none;
     margin: 40px auto;
     max-width: 1120px;
   }
@@ -2096,14 +2139,14 @@ footer .footer-social img {
   .bodygeneral main #historia, .fondo-clasica main #historia, .fondo-cero main #historia, .fondo-diet main #historia {
     display: flex;
     flex-direction: column;
+    justify-content: none;
+    align-items: none;
+    flex-wrap: none;
     row-gap: 75px;
     margin: auto;
   }
-  .bodygeneral main #historia #primer-texto, .fondo-clasica main #historia #primer-texto, .fondo-cero main #historia #primer-texto, .fondo-diet main #historia #primer-texto,
-  .bodygeneral main #historia #segundo-texto,
-  .fondo-clasica main #historia #segundo-texto,
-  .fondo-cero main #historia #segundo-texto,
-  .fondo-diet main #historia #segundo-texto {
+  .bodygeneral main #historia #primer-texto, .fondo-clasica main #historia #primer-texto, .fondo-cero main #historia #primer-texto, .fondo-diet main #historia #primer-texto, .fondo-clasica main #historia #segundo-texto, .fondo-cero main #historia #segundo-texto, .fondo-diet main #historia #segundo-texto,
+  .bodygeneral main #historia #segundo-texto {
     font-size: 13.6px;
     width: 500px;
     height: 100px;
@@ -2233,6 +2276,7 @@ footer .footer-social img {
     grid-template-rows: repeat(3, 100px);
     justify-content: center;
     align-items: center;
+    gap: none;
     margin: 300px 77px;
     max-width: 640px;
     column-gap: 20px;
@@ -2282,8 +2326,10 @@ footer .footer-social img {
     margin-top: auto;
     text-align: center;
     display: flex;
-    align-items: center;
+    flex-direction: none;
     justify-content: center;
+    align-items: center;
+    flex-wrap: none;
   }
   .fondo-cero #nutricion-info .box-nutri p,
   .fondo-cero #nutricion-info .box-nutri-cero p,
@@ -2295,12 +2341,14 @@ footer .footer-social img {
   .fondo-diet #nutricion-info .box-nutri-cero p,
   .fondo-diet #nutricion-info .box-nutri-diet p {
     border-radius: 0px 0px 10px 10px;
-    display: flex;
     font-size: 16px;
     line-height: 1.5;
     height: 50px;
-    align-items: center;
+    display: flex;
+    flex-direction: none;
     justify-content: center;
+    align-items: center;
+    flex-wrap: none;
   }
   .fondo-cero #nutricion-info .descripcion-nutri,
   .fondo-cero #nutricion-info .descripcion-nutri-cero,
@@ -2563,8 +2611,10 @@ footer .footer-social img {
     width: 425px;
     height: 80px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
   }
   .productos-cero {
     background-color: #434343;
@@ -2574,8 +2624,10 @@ footer .footer-social img {
     width: 425px;
     height: 80px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
   }
   .productos-diet {
     background-color: #b4b4b4;
@@ -2585,8 +2637,10 @@ footer .footer-social img {
     width: 425px;
     height: 80px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
   }
   .btn.productos {
     background-color: transparent;
@@ -2671,8 +2725,10 @@ footer .footer-social img {
     width: 375px;
     height: 80px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
   }
   .productos-cero {
     background-color: #434343;
@@ -2682,8 +2738,10 @@ footer .footer-social img {
     width: 375px;
     height: 80px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
   }
   .productos-diet {
     background-color: #b4b4b4;
@@ -2693,8 +2751,10 @@ footer .footer-social img {
     width: 375px;
     height: 80px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
   }
   .btn.productos {
     background-color: transparent;
@@ -2780,8 +2840,10 @@ footer .footer-social img {
     width: 320px;
     height: 80px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
   }
   .productos-cero {
     background-color: #434343;
@@ -2791,8 +2853,10 @@ footer .footer-social img {
     width: 320px;
     height: 80px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
   }
   .productos-diet {
     background-color: #b4b4b4;
@@ -2802,8 +2866,10 @@ footer .footer-social img {
     width: 320px;
     height: 80px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
   }
   .btn.productos {
     background-color: transparent;
@@ -2886,8 +2952,10 @@ footer .footer-social img {
   }
   .bodygeneral .header-resposive, .fondo-clasica .header-resposive, .fondo-cero .header-resposive, .fondo-diet .header-resposive {
     display: flex;
-    align-items: center;
+    flex-direction: none;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: none;
     padding: 10px 15px;
     color: #fff;
     position: relative;
@@ -2971,8 +3039,10 @@ footer .footer-social img {
     top: 50%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: none;
     justify-content: center;
     align-items: center;
+    gap: none;
     margin: 56px auto;
     max-width: 1200px;
   }
@@ -2986,9 +3056,12 @@ footer .footer-social img {
   .bodygeneral main #historia, .fondo-clasica main #historia, .fondo-cero main #historia, .fondo-diet main #historia {
     display: flex;
     flex-direction: column;
+    justify-content: none;
+    align-items: none;
+    flex-wrap: none;
     margin: auto;
   }
-  .bodygeneral main #historia #primer-texto, .fondo-clasica main #historia #primer-texto, .fondo-cero main #historia #primer-texto, .fondo-diet main #historia #primer-texto {
+  .bodygeneral main #historia #primer-texto, .fondo-clasica main #historia #primer-texto, .fondo-cero main #historia #primer-texto, .fondo-diet main #historia #primer-texto, .bodygeneral main #historia #segundo-texto, .fondo-clasica main #historia #segundo-texto, .fondo-cero main #historia #segundo-texto, .fondo-diet main #historia #segundo-texto {
     margin-top: 50px;
     font-size: 12.8px;
     width: 300px;
@@ -3010,8 +3083,10 @@ footer .footer-social img {
   .bodygeneral main #logos-pepsi .grilla-logos, .fondo-clasica main #logos-pepsi .grilla-logos, .fondo-cero main #logos-pepsi .grilla-logos, .fondo-diet main #logos-pepsi .grilla-logos {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: none;
     justify-content: center;
     align-items: center;
+    gap: none;
     margin: 40px auto;
     max-width: 70rem;
   }
@@ -3041,6 +3116,9 @@ footer .footer-social img {
   .bodygeneral main .contacto-info .iconos, .fondo-clasica main .contacto-info .iconos, .fondo-cero main .contacto-info .iconos, .fondo-diet main .contacto-info .iconos {
     display: flex;
     flex-direction: column;
+    justify-content: none;
+    align-items: none;
+    flex-wrap: none;
   }
   .bodygeneral .footer-social a img, .fondo-clasica .footer-social a img, .fondo-cero .footer-social a img, .fondo-diet .footer-social a img {
     width: 15px;
@@ -3403,8 +3481,10 @@ footer .footer-social img {
     width: 425px;
     height: 80px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
   }
   .productos-cero {
     background-color: #434343;
@@ -3414,8 +3494,10 @@ footer .footer-social img {
     width: 425px;
     height: 80px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
   }
   .productos-diet {
     background-color: #b4b4b4;
@@ -3425,8 +3507,10 @@ footer .footer-social img {
     width: 425px;
     height: 80px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
   }
   .btn.productos {
     background-color: transparent;
@@ -3511,8 +3595,10 @@ footer .footer-social img {
     width: 375px;
     height: 80px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
   }
   .productos-cero {
     background-color: #434343;
@@ -3522,8 +3608,10 @@ footer .footer-social img {
     width: 375px;
     height: 80px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
   }
   .productos-diet {
     background-color: #b4b4b4;
@@ -3533,8 +3621,10 @@ footer .footer-social img {
     width: 375px;
     height: 80px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
   }
   .btn.productos {
     background-color: transparent;
@@ -3620,8 +3710,10 @@ footer .footer-social img {
     width: 320px;
     height: 80px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
   }
   .productos-cero {
     background-color: #434343;
@@ -3631,8 +3723,10 @@ footer .footer-social img {
     width: 320px;
     height: 80px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
   }
   .productos-diet {
     background-color: #b4b4b4;
@@ -3642,8 +3736,10 @@ footer .footer-social img {
     width: 320px;
     height: 80px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
   }
   .btn.productos {
     background-color: transparent;
@@ -3726,8 +3822,10 @@ footer .footer-social img {
   }
   .bodygeneral .header-resposive, .fondo-clasica .header-resposive, .fondo-cero .header-resposive, .fondo-diet .header-resposive {
     display: flex;
-    align-items: center;
+    flex-direction: none;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: none;
     padding: 10px 15px;
     color: #fff;
     position: relative;
@@ -3810,8 +3908,10 @@ footer .footer-social img {
     top: 50%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: none;
     justify-content: center;
     align-items: center;
+    gap: none;
     margin: 56px auto;
     max-width: 1200px;
   }
@@ -3825,9 +3925,12 @@ footer .footer-social img {
   .bodygeneral main #historia, .fondo-clasica main #historia, .fondo-cero main #historia, .fondo-diet main #historia {
     display: flex;
     flex-direction: column;
+    justify-content: none;
+    align-items: none;
+    flex-wrap: none;
     margin: auto;
   }
-  .bodygeneral main #historia #primer-texto, .fondo-clasica main #historia #primer-texto, .fondo-cero main #historia #primer-texto, .fondo-diet main #historia #primer-texto {
+  .bodygeneral main #historia #primer-texto, .fondo-clasica main #historia #primer-texto, .fondo-cero main #historia #primer-texto, .fondo-diet main #historia #primer-texto, .bodygeneral main #historia #segundo-texto, .fondo-clasica main #historia #segundo-texto, .fondo-cero main #historia #segundo-texto, .fondo-diet main #historia #segundo-texto {
     margin-top: 50px;
     margin-bottom: 75px;
     font-size: 12.8px;
@@ -3850,8 +3953,10 @@ footer .footer-social img {
   .bodygeneral main #logos-pepsi .grilla-logos, .fondo-clasica main #logos-pepsi .grilla-logos, .fondo-cero main #logos-pepsi .grilla-logos, .fondo-diet main #logos-pepsi .grilla-logos {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: none;
     justify-content: center;
     align-items: center;
+    gap: none;
     margin: 40px auto;
     max-width: 300px;
   }
@@ -4241,8 +4346,10 @@ footer .footer-social img {
     width: 425px;
     height: 80px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
   }
   .productos-cero {
     background-color: #434343;
@@ -4252,8 +4359,10 @@ footer .footer-social img {
     width: 425px;
     height: 80px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
   }
   .productos-diet {
     background-color: #b4b4b4;
@@ -4263,8 +4372,10 @@ footer .footer-social img {
     width: 425px;
     height: 80px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
   }
   .btn.productos {
     background-color: transparent;
@@ -4349,8 +4460,10 @@ footer .footer-social img {
     width: 375px;
     height: 80px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
   }
   .productos-cero {
     background-color: #434343;
@@ -4360,8 +4473,10 @@ footer .footer-social img {
     width: 375px;
     height: 80px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
   }
   .productos-diet {
     background-color: #b4b4b4;
@@ -4371,8 +4486,10 @@ footer .footer-social img {
     width: 375px;
     height: 80px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
   }
   .btn.productos {
     background-color: transparent;
@@ -4458,8 +4575,10 @@ footer .footer-social img {
     width: 320px;
     height: 80px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
   }
   .productos-cero {
     background-color: #434343;
@@ -4469,8 +4588,10 @@ footer .footer-social img {
     width: 320px;
     height: 80px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
   }
   .productos-diet {
     background-color: #b4b4b4;
@@ -4480,8 +4601,10 @@ footer .footer-social img {
     width: 320px;
     height: 80px;
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: none;
   }
   .btn.productos {
     background-color: transparent;
@@ -4564,8 +4687,10 @@ footer .footer-social img {
   }
   .bodygeneral .header-resposive, .fondo-clasica .header-resposive, .fondo-cero .header-resposive, .fondo-diet .header-resposive {
     display: flex;
-    align-items: center;
+    flex-direction: none;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: none;
     padding: 10px 15px;
     color: #fff;
     position: relative;
@@ -4648,8 +4773,10 @@ footer .footer-social img {
     top: 50%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: none;
     justify-content: center;
     align-items: center;
+    gap: none;
     margin: 56px auto;
     max-width: 1200px;
   }
@@ -4663,9 +4790,12 @@ footer .footer-social img {
   .bodygeneral main #historia, .fondo-clasica main #historia, .fondo-cero main #historia, .fondo-diet main #historia {
     display: flex;
     flex-direction: column;
+    justify-content: none;
+    align-items: none;
+    flex-wrap: none;
     margin: auto;
   }
-  .bodygeneral main #historia #primer-texto, .fondo-clasica main #historia #primer-texto, .fondo-cero main #historia #primer-texto, .fondo-diet main #historia #primer-texto {
+  .bodygeneral main #historia #primer-texto, .fondo-clasica main #historia #primer-texto, .fondo-cero main #historia #primer-texto, .fondo-diet main #historia #primer-texto, .bodygeneral main #historia #segundo-texto, .fondo-clasica main #historia #segundo-texto, .fondo-cero main #historia #segundo-texto, .fondo-diet main #historia #segundo-texto {
     margin-top: 50px;
     margin-bottom: 75px;
     font-size: 12.8px;
@@ -4688,8 +4818,10 @@ footer .footer-social img {
   .bodygeneral main #logos-pepsi .grilla-logos, .fondo-clasica main #logos-pepsi .grilla-logos, .fondo-cero main #logos-pepsi .grilla-logos, .fondo-diet main #logos-pepsi .grilla-logos {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: none;
     justify-content: center;
     align-items: center;
+    gap: none;
     margin: 40px auto;
     max-width: 300px;
   }

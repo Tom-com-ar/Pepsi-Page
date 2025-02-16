@@ -42,10 +42,9 @@
             }
 
             #seccion2 {
+                @include flex(none,space-between,none,none);
                 margin-top: 681px;
-                display: flex;
                 position: relative;
-                justify-content: space-between;
                 background-color: #ffffff00;
                 width: 100%;
                 max-width: 1440px;
@@ -97,10 +96,7 @@
                 max-width: 1608px;
 
                 .grilla-logos {
-                    display: grid;
-                    grid-template-columns: repeat(4, 1fr);
-                    justify-content: center;
-                    align-items: center;
+                    @include grid(repeat(4, 1fr),none,center,center,none);
                     margin: 40px auto;
                     max-width: 1120px;
 

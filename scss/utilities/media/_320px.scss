@@ -16,9 +16,7 @@
         }
 
         .header-resposive {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            @include flex(none,space-between,center,none);
             padding: 10px 15px;
             color: #fff;
             position: relative;
@@ -115,10 +113,7 @@
 
                 .grilla {
                     top: 50%;
-                    display: grid;
-                    grid-template-columns: repeat(1, 1fr);
-                    justify-content: center;
-                    align-items: center;
+                    @include grid(repeat(1, 1fr),none,center,center,none);
                     margin: 56px auto;
                     max-width: 1200px;
 
@@ -137,8 +132,7 @@
             }
 
             #historia {
-                display: flex;
-                flex-direction: column;
+                @include flex(column,none,none,none);
                 margin: auto;
 
                 #primer-texto {
@@ -165,10 +159,7 @@
                 margin-top: 192px;
 
                 .grilla-logos {
-                    display: grid;
-                    grid-template-columns: repeat(1, 1fr);
-                    justify-content: center;
-                    align-items: center;
+                    @include grid(repeat(1, 1fr),none,center,center,none);
                     margin: 40px auto;
                     max-width: 300px;
 

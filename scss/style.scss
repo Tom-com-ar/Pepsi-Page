@@ -21,9 +21,7 @@
 
     main {
         #seccion1 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex(none,center,center,none);
             height: 80%;
             color: white;
             text-align: center;
@@ -64,9 +62,8 @@
 
         #seccion2 {
             margin-top: 42.5625rem;
-            display: flex;
+            @include flex(none,space-between,none,none);
             position: relative;
-            justify-content: space-between;
 
             .box {
                 height: 12.5rem;
@@ -97,19 +94,14 @@
             }
 
             #celeste {
-                height: 18.75rem;
+                @extend #negro;
                 background-color: #00aaff;
-                color: white;
-                position: relative;
-                align-self: flex-end;
             }
 
             #blanco {
-                height: 14.75rem;
-                background-color: white;
+                @extend #negro;
+                background-color: #ffffff;
                 color: black;
-                position: relative;
-                align-self: flex-end;
             }
         }
 
@@ -121,10 +113,7 @@
             max-width: 81.25rem;
 
             .grilla {
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                justify-content: center;
-                align-items: center;
+                @include grid(repeat(4, 1fr),none,center,center,none);
                 margin: 2.5rem auto;
                 max-width: 75rem;
 
@@ -158,10 +147,8 @@
         }
 
         #historia {
-            display: flex;
+            @include flex(none,center,center,none);
             margin: 2.5rem auto;
-            align-items: center;
-            justify-content: center;
             color: rgb(255, 255, 255);
             font-weight: bold;
             gap: 12.5rem;
@@ -173,9 +160,7 @@
             }
 
             #segundo-texto {
-                font-size: 1.25rem;
-                width: 40.3125rem;
-                height: 11.4375rem;
+                @extend #primer-texto;
             }
         }
 
@@ -188,10 +173,7 @@
             max-width: 100.5rem;
 
             .grilla-logos {
-                display: grid;
-                grid-template-columns: repeat(5, 1fr);
-                justify-content: center;
-                align-items: center;
+                @include grid(repeat(5, 1fr),none,center,center,none);
                 margin: 2.5rem auto;
                 max-width: 70rem;
 
@@ -226,9 +208,7 @@
         }
 
         .contacto {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex(none,center,center,none);
             color: white;
             text-align: center;
         }
@@ -236,16 +216,12 @@
         .contacto-info {
             margin-top: 6.25rem;
             margin-bottom: 6.25rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex(none,center,center,none);
             color: white;
             text-align: center;
 
             .iconos {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex(none,center,center,none);
                 gap: 1.25rem;
                 margin-top: 1.25rem;
 
@@ -265,9 +241,7 @@
     @extend .bodygeneral;
 
     #principal-clasica {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(none,center,center,none);
         color: white;
         text-align: center;
 
@@ -307,11 +281,7 @@
     }
 
     #nutricion-info {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(3, 6.25rem);
-        justify-content: center;
-        align-items: center;
+        @include grid(repeat(5, 1fr),repeat(3, 6.25rem),center,center,none);
         margin: 22.5rem 17.5875rem;
         max-width: 40rem;
         column-gap: 1.25rem;
@@ -323,9 +293,7 @@
             font-size: 1.5rem;
             margin-bottom: 1.25rem;
             color: white;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
+            @include flex(none,flex-start,center,none);
         }
 
         .box-nutri {
@@ -349,9 +317,7 @@
                 margin-bottom: auto;
                 margin-top: auto;
                 text-align: center;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @include flex(none,center,center,none);
 
                 &:hover {
                     background-color: map-get($colores, nutri-clasica1-hover );
@@ -360,13 +326,12 @@
 
             p {
                 border-radius: 0rem 0rem .625rem .625rem;
-                display: flex;
                 background-color: map-get($colores, nutri-clasica2);
                 font-size: 1rem;
                 line-height: 1.5;
                 height: 3.125rem;
-                align-items: center;
-                justify-content: center;
+                @include flex(none,center,center,none);
+
 
                 &:hover {
                     background-color: map-get($colores, nutri-clasica2-hover);
@@ -426,12 +391,9 @@
     background: map-get($colores, fondo-cero);
 
     #principal-cero {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(none,center,center,none);
         color: white;
         text-align: center;
-        color: white;
 
         #textoprincipal-cero {
             width: 52.375rem;
@@ -469,11 +431,7 @@
     }
 
     #nutricion-info {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(3, 6.25rem);
-        justify-content: center;
-        align-items: center;
+        @include grid(repeat(5, 1fr),repeat(3, 6.25rem),center,center,none);
         margin: 22.5rem 17.5875rem;
         max-width: 40rem;
         column-gap: 1.25rem;
@@ -485,9 +443,8 @@
             font-size: 1.5rem;
             margin-bottom: 1.25rem;
             color: white;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
+            @include flex(none,flex-start,center,none);
+
         }
 
         .box-nutri-cero {
@@ -511,9 +468,7 @@
                 margin-bottom: auto;
                 margin-top: auto;
                 text-align: center;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @include flex(none,center,center,none);
 
                 &:hover {
                     background-color: map-get($colores, nutri-cero1-hover);
@@ -522,13 +477,11 @@
 
             p {
                 border-radius: 0rem 0rem .625rem .625rem;
-                display: flex;
                 background-color: map-get($colores, nutri-cero2);
                 font-size: 1rem;
                 line-height: 1.5;
                 height: 3.125rem;
-                align-items: center;
-                justify-content: center;
+                @include flex(none,center,center,none);
 
                 &:hover {
                     background-color: map-get($colores, nutri-cero2-hover);
@@ -589,12 +542,9 @@
     background: map-get($colores, fondo-diet);
 
     #principal-diet {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(none,center,center,none);
         color: white;
         text-align: center;
-        color: white;
 
         #textoprincipal-diet {
             width: 52.375rem;
@@ -631,11 +581,7 @@
     }
 
     #nutricion-info {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(3, 6.25rem);
-        justify-content: center;
-        align-items: center;
+        @include grid(repeat(5, 1fr),repeat(3, 6.25rem),center,center,none);
         margin: 22.5rem 17.5875rem;
         max-width: 40rem;
         column-gap: 1.25rem;
@@ -647,9 +593,7 @@
             font-size: 1.5rem;
             margin-bottom: 1.25rem;
             color: white;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
+            @include flex(none,flex-start,center,none);
         }
 
         .box-nutri-diet {
@@ -673,9 +617,7 @@
                 margin-bottom: auto;
                 margin-top: auto;
                 text-align: center;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @include flex(none,center,center,none);
 
                 &:hover {
                     background-color: map-get($colores, nutri-diet1-hover );
@@ -684,13 +626,11 @@
 
             p {
                 border-radius: 0rem 0rem .625rem .625rem;
-                display: flex;
                 background-color: map-get($colores, nutri-diet2);
                 font-size: 1rem;
                 line-height: 1.5;
                 height: 3.125rem;
-                align-items: center;
-                justify-content: center;
+                @include flex(none,center,center,none);
 
                 &:hover {
                     background-color: map-get($colores, nutri-diet2-hover);
